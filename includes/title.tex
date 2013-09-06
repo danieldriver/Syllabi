@@ -1,0 +1,63 @@
+\ProvidesFile{title.tex}[2013/09/06 v1.0 -- Syllabus title page]
+
+\begin{titlepage}
+  \begin{center}
+
+    \begin{minipage}{\textwidth}
+      \parbox[t]{0.5\textwidth}{
+        \mbox{}\\[-\baselineskip] % dummy line to align parboxes
+        \includegraphics[width=0.5\textwidth]{.syllabus/includes/TyndaleUC}}
+      \hfill
+      \parbox[t]{0.4\textwidth}{
+        \raggedleft\LARGE\sffamily Course Syllabus\\
+        \semester}
+    \end{minipage}
+
+    \vfill
+
+    {\sffamily\textsc{\LARGE\MakeLowercase\coursecode}\\[2ex]
+      \bfseries\itshape\Huge\coursetitle}
+
+    \vfill
+
+    \begin{tabular}{>{\bfseries}rl>{\bfseries}rl}
+      \toprule
+      Instructor & \professor                   & Course  & \liningnums{\coursecode}~\texttt{(v\version)} \\
+      \midrule
+      Phone      & \texttt{\phone}              & Meets   & \meeton                                       \\
+      Email      & \href{mailto:\email}{\email} & Time    & \meetat                                       \\
+      Office     & \officenumber                & Room    & \meetin                                       \\
+      Hours      & \officehours                 & Website & \href{http://\website}{\website}              \\
+      \bottomrule
+    \end{tabular}
+
+    \vfill
+
+    \begin{description}
+      \item[Commuter Hotline]
+        Class cancellations due to inclement weather or illness will
+        be announced on the commuter hotline at \texttt{416.226.6620
+        x2187}. Alternately, weather cancellation information is posted
+        at \href{http://tyndale.ca/weather}{tyndale.ca/weather}.
+      \item[MyTyndale.ca]
+        This course may have materials stored on its website, such as
+        handouts or readings that may be needed in order to complete
+        assignments. Students are responsible for checking these course
+        pages on a regular basis. Here, too, students are able to view
+        their grades throughout the semester. For more information see
+        Section~\ref{mytyndale}, below.
+      \item[Mail]
+        Students are responsible for information communicated through
+        their campus mailboxes and student e-mail accounts. A mailbox
+        directory hangs beside the mailboxes. For more information
+        contact the Registrar's office.
+    \end{description}
+
+  \end{center}
+
+  \section{Course Description}
+  \label{description}
+
+  \emph{From the Academic Calendar:} \cdescription
+
+\end{titlepage}

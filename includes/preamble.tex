@@ -1,0 +1,46 @@
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Arno Pro}
+\setsansfont[Ligatures=TeX,
+             Scale=MatchLowercase]{Seria Sans Pro}
+\setmonofont[Scale=MatchLowercase]{Source Code Pro}
+\newfontfamily\balt[Ligatures=TeX]{EspinosaNova-RotundaBoldAlt}
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+\frenchspacing
+\setlength{\emergencystretch}{2em}  % prevent overfull lines
+
+\usepackage[scale={0.6,0.8}]{geometry}
+\usepackage{graphicx}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{marginfix} % protect positioning of margin table in policy/grades
+
+\newcounter{session} % macros for the schedule of readings
+\newcounter{columns}
+\newcounter{courseunit}
+\newcommand\setcolumncount[2][0]{% optionally set sessioncount to other than 0,
+  \setcounter{session}{#1}       % e.g. to -1, or to resume a standing count
+  \setcounter{columns}{#2}}
+\newcommand\sessioncount{\stepcounter{session}\arabic{session}}
+\newcommand\sessionskip[1]{\multicolumn{1}{@{}r@{ }}{#1}}
+\newcommand\unit[1]{\multicolumn{\thecolumns}{c}{%
+    \scshape\stepcounter{courseunit}\roman{courseunit}. \MakeLowercase{#1}}}
+\newcommand\noclass[1]{\multicolumn{1}{@{}l}{\itshape No Class: #1}}
+
+\usepackage[setpagesize=false, % page size defined by xetex
+unicode=false, % unicode breaks when used with xetex
+xetex]{hyperref}
+\hypersetup{breaklinks=true,
+  bookmarks=true,
+  pdfauthor={Daniel R. Driver, PhD},
+  pdftitle={BSTH XXXX: Syllabus Template},
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=magenta,
+  pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\title{\coursecode: \corusetitle}
+\author{\professor}
+\date{\semester}
