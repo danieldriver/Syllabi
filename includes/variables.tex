@@ -1,0 +1,53 @@
+\ProvidesFile{variables.tex}[2013/09/06 v1.0 -- Syllabus variables]
+
+\usepackage{xspace} % make manual spaces (like \mycmd\ ) unnecessary
+
+% variables for internal use
+\newcommand\prof{}
+\newcommand\pdegree{}
+\newcommand\pphone{}
+\newcommand\pemail{}
+\newcommand\poffice{}
+\newcommand\phours{}
+%
+\newcommand\ccode{}
+\newcommand\ctitle{}
+\newcommand\cseries{}
+\newcommand\cversion{}
+\newcommand\csemester{}
+\newcommand\cmeetson{}
+\newcommand\cmeetsat{}
+\newcommand\cmeetsin{}
+\newcommand\cwebsite{}
+\newcommand\cdescrip{}
+
+% commands for setting variables in the preamble
+\newcommand\professor[2][PhD]{
+  \renewcommand\pdegree{#1\xspace}
+  \renewcommand\prof{#2\xspace}}
+\newcommand\phone[1]{
+  \renewcommand\pphone{\texttt{#1}\xspace}}
+\newcommand\email[1]{
+  \renewcommand\pemail{\href{mailto:#1}{#1}\xspace}}
+\newcommand\officehours[2][Ballyconnor 1088]{
+  \renewcommand\poffice{#1\xspace}
+  \renewcommand\phours{#2\xspace}}
+%
+\newcommand\coursecode[2][1.0]{
+  \renewcommand\cversion{v#1\xspace}
+  \renewcommand\ccode{#2\xspace}}
+\newcommand\coursetitle[2][]{
+  \renewcommand\cseries{#1\xspace}%
+  \renewcommand\ctitle{#2\xspace}}
+\newcommand\semester[1]{
+  \renewcommand\csemester{#1\xspace}}
+\newcommand\meets[3]{
+  \newcommand\AM{\textsc{am}}
+  \newcommand\PM{\textsc{pm}}
+  \renewcommand\cmeetson{#1\xspace}
+  \renewcommand\cmeetsat{#2\xspace}
+  \renewcommand\cmeetsin{#3\xspace}}
+\newcommand\website[1]{
+  \renewcommand\cwebsite{\href{http://#1}{#1}\xspace}}
+\newcommand\cdescription[1]{
+  \renewcommand\cdescrip{#1 \par}}

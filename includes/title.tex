@@ -10,24 +10,24 @@
       \hfill
       \parbox[t]{0.4\textwidth}{
         \raggedleft\LARGE\sffamily Course Syllabus\\
-        \semester}
+        \csemester}
     \end{minipage}
 
     \vfill
 
-    {\sffamily\textsc{\LARGE\MakeLowercase\coursecode}\\[2ex]
-      \bfseries\itshape\Huge\coursetitle}
+    {\sffamily\textsc{\LARGE\MakeLowercase\ccode}\\[2ex]
+      \bfseries\itshape\Huge\ctitle}
 
     \vfill
 
     \begin{tabular}{>{\bfseries}rl>{\bfseries}rl}
       \toprule
-      Instructor & \professor                   & Course  & \liningnums{\coursecode}~\texttt{(v\version)} \\
+      Instructor  & \prof    & Course  & \liningnums{\ccode}~\texttt{(\cversion)} \\
       \midrule
-      Phone      & \texttt{\phone}              & Meets   & \meeton                                       \\
-      Email      & \href{mailto:\email}{\email} & Time    & \meetat                                       \\
-      Office     & \officenumber                & Room    & \meetin                                       \\
-      Hours      & \officehours                 & Website & \href{http://\website}{\website}              \\
+      Phone       & \pphone  & Meets   & \cmeetson                                \\
+      Email       & \pemail  & Time    & \cmeetsat                                \\
+      Office      & \poffice & Room    & \cmeetsin                                \\
+      Hours       & \phours  & Website & \cwebsite                                \\
       \bottomrule
     \end{tabular}
 
@@ -58,7 +58,7 @@
   \section{Course Description}
   \label{description}
 
-  \emph{From the Academic Calendar:} \cdescription
+  \emph{From the Academic Calendar:} \cdescrip
 
 \end{titlepage}
 \setcounter{page}{2} % count the title page as page 1

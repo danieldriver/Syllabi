@@ -47,29 +47,29 @@
 \definecolor{TyndaleYellow}{cmyk}{.03,.03,.35,0}
 
 % metadata (assumes a host of definitions are made in the main file)
-\usepackage[setpagesize=false,       % leave this task to geometry
+\usepackage[setpagesize=false,     % leave this to geometry
             xetex]{hyperref}
-\hypersetup{breaklinks=true,         % allow link text to break across lines
-            colorlinks=true,         % colorlinks resets pdfborder to 0 0 0
-              urlcolor=TyndaleURLs,  % for external links
-              linkcolor=TyndaleRed,  % for normal internal links
-              citecolor=TyndaleAqua, % for bibliographical citations in text
-            hyperfootnotes=false,    % fragile and distracting
-            pdfauthor={\professor},
-            pdftitle={\coursecode: \coursetitle},
-            pdfsubject={Tyndale UC, \semester},
+\hypersetup{breaklinks=true,       % allow link text to break across lines
+            colorlinks=true,       % colorlinks resets pdfborder to 0 0 0
+            urlcolor=TyndaleURLs,  % for external links
+            linkcolor=TyndaleRed,  % for normal internal links
+            citecolor=TyndaleAqua, % for bibliographical citations in text
+            hyperfootnotes=false,  % fragile and distracting
+            pdfauthor={\prof},
+            pdftitle={\ccode: \ctitle},
+            pdfsubject={Tyndale UC, \csemester},
             pdfcreator={github.com/danieldriver/syllabus}}
-\urlstyle{same}                      % don't use monospace font for urls
+\urlstyle{same}                    % don't use monospace font for urls
 
 % custom footlines
 \usepackage{fancyhdr}
 \pagestyle{fancy} % turn it on
 \fancyhf{}        % reset everything
 \renewcommand{\headrulewidth}{0pt} % remove header line as well
-\lfoot{\sffamily\scshape\MakeLowercase{\coursetitle}}
-\rfoot{\sffamily\scshape\MakeLowercase{\semester~Syllabus | \thepage}}
+\lfoot{\sffamily\scshape\MakeLowercase{\ctitle, \cversion}}
+\rfoot{\sffamily\scshape\MakeLowercase{\csemester~Syllabus | \thepage}}
 
 % gratuitous with custom title page, but useful as a fallback
-\title{\coursecode: \corusetitle}
+\title{\ccode: \ctitle}
 \author{\professor}
 \date{\semester}

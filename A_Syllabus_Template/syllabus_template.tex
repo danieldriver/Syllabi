@@ -2,23 +2,22 @@
 % !TEX encoding = UTF-8 Unicode
 
 \documentclass[titlepage]{article}
+\input{.syllabus/includes/variables}
 
-\newcommand\coursecode   {BSTH 1013}
-\newcommand\coursetitle  {Old Testament Scripture}
-\newcommand\version      {6.1}
-%
-\newcommand\professor    {Daniel R. Driver, PhD}
-\newcommand\phone        {416.226.6620 x2201}
-\newcommand\email        {ddriver@tyndale.ca}
-\newcommand\officenumber {Ballyconnor 1088}
-\newcommand\officehours  {By appointment only}
-%
-\newcommand\semester     {Fall 2013}
-\newcommand\meeton       {Mondays \& Thursdays}
-\newcommand\meetat       {11:30 \textsc{am}--12:50 \textsc{pm}}
-\newcommand\meetin       {Ballyconnor 2087}
-\newcommand\website      {class.tyndale.ca}
-\newcommand\cdescription {% copy from http://tyndale.ca/registrar/calendar
+\coursecode[2.1]{BSTH 1013} % version is 1.0 unless \cmd[1.1]{}
+\coursetitle{Old Testament Scripture} % optional series: \cmd[series]{}
+
+\professor{Daniel R. Driver} % terminal degree is PhD unless \cmd[DPhil]{}
+\phone{416.226.6620 x2201}
+\email{ddriver@tyndale.ca}
+\officehours{By appointment only}% in Ballyconnor 1088 unless \cmd[moved]{}
+
+\semester{Fall 2013}
+\meets{Mondays \& Thursdays} % \meets{on}{at}{in}
+      {11:30 \AM--12:50 \PM}
+      {Ballyconnor 2087}
+\website{class.tyndale.ca} % omit http://
+\cdescription{% copy from tyndale.ca/registrar/calendar
   Survey of the redemptive story in the three major divisions of the Old
   Testament (the Law/Torah, the Prophets, and the Writings), including
   an orientation to the historical backgrounds, religious context,
@@ -129,7 +128,7 @@ pack is available in class, directly from Dr. Driver.
     later than the fifth week of class. Review it in preparation for the
     class on which it is assigned.
   \bibitem[Driver]{driver} Daniel R. Driver.
-    \emph{\coursetitle\ Introductory Course Pack}. Toronto, \semester.
+    \emph{\coursetitle\ Introductory Course Pack}. Toronto, \csemester.
     In response to the requests of many students, I am compiling a pack
     of notes for this class. Since this is still a work in progress,
     I will not be giving out the complete pack at the start of the
@@ -152,7 +151,7 @@ expect to get an A for the course.
 Note that the required readings for this survey emphasize a selection
 of primary texts from the Old Testament. Reading in the vast body of
 secondary literature on the Bible is largely left for upper-division
-courses. Diligent students in \coursecode, however---and all prospective
+courses. Diligent students in \ccode, however---and all prospective
 majors---will make a special of reviewing the supplementary material
 carefully, since they aim for maximum understanding.
 
