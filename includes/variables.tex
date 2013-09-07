@@ -22,6 +22,7 @@
 \newcommand\cdescrip{}
 
 % commands for setting variables in the preamble
+\usepackage{xifthen} % provides \isempty test
 \newcommand\professor[2][PhD]{
   \renewcommand\pdegree{#1\xspace}
   \renewcommand\prof{#2\xspace}}
@@ -34,10 +35,12 @@
   \renewcommand\phours{#2\xspace}}
 %
 \newcommand\coursecode[2][1.0]{
-  \renewcommand\cversion{v#1\xspace}
+  \renewcommand\cversion{#1\xspace}
   \renewcommand\ccode{#2\xspace}}
 \newcommand\coursetitle[2][]{
-  \renewcommand\cseries{#1\xspace}%
+  \ifthenelse{\isempty{#1}}%
+    {}% do nothing if #1 is empty, else:
+    {\renewcommand\cseries{#1\\[1ex]}}
   \renewcommand\ctitle{#2\xspace}}
 \newcommand\semester[1]{
   \renewcommand\csemester{#1\xspace}}
@@ -50,4 +53,4 @@
 \newcommand\website[1]{
   \renewcommand\cwebsite{\href{http://#1}{#1}\xspace}}
 \newcommand\cdescription[1]{
-  \renewcommand\cdescrip{#1 \par}}
+  \renewcommand\cdescrip{#1\par}}

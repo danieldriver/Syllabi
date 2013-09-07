@@ -3,37 +3,41 @@
 \begin{titlepage}
   \begin{center}
 
+    \LARGE\sffamily % set title elements in a large sans serif
+
     \begin{minipage}{\textwidth}
       \parbox[t]{0.5\textwidth}{
         \mbox{}\\[-\baselineskip] % dummy line to align parboxes
         \includegraphics[width=0.5\textwidth]{.syllabus/includes/TyndaleUC}}
       \hfill
       \parbox[t]{0.4\textwidth}{
-        \raggedleft\LARGE\sffamily Course Syllabus\\
+        \raggedleft\sffamily Course Syllabus\\
         \csemester}
     \end{minipage}
 
     \vfill
 
-    {\sffamily\textsc{\LARGE\MakeLowercase\ccode}\\[2ex]
-      \bfseries\Huge\ctitle}
+    {\textsc{\MakeLowercase\ccode}\\[1ex]
+      \bfseries\cseries\Huge\ctitle}
 
     \vfill
 
+    \normalsize\rmfamily % switch back to body type
+
     \begin{tabular}{>{\bfseries}rl>{\bfseries}rl}
       \toprule
-      Instructor  & \prof    & Course  & \liningnums{\ccode}~\texttt{(\cversion)} \\
+      Instructor & \prof, \pdegree & Course  & Version \cversion \\
       \midrule
-      Phone       & \pphone  & Meets   & \cmeetson                                \\
-      Email       & \pemail  & Time    & \cmeetsat                                \\
-      Office      & \poffice & Room    & \cmeetsin                                \\
-      Hours       & \phours  & Website & \cwebsite                                \\
+      Phone      & \pphone         & Meets   & \cmeetson         \\
+      Email      & \pemail         & Time    & \cmeetsat         \\
+      Office     & \poffice        & Room    & \cmeetsin         \\
+      Hours      & \phours         & Website & \cwebsite         \\
       \bottomrule
     \end{tabular}
 
     \vfill
 
-    \begin{description}
+    \begin{description}\small
       \item[Commuter Hotline]
         Class cancellations due to inclement weather or illness will
         be announced on the commuter hotline at \texttt{416.226.6620
