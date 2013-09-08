@@ -3,26 +3,29 @@
 \begin{titlepage}
   \begin{center}
 
-    \LARGE\sffamily % set title elements in a large sans serif
+    \sffamily % set title elements in sans serif
 
+    \newcommand\toptxt{\LARGE Course Syllabus}
+    \newlength\topwd
+    \settowidth\topwd\toptxt
     \begin{minipage}{\textwidth}
-      \parbox[t]{0.5\textwidth}{
+      \color{TyndaleBlue}
+      \parbox[t]{\the\topwd}{
         \mbox{}\\[-13pt] % dummy line to align parboxes
-        \includegraphics[width=0.5\textwidth]{.syllabus/includes/TyndaleUC}}
+        \includegraphics[width=\the\topwd]{.syllabus/includes/TyndaleUC}}
       \hfill
-      \parbox[t]{0.4\textwidth}{
-        \raggedleft Course Syllabus\\
-        \csemester}
+      \parbox[t]{\the\topwd}{
+        \raggedleft\toptxt \\ \csemester}
     \end{minipage}
 
     \vfill
 
-    {\textsc{\MakeLowercase\ccode}\\[1ex]
+    {\LARGE\textsc{\MakeLowercase\ccode}\\[1ex]
       \bfseries\cseries\Huge\ctitle}
 
     \vfill
 
-    \normalsize\rmfamily % switch back to body type
+    \rmfamily % switch back to serif
 
     \begin{tabular}{>{\bfseries}rl>{\bfseries}rl}
       \toprule
