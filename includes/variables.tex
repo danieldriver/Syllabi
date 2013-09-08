@@ -1,6 +1,7 @@
 \ProvidesFile{variables.tex}[2013/09/06 v1.0 -- Syllabus variables]
 
 \usepackage{xspace} % make manual spaces (like \mycmd\ ) unnecessary
+\usepackage{xifthen} % provides \isempty test
 
 % variables for internal use
 \newcommand\prof{}
@@ -22,12 +23,11 @@
 \newcommand\cdescrip{}
 
 % commands for setting variables in the preamble
-\usepackage{xifthen} % provides \isempty test
 \newcommand\professor[2][PhD]{
   \renewcommand\pdegree{#1\xspace}
   \renewcommand\prof{#2\xspace}}
 \newcommand\phone[1]{
-  \renewcommand\pphone{\texttt{#1}\xspace}}
+  \renewcommand\pphone{\addfontfeatures{Numbers=Monospaced}#1\xspace}}
 \newcommand\email[1]{
   \renewcommand\pemail{\href{mailto:#1}{#1}\xspace}}
 \newcommand\officehours[2][Ballyconnor 1088]{
