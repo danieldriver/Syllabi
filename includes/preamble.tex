@@ -4,7 +4,6 @@
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Meta Serif Pro}
 \setsansfont[Ligatures=TeX]{Meta Pro}
-\newfontfamily\Heb{Meta Hebrew}
 \setmonofont[Scale=MatchLowercase]{Menlo}
 \usepackage{sectsty}
 \allsectionsfont{\sffamily}
@@ -79,6 +78,12 @@
 \renewcommand{\headrulewidth}{0pt} % remove header line as well
 \lfoot{\sffamily\scshape\footnotesize\MakeLowercase{\ctitle, v\cversion}}
 \rfoot{\sffamily\scshape\footnotesize\MakeLowercase{\prof\quad\thepage}}
+
+% language support: polyglossia needs to go last
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{hebrew}
+\newfontfamily\hebrewfont[Script=Hebrew]{Meta Hebrew}
 
 % gratuitous with custom title page, but useful as a fallback
 \title{\ccode: \ctitle}
