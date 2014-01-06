@@ -28,7 +28,6 @@
 \usepackage{graphicx}
 \usepackage{array}     % allow insertions of column styling with >{}
 \usepackage{booktabs}  % elegant horizontal rules in tables
-\usepackage{marginfix} % protect positioning of margin table in policy/grades
 
 % custom macros for a session count in the schedule of readings
 \newcounter{session}
@@ -86,6 +85,9 @@
 \setdefaultlanguage{english}
 \setotherlanguage{hebrew}
 \newfontfamily\hebrewfont[Script=Hebrew]{Meta Hebrew}
+
+% protect positioning of margin table in policy/grades -- needs to come after polyglossia
+\usepackage{marginfix}
 
 % gratuitous with custom title page, but useful as a fallback
 \title{\ccode: \ctitle}
