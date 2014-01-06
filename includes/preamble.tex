@@ -33,16 +33,17 @@
 % custom macros for a session count in the schedule of readings
 \newcounter{session}
 \newcounter{columns}
+\newcounter{midcolumns}
 \newcounter{courseunit}
 \newcommand\setcolumncount[2][0]{ % optionally set count to other than 0,
   \setcounter{session}{#1}        % e.g. to -1, or to a standing count
-  \setcounter{columns}{#2}}
+  \setcounter{columns}{#2}
+  \setcounter{midcolumns}{#2-2}}
 \newcommand\sessioncount{\stepcounter{session}\arabic{session}}
 \newcommand\sessionskip[1]{\multicolumn{1}{@{}r@{ }}{#1}}
 \newcommand\unit[1]{\multicolumn{\thecolumns}{c}{%
   \scshape\stepcounter{courseunit}\roman{courseunit}. \MakeLowercase{#1}}}
-\newcommand\noclass[1]{\multicolumn{1}{@{}l}{\itshape No Class: #1}}
-\newcommand\noclassmulti[2]{\multicolumn{#1}{@{}l}{\itshape No Class: #2}}
+\newcommand\noclass[1]{\sessionskip{---.}&\multicolumn{\themidcolumns}{@{}l}{\itshape No Class: #1}}
 
 % color to match Tyndale's branding
 \usepackage[usenames]{xcolor}
