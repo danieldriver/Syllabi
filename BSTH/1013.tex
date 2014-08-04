@@ -1,22 +1,24 @@
-% !TEX program = xelatex
+% !TEX TS-program = XeLaTeX
 % !TEX encoding = UTF-8 Unicode
-% Copyright (c) 2013 by Daniel R. Driver. All rights reserved.
+% Copyright (c) 2014 by Daniel R. Driver. All rights reserved.
 
 \documentclass[titlepage]{article}
-\newcommand\path{../../syllabus}
-\input{\path/includes/variables}
+% clone the necessary input files: git@github.com:danieldriver/syllabus.git
+\newcommand\policy{../policy}
+\newcommand\incl{../includes}
+\input{\incl/variables}
 
-\coursecode[6.1]{BSTH 1013}
+\coursecode[7.0]{BSTH 1013}
 \coursetitle{Old Testament Scripture}
 
 \professor{Daniel R. Driver}
 \phone{416.226.6620 x2201}
 \email{ddriver@tyndale.ca}
-\officehours{Mon. \& Wed., 2:30--4:30 \PM}
+\officehours{Mon. \& Thur., 1:30--3:30 \PM}
 
 \semester{Winter 2014}
-\meets{Thursdays} % \meets{on}{at}{in}
-      {6:30--9:20 \PM}
+\meets{Tuesdays \& Thursdays} % \meets{on}{at}{in}
+      {3:45--5:05 \PM}
       {Ballyconnor 2087}
 \website{danieldriver.com}
 \cdescription{% copy from tyndale.ca/registrar/calendar
@@ -31,10 +33,10 @@
   Theology.}
 }
 
-\input{\path/includes/preamble}
+\input{\incl/preamble}
 
 \begin{document}
-\input{\path/includes/title}
+\input{\incl/title}
 
 \section{Learning Outcomes}
 \label{outcomes}
@@ -165,28 +167,27 @@ The breakdown for the semester's total work is as follows:
   \label{distribution}
 \end{table}
 
-\input{\path/grades}
+\input{\policy/grades}
 
 \section{Policy on Assignments \& Exams}
 \label{policy}
 
-\input{\path/academic_calendar}
-\input{\path/assignments}
-\input{\path/exams}
-
+\input{\policy/academic_calendar}
+\input{\policy/assignments}
+\input{\policy/exams}
 
 \section{Student Expectations \& Guidelines}
 \label{expectations}
 
-\input{\path/academic_integrity}
-\input{\path/attendance}
-\input{\path/technology}
+\input{\policy/academic_integrity}
+\input{\policy/attendance}
+\input{\policy/technology}
 
 \section{Student Support}
 \label{support}
 
-\input{\path/writing_centre}
-\input{\path/accommodation}
+\input{\policy/writing_centre}
+\input{\policy/accommodation}
 
 \section{Course Outline}
 \label{outline}
@@ -207,7 +208,7 @@ the right to adjust it to suit the needs of the class.
   \centering
   \begin{tabular}{>{\sessioncount.}r@{ }llr}
     \toprule
-    \sessionskip{\textbf{\S}.}&\textbf{Lecture Title}&\textbf{Primary Reading}&\textbf{Date}\\
+    \sessionskip{\textbf{\S}.}&\textbf{Primary Reading}&\textbf{Secondary Reading}&\textbf{Date}\\
     \midrule
     \unit{Beginnings}        \\
           & When God Created                          & Psalms 8, 74, 104         &  9 Jan. \\
@@ -243,6 +244,7 @@ the right to adjust it to suit the needs of the class.
   \caption{Schedule of Readings}
   \label{schedule}
 \end{table}
+
 See the \href{http://www.tyndale.ca/registrar/important-dates}{%
 Registrar's website} for a list of other important dates. Generally, the
 last day to add or drop a class without penalty is the end of the second
