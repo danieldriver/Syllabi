@@ -1,11 +1,13 @@
-% !TEX program = xelatex
+% !TEX TS-program = XeLaTeX
 % !TEX encoding = UTF-8 Unicode
 % Copyright (c) 2014 by Daniel R. Driver. All rights reserved.
 
 \documentclass[titlepage]{article}
 % clone the necessary input files: git@github.com:danieldriver/syllabus.git
-\newcommand\path{../../syllabus}
-\input{\path/includes/variables}
+\newcommand\path{../}
+\newcommand\policy{\path/policy}
+\newcommand\incl{\path/includes}
+\input{\incl/variables}
 
 \coursecode[2.1]{BSTH tk} % version is 1.0 unless \cmd[1.1]{}
 \coursetitle{tk} % optional series: \cmd[series]{}
@@ -32,10 +34,10 @@
   Theology.}
 }
 
-\input{\path/includes/preamble}
+\input{\incl/preamble}
 
 \begin{document}
-\input{\path/includes/title}
+\input{\incl/title}
 
 \section{Learning Outcomes}
 \label{outcomes}
@@ -220,27 +222,27 @@ The breakdown for the semester's total work is as follows:
   \label{distribution}
 \end{table}
 
-\input{\path/grades}
+\input{\policy/grades}
 
 \section{Policy on Assignments \& Exams}
 \label{policy}
 
-\input{\path/academic_calendar}
-\input{\path/assignments}
-\input{\path/exams}
+\input{\policy/academic_calendar}
+\input{\policy/assignments}
+\input{\policy/exams}
 
 \section{Student Expectations \& Guidelines}
 \label{expectations}
 
-\input{\path/academic_integrity}
-\input{\path/attendance}
-\input{\path/technology}
+\input{\policy/academic_integrity}
+\input{\policy/attendance}
+\input{\policy/technology}
 
 \section{Student Support}
 \label{support}
 
-\input{\path/writing_centre}
-\input{\path/accommodation}
+\input{\policy/writing_centre}
+\input{\policy/accommodation}
 
 \section{Course Outline}
 \label{outline}
@@ -261,7 +263,7 @@ the right to adjust it to suit the needs of the class.
   \centering
   \begin{tabular}{>{\sessioncount.}r@{ }llr}
     \toprule
-    \sessionskip{\textbf{\S}.}&\textbf{Lecture Title}&\textbf{Primary Reading}&\textbf{Date}    \\
+    \sessionskip{\textbf{\S}.}&\textbf{Primary Reading}&\textbf{Secondary Reading}&\textbf{Date}\\
     \midrule
     \unit{One} \\
           &                                           &                           &  6 Jan.     \\
@@ -277,7 +279,7 @@ the right to adjust it to suit the needs of the class.
           &                                           &                           &  5 Feb.     \\
           &                                           &                           & 10 Feb.     \\
           &                                           &                           & 12 Feb.     \\
-    \sessionskip{---.}  & \noclass{Reading Week}      & \emph{research, write}    & 17--21 Feb. \\
+    \noclass{Reading Week}                                                        & 17--21 Feb. \\
           &                                           &                           & 24 Feb.     \\
           &                                           &                           & 26 Feb.     \\
           &                                           &                           &  3 Mar.     \\
@@ -290,7 +292,7 @@ the right to adjust it to suit the needs of the class.
           &                                           &                           & 26 Mar.     \\
           &                                           &                           & 31 Mar.     \\
           &                                           &                           &  2 Apr.     \\
-    \sessionskip{---.}  & \noclass{Reading Days}      & \emph{research, write}    & 7--8 Apr.   \\
+    \noclass{Reading Days}                                                        & 7--8 Apr.   \\
     \bottomrule
   \end{tabular}
   \caption{Schedule of Readings}
@@ -304,7 +306,7 @@ week of class.
 
 \section{Course Bibliography}
 \label{bibliography}
-
+j
 An introductory bibliography is provided at the end of each page
 of notes in the course pack. Pursue this material as your interest
 dictates, or if you wish to check my handling of any of the material
