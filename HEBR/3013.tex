@@ -1,0 +1,348 @@
+% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+% basic typography
+\usepackage{fontspec,realscripts}
+\defaultfontfeatures{Mapping=tex-text,Numbers=OldStyle}
+\setmainfont[BoldFont={Kepler Std Semibold}]{Kepler Std Light}
+\setsansfont{DIN 1451 Std Mittelschrift}
+\setmonofont[Scale=MatchLowercase]{Menlo}
+\newfontfamily{\sbl}[Script=Hebrew]{SBLHebrew}
+\usepackage{microtype}
+\frenchspacing
+% add logo and set in DIN
+\usepackage{titling,graphicx}%\usepackage{showframe}
+%\setlength{\droptitle}{-46pt}
+\renewcommand{\maketitlehooka}{\sffamily}
+\pretitle{\begin{center}\LARGE
+          \includegraphics[width=0.4\textwidth]{tuc_vblack.png}
+          \par\vskip 1.5em}
+\posttitle{\par\end{center}\vskip 0.5em}
+% set section headers in DIN
+\usepackage{titlesec}
+\titleformat*{\section}{\Large\sffamily}
+\titleformat*{\subsection}{\large\sffamily}
+\titleformat*{\subsubsection}{\normalsize\sffamily}
+\titleformat*{\paragraph}{\normalsize\sffamily}
+\titleformat*{\subparagraph}{\normalsize\sffamily}
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}\textsf{#1}}
+% provide for tables and set caption in DIN
+\usepackage{ctable}
+\usepackage{float} % provides the H option for float placement
+\usepackage[font=sf,labelformat=empty]{caption}% set captions in DIN
+\renewcommand{\tmark}[1][a]{\hbox{\normalfont\textit{\textsuperscript#1}}}
+% realscripts somehow makes \textsuperscript not work as ctable expects
+
+% Redefine labelwidth for lists; otherwise, the enumerate package will cause
+% markers to extend beyond the left margin.
+\makeatletter\AtBeginDocument{%
+  \renewcommand{\@listi}
+    {\setlength{\labelwidth}{4em}}
+}\makeatother
+\usepackage{enumerate}
+
+\usepackage[setpagesize=false, % page size defined by xetex
+            unicode=false, % unicode breaks when used with xetex // alt: unicode,pdfencoding=auto
+            xetex]{hyperref}
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Daniel R. Driver},
+            pdftitle={HEBR 3013: Readings in Biblical Hebrew I},
+            pdfsubject={Tyndale UC Course Syllabus},
+            pdfkeywords={biblical studies} {theology},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+%\setlength{\parindent}{0pt} % alternate setting of paragraphs
+%\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{1} % set to 0 to remove
+
+\title{HEBR 3013: Readings in Biblical Hebrew I}
+\author{Daniel R. Driver, PhD\thanks{
+  Ballyconnor office 1107, phone 416.226.6620 x2201,
+  email \href{mailto:ddriver@tyndale.ca}{\texttt{ddriver@tyndale.ca}}.}}
+\date{Fall 2012 Course Syllabus (\texttt{2.0})\thanks{Meets in Ballyconnor 2084, Tues \& Thur, 1:00--2:20 \textsc{pm}.
+  Version date: 9 October 2012.}}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{description}
+\item[Commuter Hotline]
+416.226.6620 x2187 --- Class cancellations due to inclement weather or
+illness will be announced/posted on the commuter hotline.
+\item[MyTyndale.ca]
+This course may have \textsc{lms} pages that are meant to enhance your
+learning experience and that you may need to access in order to complete
+some assignments. It is where news items, notices and marks may be
+posted. Log in often with your mytyndale username and password.
+\item[Mailboxes]
+Every student is responsible for information communicated through the
+student mailboxes. A mailbox directory is posted beside the mailboxes.
+For more information contact the Registrar's office.
+\end{description}
+
+\section{Course Description}
+
+\emph{From the Academic Calendar}: Provides the student with a broad
+exposure to an extensive amount of Biblical Hebrew prose, facilitating
+an environment where the student's reading ability is enhanced. In
+addition to providing a platform of advanced morphology and syntax, also
+provides a preliminary introduction to matters of textual criticism and
+exposure to the Septuagint and Qumran materials. Prerequisites:
+\textsc{hebr} 201, 202; \textsc{rlgs} 101, 102, 201. Exclusion:
+\textsc{hebr} 401.
+
+\section{Course Objectives}
+
+The basic goal of this course is to become proficient in reading
+biblical Hebrew. We will build on what students have done in previous
+study, aiming to bridge whatever gaps remain between rudimentary Hebrew
+and the demands that confront serious readers of the Hebrew Bible.
+Students should move beyond rote memorization and toward the mature use
+of language skills. Of course the need for memorization does not
+disappear: the steady acquisition of vocabulary will continue, as will
+the recitation of select passages of scripture. We will work together to
+make our common labor as enjoyable as possible, encouraging and
+motivating one another in a variety of ways.
+
+\section{Required Texts}
+
+\begin{enumerate}[1.]
+\item
+  \emph{Biblia Hebraica Stuttgartensia}. Paperback/Student ed.
+  Stuttgart: Deutsche Bibelgesellschaft, 1997.
+\item
+  Brown, F., S. Driver and C. Briggs, \emph{Brown-Driver-Briggs Hebrew
+  and English Lexicon} (Peabody, Mass: Hendrickson, 2004; repr. of 1906
+  ed.).
+\item
+  Buth, Randal. \emph{Living Biblical Hebrew: Selected Readings with 500
+  Friends (Gimel)}. Jerusalem: Biblical Language Center, 2006. Order the
+  book and CD {[}ISBN 978-9657352045{]} from
+  \url{http://www.biblicallanguagecenter.com/books-products/biblical-hebrew/}.
+\item
+  Cook, John A. and Robert D. Holmstedt. \emph{Biblical Hebrew: A
+  Student Grammar}. Creative Commons BY-NC 3.0 textbook released for
+  personal or classroom use. Draft, 2007; revised 2009, 2010. Get it
+  online at \url{http://individual.utoronto.ca/holmstedt/Textbook.html}.
+\end{enumerate}
+
+\section{Supplementary Texts}
+
+\begin{enumerate}[1.]
+\item
+  Sáenz-Badillos, Angel. \emph{A History of the Hebrew Language}.
+  Cambridge: Cambridge University Press, 1996.
+\item
+  Scott, W.R. and H.P. Scanlin. \emph{A Simplified Guide to
+  BHS: Critical Apparatus, Masora, Accents, Unusual Letters \& Other
+  Markings}. Richland Hills:
+  BIBAL, 2007.
+\item
+  Tov, Emanuel. \emph{Textual Criticism of the Hebrew Bible}.
+  3\textsuperscript{rd} edition, revised and expanded. Minneapolis:
+  Fortress, 2012.
+\item
+  Zvi, Ehud Ben, Ms.~Maxine Hancock and Mr.~Richard A. Beinert.
+  \emph{Readings in Biblical Hebrew: An Intermediate Textbook}. Yale
+  Language Series. New Haven: Yale University Press, 1993.
+\end{enumerate}
+
+\section{Course Evaluation}
+
+\begin{enumerate}[1.]
+\item
+  The backbone of the course is reading and translation. Biblical texts
+  are set for each week. Students are to provide their own translations,
+  to be collected and refined for submission at the end of term.
+\item
+  Ten weekly quizzes make sure that you have a rudimentary vocabulary
+  (500 friends) in hand by the end of the first semester.
+\item
+  At some point in the first semester you will need to schedule office
+  hours to recite a dozen (12) verses of Hebrew. You can select any
+  verses you like, though I recommend choosing one of the texts we study
+  together. The memorization is due on the last day of class.
+\item
+  The final exam will be held during exam week, as scheduled by the
+  Registrar.
+\item
+  The semester's work will be weighted as follows, though the instructor
+  reserves the right to adjust the balance as necessary:
+\end{enumerate}
+
+\ctable[pos = H, center, botcap]{lr}
+{% notes
+}
+{% rows
+\FL
+Translation Set & 25\%
+\\
+Vocabulary Quizzes & 25\%
+\\
+Memorization & 25\%
+\\
+Final Exam & 25\%
+\LL
+}
+
+Finally, students are responsible to keep a backup print copy of all
+assignments.
+
+\section{Course Outline}
+
+See the table at the end of this syllabus.
+
+\ctable[caption = {Course Outline and Schedule of Readings},
+pos = B, center, topcap]{llr}
+{% notes
+\tnote[a]{The final exam will be held during exam week as scheduled by
+  the Registrar.}
+}
+{% rows
+\FL
+\emph{Cook \& Holmstedt} & \emph{Buth \& your 500 friends} & \emph{Date}
+\ML
+Introductions &  & September 11
+\\
+Review &  & September 13
+\\\noalign{\medskip}
+Lesson 2 &  & September 18
+\\
+Lessons 3 \& 4 & Quiz 1: Friends through \sbl א & September 20
+\\\noalign{\medskip}
+Lessons 5 \& 6 &  & September 25
+\\
+Lessons 7 \& 8 & Quiz 2: Friends through \sbl ד & September 27
+\\\noalign{\medskip}
+Lessons 9 \& 10 & Genesis 22 & October 02
+\\
+\emph{No class: DRD away} & No quiz; Friends through \sbl ה & October 04
+\\\noalign{\medskip}
+Lessons 11 \& 12 & Genesis 22 plus accents & October 09
+\\
+Lessons 13 \& 14 & Quiz 3: Friends through \sbl ח & October 11
+\\\noalign{\medskip}
+Lessons 15 \& 16 & Genesis 1--2:3 & October 16
+\\
+Lessons 17 \& 18 & Quiz 4: Friends through \sbl כ & October 18
+\\\noalign{\medskip}
+\emph{No class: reading day} &  & October 23
+\\
+Lessons 19 \& 20 & Quiz 5: Friends through \sbl מ & October 25
+\\\noalign{\medskip}
+Lesson 21 & Exodus 19 & October 30
+\\
+Lesson 22 & Quiz 6: Friends through \sbl נ & November 01
+\\\noalign{\medskip}
+Lesson 23 & Exodus 20 & November 06
+\\
+Lesson 24 & Quiz 7: Friends through \sbl ע & November 08
+\\\noalign{\medskip}
+Lesson 25 & Ruth 1 & November 13
+\\
+Lesson 26 & Quiz 8: Friends through \sbl ק & November 15
+\\\noalign{\medskip}
+Lesson 27 & Ruth 2 & November 20
+\\
+Lesson 28 & Quiz 9: Friends through \sbl ת & November 22
+\\\noalign{\medskip}
+Lesson 29 & Ruth 3 & November 27
+\\
+Lesson 30 & Quiz 10: All 500 friends & November 29
+\\\noalign{\medskip}
+Review & Ruth 4 & December 04
+\\
+\emph{No class: reading day} & Translation sets \textbf{due} & December
+06
+\\\noalign{\medskip}
+Final Exam &  & TBA\tmark[a]
+\LL
+}
+
+\section{Academic Integrity}
+
+Integrity in academic work is required of all our students. Academic
+dishonesty is any breach of this integrity, and includes such practices
+as cheating (the use of unauthorized material on tests and
+examinations), submitting the same work for different classes without
+permission of the instructors, using false information (including false
+references to secondary sources) in an assignment, improper or
+unacknowledged collaboration with other students, and plagiarism.
+
+Tyndale University College \& Seminary takes seriously its
+responsibility to uphold academic integrity, and to apply consequences
+for academic dishonesty. Students are advised to consult the
+\href{http://www.tyndale.ca/registrar/calendar}{Academic Calendar} for
+more information on this policy and its application to their work in
+this course.
+
+\section{Bibliography}
+
+In \textsc{hebr} 201 and 202 last year I assigned a text by Kittel,
+Hoffer and Wright. Ben Zvi makes reference to it, so it may be useful
+for reference in \textsc{hebr} 302.
+
+\begin{itemize}
+\item
+  Kittel, Bonnie, Victoria Hoffer and Rebecca Wright, \emph{Biblical
+  Hebrew, 2nd Ed.: Text and Workbook} (New Haven: Yale UP, 2004).
+  {[}ISBN 978-0300098624{]}
+\end{itemize}
+
+A useful index to standard texts (cheaper than the major software
+packages):
+
+\begin{itemize}
+\item
+  Einspahr, Bruce, \emph{Index to Brown, Driver \& Briggs Hebrew
+  Lexicon} (Chicago: Moody, 1976). {[}Ref PJ 4833.B6 E35 1976{]}
+\end{itemize}
+
+Other major dictionaries of classical Hebrew:
+
+\begin{itemize}
+\item
+  Köhler, Ludwig, and Walter Baumgartner, \emph{The Hebrew and Aramaic
+  lexicon of the Old Testament} (Leiden: Brill, 1994--2000). {[}Ref PJ
+  4833.K61813{]}
+\item
+  Clines, David J. A., ed., \emph{The Dictionary of Classical Hebrew}
+  (Sheffield: Sheffield Academic Press, 1993--2011). {[}Ref PJ
+  4833.D53{]}
+\end{itemize}
+
+Other Hebrew grammars (only a selection, as a glance at the right shelf
+in our library will tell you):
+
+\begin{itemize}
+\item
+  Seow, C. L., \emph{A Grammar for Biblical Hebrew} (Nashville:
+  Abingdon, 1995). I may reference this grammar on occasion. {[}PJ
+  4567.S424 1995{]}
+\item
+  Weingreen, J., \emph{A Practical Grammar for Classical Hebrew}
+  (Oxford: Clarendon, 1959). {[}Two copies: PJ 4567.W4 1939{]}
+\item
+  Martin, J. D., \emph{Davidson's Introductory Hebrew Grammar} (27th
+  edition; Edinburgh: T\&T Clark, 1993). This is the grammar I was
+  assigned in St Andrews, Scotland. Our library has copies of some older
+  editions, including the 26th. {[}PJ 4567.D3 1966{]}
+\item
+  Kautsch, E., \emph{Gesenius' Hebrew Grammar} (revised in accordance
+  with the 28th German edition by A. E. Crowley; Oxford: Clarendon,
+  1910). This is still the standard reference grammar in English. {[}Ref
+  PJ 4567.G46 1910{]}
+\end{itemize}
+
+There are many other resources out there, including some Biblical Hebrew
+vocabulary cards (paper and now electronic). In my experience, making
+your own cards and other study resources is the best way to cement your
+learning.
+
+\end{document}
