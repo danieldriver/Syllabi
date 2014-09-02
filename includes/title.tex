@@ -1,4 +1,4 @@
-\ProvidesFile{title.tex}[2013/09/06 v1.0 -- Syllabus title page]
+\ProvidesFile{title.tex}[2014/09/02 v1.1 -- Syllabus title page]
 
 \begin{titlepage}
   \begin{center}
@@ -20,12 +20,11 @@
 
     \vfill
 
-    {\LARGE\textsc{\MakeLowercase\ccode}\\[1ex]
+    {\LARGE\textsc{\ccode}\\[1ex]
       \bfseries\cseries\Huge\ctitle}
 
     \vfill
-
-    \rmfamily % switch back to serif
+    \lining % switch to lining font family
 
     \begin{tabular}{>{\bfseries}rl>{\bfseries}rl}
       \toprule
@@ -39,12 +38,13 @@
     \end{tabular}
 
     \vfill
+    \rmfamily % switch back to default serif
 
     \begin{description}\footnotesize
       \item[Commuter Hotline]
         Class cancellations due to inclement weather or illness will be
         announced on the commuter hotline at
-        {\addfontfeatures{Numbers=Monospaced} 416.226.6620 x2187}.
+        {\lining 416-226-6620 ext. 2187}.
         Weather information is also posted at
         \href{http://tyndale.ca/weather}{tyndale.ca/weather}.
       \item[MyTyndale.ca]

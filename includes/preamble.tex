@@ -1,9 +1,14 @@
-\ProvidesFile{preamble.tex}[2013/09/06 v1.0 -- Syllabus preamble]
+\ProvidesFile{preamble.tex}[2014/09/02 v1.1 -- Syllabus preamble]
 
 % basic typography
-\usepackage{fontspec}
-\setmainfont[Ligatures=TeX]{Meta Serif Pro}
-\setsansfont[Ligatures=TeX]{Meta Pro}
+\usepackage{fontspec,realscripts}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[%
+  Numbers={Proportional,OldStyle},
+  SmallCapsFeatures={RawFeature=+c2sc;+smcp,LetterSpace=1}]{Scala OT}
+\newfontfamily\lining[Numbers={Monospaced}]{Scala OT}
+\setsansfont[%
+  SmallCapsFeatures={RawFeature=+c2sc;+smcp,LetterSpace=1}]{Scala Sans Pro}
 \setmonofont[Scale=MatchLowercase]{Menlo}
 \usepackage{sectsty}
 \allsectionsfont{\sffamily}
@@ -13,13 +18,13 @@
 % custom font size and leading
 \renewcommand\tiny{\fontsize{6}{9}\selectfont}
 \renewcommand\scriptsize{\fontsize{7}{10}\selectfont}
-\renewcommand\footnotesize{\fontsize{8}{11}\selectfont}
-\renewcommand\small{\fontsize{8.5}{11.5}\selectfont}
-\renewcommand\normalsize{\fontsize{9}{12}\selectfont}% base size
-\renewcommand\large{\fontsize{11}{14}\selectfont}
-\renewcommand\Large{\fontsize{13}{16}\selectfont}
-\renewcommand\LARGE{\fontsize{16}{19}\selectfont}% "course syllabus \\ semester" benefits from more lead
-\renewcommand\huge{\fontsize{19}{21}\selectfont}
+\renewcommand\footnotesize{\fontsize{8}{10}\selectfont}
+\renewcommand\small{\fontsize{9}{11}\selectfont}
+\renewcommand\normalsize{\fontsize{10}{12}\selectfont}% base size
+\renewcommand\large{\fontsize{11}{13}\selectfont}
+\renewcommand\Large{\fontsize{12}{14}\selectfont}
+\renewcommand\LARGE{\fontsize{16}{18}\selectfont}% "course syllabus \\ semester" benefits from more lead
+\renewcommand\huge{\fontsize{20}{22}\selectfont}
 \renewcommand\Huge{\fontsize{24}{26}\selectfont}
 
 % layout packages: page, logo, tables
@@ -41,7 +46,7 @@
 \newcommand\sessioncount{\stepcounter{session}\arabic{session}}
 \newcommand\sessionskip[1]{\multicolumn{1}{@{}r@{ }}{#1}}
 \newcommand\unit[1]{\multicolumn{\thecolumns}{c}{%
-  \scshape\stepcounter{courseunit}\roman{courseunit}. \MakeLowercase{#1}}}
+  \scshape\stepcounter{courseunit}\roman{courseunit}. #1}}
 \newcommand\noclass[1]{\sessionskip{---.}&\multicolumn{\themidcolumns}{@{}l}{\itshape No Class: #1}}
 
 % color to match Tyndale's branding
@@ -77,8 +82,8 @@
 \pagestyle{fancy} % turn it on
 \fancyhf{}        % reset everything
 \renewcommand{\headrulewidth}{0pt} % remove header line as well
-\lfoot{\sffamily\scshape\footnotesize\MakeLowercase{\ctitle, v\cversion}}
-\rfoot{\sffamily\scshape\footnotesize\MakeLowercase{\prof\quad\thepage}}
+\lfoot{\sffamily\scshape\footnotesize\ctitle, \csemester}
+\rfoot{\sffamily\scshape\footnotesize\prof\quad\thepage}
 
 % language support: polyglossia needs to go last
 \usepackage{polyglossia}
