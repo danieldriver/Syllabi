@@ -37,17 +37,21 @@
 % custom macros for a session count in the schedule of readings
 \newcounter{session}
 \newcounter{columns}
+\newcounter{spancolumns}
 \newcounter{midcolumns}
 \newcounter{courseunit}
 \newcommand\setcolumncount[2][0]{ % optionally set count to other than 0,
   \setcounter{session}{#1}        % e.g. to -1, or to a standing count
   \setcounter{columns}{#2}
+  \setcounter{spancolumns}{#2-1}
   \setcounter{midcolumns}{#2-2}}
 \newcommand\sessioncount{\stepcounter{session}\arabic{session}}
 \newcommand\sessionskip[1]{\multicolumn{1}{@{}r@{ }}{#1}}
 \newcommand\unit[1]{\multicolumn{\thecolumns}{c}{%
   \scshape\stepcounter{courseunit}\roman{courseunit}. #1}}
 \newcommand\noclass[1]{\sessionskip{---.}&\multicolumn{\themidcolumns}{@{}l}{\itshape No Class: #1}}
+\newcommand\rarr{\Large\char"EA31\hspace*{0.5pt}} % pointer finger w/ reminder tie in Scala OT
+\newcommand\reminder[2]{\sessionskip{\rarr}&\multicolumn{\thespancolumns}{@{}l}{#1 \hfill #2}}
 
 % color to match Tyndale's branding
 \usepackage[usenames]{xcolor}
