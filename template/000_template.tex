@@ -1,37 +1,42 @@
-% !TEX TS-program = XeLaTeX
+% Copyright (c) 2015 by Daniel R. Driver.
 % !TEX encoding = UTF-8 Unicode
-% Copyright (c) 2014 by Daniel R. Driver. All rights reserved.
+% !TEX TS-program = XeLaTeX
 
 \documentclass[titlepage]{article}
-% clone the necessary input files: git@github.com:danieldriver/syllabus.git
+
+% This document presumes a file structure and set of inputs that are
+% available at: git@github.com:danieldriver/syllabi.git
+
 \newcommand\policy{../policy}
 \newcommand\incl{../includes}
 \input{\incl/variables}
 
-\coursecode[2.1]{BSTH tk} % version is 1.0 unless \cmd[1.1]{}
-\coursetitle{tk} % optional series: \cmd[series]{}
+\coursecode[2.1]{BSTH tk}% version is 1.0 unless \cmd[1.1]{}
+\coursetitle{tk}% optional series: \cmd[series]{}
 
-\professor{Daniel R. Driver} % terminal degree is PhD unless \cmd[DPhil]{}
+\professor{Daniel R. Driver}% terminal degree is PhD unless \cmd[DPhil]{}
 \phone{416.226.6620 x2201}
 \email{ddriver@tyndale.ca}
-\officehours{Mon. \& Thur., 1:30--3:30 \PM}% in Ballyconnor 1088 unless \cmd[moved]{}
+\officehours{Mon. \& Wed., 1:30--3:30 \PM}
 
-\semester{Winter 2014}
-\meets{Mondays \& Wednesdays} % \meets{on}{at}{in}
+\semester{Winter 2015}
+\meets{Mondays \& Wednesdays}% \meets{on}{at}{in}
       {8:15--9:35 \AM}
       {Ballyconnor 2087}
-\website{classes.tyndale.ca} % omit http://
+\website{classes.tyndale.ca}% omit http://
 \cdescription{% copy from tyndale.ca/registrar/calendar
-  Survey of the redemptive story in the three major divisions of the Old
-  Testament (the Law/Torah, the Prophets, and the Writings), including
-  an orientation to the historical backgrounds, religious context,
-  literary forms, apocryphal dimensions, prophetic elements, matters of
-  canon, text, interpretation, and critical issues.
 
-  {\itshape Note that this class is both a general studies requirement
-  and a prerequisite for advanced courses in Biblical Studies \&
-  Theology.}
-}
+	Survey of the redemptive story in the three major divisions of the
+	Old Testament (the Law/Torah, the Prophets, and the Writings),
+	including an orientation to the historical backgrounds, religious
+	context, literary forms, apocryphal dimensions, prophetic elements,
+	matters of canon, text, interpretation, and critical issues.
+
+	{\itshape Note that this class is both a general studies requirement
+	and a prerequisite for advanced courses in Biblical Studies \&
+	Theology.}
+
+}% end of course description
 
 \input{\incl/preamble}
 
@@ -98,70 +103,76 @@
 The learning outcomes in this course will be determined by each
 student's ability to meet specific goals (learning objectives). By the
 end of the course students should be able to:
-  name;
-  give;
-  contrast;
-  locate;
-  understand;
-  recognize;
-  list;
-  articulate;
-  defend;
-  classify;
-  report on;
-  memorize.
+	name;
+	give;
+	contrast;
+	locate;
+	understand;
+	recognize;
+	list;
+	articulate;
+	defend;
+	classify;
+	report on;
+	memorize.
 
 Students should also be able to \ldots
 
 \section{Required Texts \& Materials}
 \label{texts}
 
-All required texts are available in the Tyndale Bookstore. The course
-pack is available in class, directly from Dr. Driver.
+All required textbooks are available in the Tyndale Bookstore. The
+coursepack is available in class, directly from Dr. Driver.
 
 \begingroup
 \renewcommand{\section}[2]{}% temporarily remove the section heading
 \begin{thebibliography}{Heschel}% use the longest item in the bibliography
-  \bibitem[ESV]{esv} \emph{The Bible, English Standard Version}.
-    Wheaton, Ill.: Crossway, 2001 (rev. 2011). For this class it is
-    important to have a common translation of the Bible. I have selected
-    the ESV because it is recent, popular, readable and fairly literal.
-    The only two allowable substitutions are the versions most cited by
-    biblical scholars, namely, the NRSV and the JPS. If you have none of
-    these, you should purchase an ESV for this class.
-  \bibitem[Heschel]{heschel} Abraham Joshua Heschel.
-    \emph{The Sabbath: Its Meaning for Modern Man}. New York: Farrar,
-    Straus and Giroux, 1951 (repr. 2005). Read this classic example of
-    20\textsuperscript{th} century Jewish spirituality on your own, no
-    later than the fifth week of class. Review it in preparation for the
-    class on which it is assigned.
-  \bibitem[Driver]{driver} Daniel R. Driver.
-    \emph{\coursetitle\ Introductory Course Pack}. Toronto, \csemester.
-    In response to the requests of many students, I am compiling a pack
-    of notes for this class. Since this is still a work in progress,
-    I will not be giving out the complete pack at the start of the
-    semester. Rather, I will circulate it in several batches. It
-    behooves you to gather, keep and study this material (I recommend
-    using a small three-ring binder).
+
+	\bibitem[NRSV]{nrsv} \emph{The New Oxford Annotated Bible with
+	Apocrypha}. Oxford: Oxford University Press, 2010
+	(4\textsuperscript{th} edition). Many serviceable translations of
+	the Bible exist, but I assign the NRSV because it is a standard
+	among biblical scholars. If you do not already have a copy then you
+	must purchase one for this class.
+
+	\bibitem[Heschel]{heschel} Abraham Joshua Heschel. \emph{The
+	Sabbath: Its Meaning for Modern Man}. New York: Farrar, Straus and
+	Giroux, 1951 (repr. 2005). Read this classic example of
+	20\textsuperscript{th} century Jewish spirituality on your own, no
+	later than the fourth week of class. Review it in preparation for
+	the class on which it is assigned.
+
+	\bibitem[Moberly]{moberly} R.\,W.\,L. Moberly. \emph{Old Testament
+	Theology: Reading the Hebrew Bible as Christian Scripture}. Grand
+	Rapids: Baker Academic, 2013. Read these eight essays by a leading
+	Old Testament scholar and biblical theologian in parallel with (but
+	after completing) the assigned Bible readings.
+
+	\bibitem[OTSIC]{otsic} Daniel R. Driver. \emph{\ctitle\ Introductory
+	Coursepack}. Toronto, \csemester. In response to the requests of
+	many students I have compiled a pack of notes for my lectures. I
+	will circulate the relevant pages before each class. It behooves you
+	to gather, annotate, and study this material carefully.
+
 \end{thebibliography}
 \endgroup
 
 \section{Supplementary Texts}
 \label{supplementary}
 
-Supplementary readings are recommended in the bibliography that follows
-each page of notes in the course pack. They will ordinarily be available
-for download through the course website (some may be kept on reserve
-in the library). Students are not required to read the supplementary
-material; then again, students who choose not to read it should not
-expect to get an A for the course.
+Supplementary readings are listed in the bibliographies that follow each
+page of notes in the coursepack. Excerpts from this literature,
+ordinarily an article or a book chapter per week, will be available for
+download through the course website (alternately, some may be placed on
+reserve in the library). Students are not strictly required to read this
+supplementary material; then again, students who choose not to read it
+should not expect to get an A for the course.
 
-Note that the required readings for this survey emphasize a selection
-of primary texts from the Old Testament. Reading in the vast body of
+Note that the required readings for this survey emphasize a selection of
+primary texts from the Old Testament. Reading in the vast body of
 secondary literature on the Bible is largely left for upper-division
-courses. Diligent students, however---and all prospective majors---will
-make a special point of reviewing the supplementary material carefully,
-since they aim at maximum understanding.
+courses. Diligent students, however, and all prospective majors, will
+make a special point of reviewing the supplementary articles.
 
 \section{Evaluation}
 \label{evaluation}
@@ -186,37 +197,46 @@ since they aim at maximum understanding.
 %     examinations will be scheduled only by the Registrar’s Office.**
 
 \begin{enumerate}
- \item Each week of class will typically begin with a \textbf{reading
-   quiz}. These are designed to ensure that you have read the assigned
-   material carefully. Quizzes given in class may not be made up in the
-   case of absence. Online quizzes are open book, but they are timed,
-   and only a single attempt is allowed.
- \item Students are to \textbf{memorize Psalm 8} in the KJV and recite
-   it to me privately, in my office, in the fourth or fifth week of
-   class. A sign-up sheet will be circulated in week three.
- \item A \textbf{midterm exam} will be given in class as scheduled in
-   the course outline (Section~\ref{outline}). It may also involve a
-   take-home writing component.
- \item A comprehensive \textbf{final exam} will be held during the exam
-   period as schedule by the Registrar (see Section~\ref{exams}). It is
-   designed to assess learning outcomes---how well you have obtained the
-   objectives outlined in Section~\ref{outcomes}. Test your readiness
-   for the final by asking yourself how well you can perform the tasks
-   outlined in those paragraphs.
+
+	\item At various points throughout the semester I will announce
+	\textbf{reading quizzes}. They are designed to ensure that you have
+	read the assigned material carefully, and may be administered online
+	(outside of class) or on paper (in class). Online quizzes are open
+	book, but they are timed and limited to a single attempt. Quizzes
+	given in class are closed book, and they may not be made up in the
+	case of absence.
+
+	\item Students are to \textbf{memorize Psalm 8} in the King James
+	Version (KJV) and recite it to me privately, in my office, in the
+	fourth or fifth week of class. An online sign-up sheet will be
+	posted to the class website in week three.
+
+	\item A \textbf{midterm exam} will be given in class as scheduled in
+	the course outline (Section~\ref{outline}). At the instructor's
+	option, it may include a take-home writing component.
+
+	\item A comprehensive \textbf{final exam} will be held during the
+	exam period as schedule by the Registrar (see Section~\ref{exams}).
+	It is designed to assess learning outcomes, i.e., your attainment of
+	the objectives in Section~\ref{outcomes}. Test your readiness for
+	the final by asking yourself how well you can perform the tasks
+	outlined in those paragraphs.
+
 \end{enumerate}
 
 The breakdown for the semester's total work is as follows:
 
 \begin{table}[htbp]
   \centering
+  {\lining
   \begin{tabular}{lr}
     \toprule
     Reading Quizzes & 25\% \\
-    Memorization    & 25\% \\
-    Midterm Exam    & 25\% \\
-    Final Exam      & 25\% \\
+    Memorization    & 15\% \\
+    Midterm Exam    & 30\% \\
+    Final Exam      & 30\% \\
     \bottomrule
-  \end{tabular}
+  \end{tabular}}
   \caption{Distribution of Grades}
   \label{distribution}
 \end{table}
@@ -243,69 +263,68 @@ The breakdown for the semester's total work is as follows:
 \label{outline}
 
 Readings should be completed before the start of the class for which
-they are assigned. Primary readings are compulsory. Any supplementary
-readings that I circulate (see Section~\ref{supplementary}) will be
+they are assigned. Primary readings (from scripture) and required
+secondary texts (Heschel and Moberly) are compulsory. Any supplementary
+readings that I circulate (per Section~\ref{supplementary}) will be
 keyed to the session number (listed under \textbf{\S} in
 Table~\ref{schedule}), and should ideally be read before class as well.
 We will adhere to the schedule as closely as possible, though I reserve
 the right to adjust it to suit the needs of the class.
 
-\newcommand\Yhwh{\textsc{Yhwh}}
-\newcommand\rarr{\char"2192\hspace*{0.5pt}}
-
-\setcolumncount{4} % set up \sessioncount, \unit{} and \noclass{} macros
+\setcolumncount{4}% set up \sessioncount, \unit{}, \noclass{}, and \reminder{memo}{date} macros
 \begin{table}[htb]% add p to put the schedule on its own page
   \centering
-  \begin{tabular}{>{\sessioncount.}r@{ }llr}
-    \toprule
-    \sessionskip{\textbf{\S}.}&\textbf{Primary Reading}&\textbf{Secondary Reading}&\textbf{Date}\\
-    \midrule
-    \unit{One} \\
-          &                                           &                           &  4 Sep.     \\
-          &                                           &                           &  9 Sep.     \\
-          &                                           &                           & 11 Sep.     \\
-          &                                           &                           & 16 Sep.     \\
-          &                                           &                           & 18 Sep.     \\
-          &                                           &                           & 23 Sep.     \\ [1ex]
-    \unit{Two} \\
-          &                                           &                           & 25 Sep.     \\
-          &                                           &                           & 30 Sep.     \\
-          &                                           &                           &  2 Oct.     \\
-          &                                           &                           &  7 Oct.     \\
-          &                                           &                           &  9 Oct.     \\
-          &                                           &                           & 14 Oct.     \\
-          &                                           &                           & 16 Oct.     \\
-          &                                           &                           & 21 Oct.     \\
-    \noclass{Reading Days}                                                        & 23--24 Oct. \\
-          &                                           &                           & 28 Oct.     \\
-          &                                           &                           & 30 Oct.     \\
-          &                                           &                           &  4 Nov.     \\
-          &                                           &                           &  6 Nov.     \\
-          &                                           &                           & 11 Nov.     \\
-          &                                           &                           & 13 Nov.     \\
-          &                                           &                           & 18 Nov.     \\
-          &                                           &                           & 20 Nov.     \\
-          &                                           &                           & 25 Nov.     \\
-          &                                           &                           & 27 Nov.     \\
-    \noclass{Reading Days}                                                        & 2--3 Dec.   \\
-    \bottomrule
+  \begin{tabular}{>{\sessioncount.}r@{ }llr}% make sure the column config agrees with \setcolumncount
+	\toprule
+	\sessionskip{\textbf{\S}.}&\textbf{Primary Reading}&\textbf{Secondary Reading}&\textbf{Date}\\
+	\midrule
+	\unit{One} \\
+	&                                           &                           &  5 Jan.     \\
+	&                                           &                           &  7 Jan.     \\
+	&                                           &                           & 12 Jan.     \\
+	&                                           &                           & 14 Jan.     \\
+	&                                           &                           & 19 Jan.     \\
+	&                                           &                           & 21 Jan.     \\ [1ex]
+	\unit{Two} \\
+	&                                           &                           & 26 Jan.     \\
+	&                                           &                           & 28 Jan.     \\
+	&                                           &                           &  2 Feb.     \\
+	&                                           &                           &  4 Feb.     \\
+	&                                           &                           &  9 Feb.     \\
+	&                                           &                           & 11 Feb.     \\
+	\noclass{Reading Week}                                                        & 16--20 Feb. \\
+	&                                           &                           & 23 Feb.     \\
+	&                                           &                           & 25 Feb.     \\
+	&                                           &                           &  2 Mar.     \\
+	&                                           &                           &  4 Mar.     \\
+	&                                           &                           &  9 Mar.     \\
+	&                                           &                           & 11 Mar.     \\
+	&                                           &                           & 16 Mar.     \\
+	&                                           &                           & 18 Mar.     \\
+	&                                           &                           & 23 Mar.     \\
+	&                                           &                           & 25 Mar.     \\
+	&                                           &                           & 30 Mar.     \\
+	&                                           &                           &  1 Apr.     \\
+	\noclass{Reading Days}                                                  & 6--7 Apr.   \\
+	\reminder{\textbf{Final Exam} (as schedule by the Registrar)}{8--15 Apr.} \\
+	\bottomrule
   \end{tabular}
   \caption{Schedule of Readings}
   \label{schedule}
 \end{table}
 
-See the \href{http://www.tyndale.ca/registrar/important-dates}{%
-Registrar's website} for a list of other important dates. Generally, the
-last day to add or drop a class without penalty is the end of the second
-week of class.
+See the Registrar's website for a list of other
+\href{http://www.tyndale.ca/registrar/important-dates}{important dates}.
+The last day to add a class, or to drop one without penalty, is
+ordinarily the end of the term's second week.
 
 \section{Course Bibliography}
 \label{bibliography}
 
-An introductory bibliography is provided at the end of each page
-of notes in the course pack. Pursue this material as your interest
-dictates, or if you wish to check my handling of any of the material
-I present. Be sure to pay special attention to items flagged as
-supplementary reading (Section~\ref{supplementary}).
+An introductory bibliography is provided at the end of each page of
+notes in the coursepack. Pursue this material as your interest dictates,
+or if you wish to check my handling of any of the material I present.
+Pay special attention to items flagged as supplementary reading
+(Section~\ref{supplementary}).
 
 \end{document}
