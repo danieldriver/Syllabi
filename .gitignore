@@ -1,0 +1,16 @@
+# Ignore common LaTeX and biber build files
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+
+# Ignore the final PDFs as well
+*.pdf
+
+# For fuller lists see https://gist.github.com/kogakure/149016
+# and https://github.com/github/gitignore/blob/master/TeX.gitignore
+
+# Mac finder files
+.DS_Store
