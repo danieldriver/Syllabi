@@ -6,8 +6,8 @@
 *.run.xml
 *.synctex.gz
 
-# Ignore the final PDFs as well
-*.pdf
+# Include or ignore the final PDFs
+!*.pdf
 
 # For fuller lists see https://gist.github.com/kogakure/149016
 # and https://github.com/github/gitignore/blob/master/TeX.gitignore
