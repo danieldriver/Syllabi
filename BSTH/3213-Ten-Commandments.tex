@@ -1,0 +1,230 @@
+% Copyright (c) 2015 by Daniel R. Driver.
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTeX
+
+\documentclass[titlepage]{article}
+
+% This document presumes a file structure and set of inputs that are
+% available at: git@github.com:danieldriver/syllabi.git
+
+\newcommand\policy{../policy}
+\newcommand\incl{../includes}
+\input{\incl/variables}
+
+\coursecode[2.1]{BSTH 3213}
+\coursetitle{The Ten Commandments}
+
+% Taught as RLGS 3113 in:
+%   - Winter 2012
+% Taught as BSTH 3213 in:
+%   - Winter 2015
+
+\professor{Daniel R. Driver}
+\phone{416-226-6620 ext. 2201}
+\email{ddriver@tyndale.ca}
+\officehours{Mon. \& Thur., 2:30--3:30 \PM}
+
+\semester{Winter 2016}
+\meets{Mon. \& Wed.}% \meets{on}{at}{in}
+      {8:15--9:35 \AM}
+      {Bayview G310}
+\website{classes.tyndale.ca}
+\cdescription{% copy from tyndale.ca/registrar/calendar
+	Explores the legal and cultic context of the Ten Commandments. The
+	course will also address the significance of the Decalogue in
+	Christian interpretation and the history of civilization. Students
+	will become familiar with current scholarship on the Ten
+	Commandments, especially in the context of Christian discourse.
+	Prerequisites: \textsc{bsth} 101, 102, 201.
+}% end of course description
+\objectives{% recall Bloom's taxonomy: http://www.celt.iastate.edu/teaching/RevisedBlooms1.html
+By the end of the course students should be able to:
+	name the Ten Commandments in order;
+	locate at least three biblical versions of the Ten Commandments;
+	differentiate biblical versions by their contents;
+	interpret each of the Commandments in their immediate literary context;
+	integrate an understanding of the Ten Commandments with a broader view of biblical law;
+	summarize the way different religious traditions count to Ten;
+	compare the ways the Commandments have been interpreted in history;
+	identify, evaluate, and report on contemporary connections with at least one of the Ten Commandments.
+}% end of learning objectives
+
+\input{\incl/preamble}
+
+\begin{document}
+\input{\incl/title}
+
+\section{Required Texts \& Materials}
+\label{texts}
+
+All required textbooks are available in the Tyndale Bookstore.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{3}% use the longest item in the bibliography
+
+	\bibitem{Greenman-Larsen} Jeffrey P. Greenman and Timothy Larsen, eds.
+	\emph{The Decalogue through the Centuries: From the Hebrew Scriptures to Benedict XVI}.
+	Louisville: Westminster John Knox Press, 2012.
+	ISBN 978-0664234904.
+
+	\bibitem{Coogan} Michael Coogan.
+    \emph{The Ten Commandments: A Short History of an Ancient Text}.
+    New Haven: Yale University Press, 2014.
+    ISBN 978-0300178715.
+
+	\bibitem{VanHarn} Roger E. Van Harn, ed.
+	\emph{The Ten Commandments for Jews, Christians, and Others}.
+	Grand Rapids: Wm. B. Eerdmans, 2007.
+	ISBN 978-0802829658.
+
+\end{thebibliography}
+\endgroup
+
+\section{Supplementary Texts}
+\label{supplementary}
+
+All supplementary textbooks are held in reserve in the Tyndale library.
+Other supplementary materials may be provided through the course website.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{3}% use the longest item in the bibliography
+
+	\bibitem{Braaten-Seitz} Carl E. Braaten and Christopher R. Seitz, eds.
+	\emph{I Am the Lord Your God: Christian Reflections on the Ten Commandments}.
+	Grand Rapids: Eerdmans, 2005
+	ISBN 978-0802828125.
+
+	\bibitem{Miller} Patrick Miller.
+    \emph{The Ten Commandments: Interpretation: Resources for the Use of Scripture in the Church}.
+    Louisville: Westminster John Knox, 2009.
+    ISBN 978-0664230555.
+
+\end{thebibliography}
+\endgroup
+
+\section{Course Outline}
+\label{outline}
+
+Readings should be completed before the start of the class for which
+they are assigned. We will adhere to the schedule in
+Table~\ref{schedule} (below) as closely as possible, though I reserve
+the right to adjust it to suit the needs of the class.
+
+%Readings should be completed before the start of the class for which
+%they are assigned. Primary readings (from scripture) and required
+%secondary texts (Heschel and Moberly) are compulsory. Any supplementary
+%readings that I circulate (per Section~\ref{supplementary}) will be
+%keyed to the session number (listed under \textbf{\S} in
+%Table~\ref{schedule}), and should ideally be read before class as well.
+%We will adhere to the schedule as closely as possible, though I reserve
+%the right to adjust it to suit the needs of the class.
+
+\setcolumncount{4}% set up \sessioncount, \unit{}, \noclass{}, and \reminder{memo}{date} macros
+\begin{table}[htbp]% add p to put the schedule on its own page
+  \centering
+  \begin{tabular}{>{\sessioncount.}r@{ }llr}% make sure the column config agrees with \setcolumncount
+	\toprule
+	\sessionskip{\textbf{Week.}}&\textbf{Primary Focus}&\textbf{Secondary Reading}&\textbf{Dates}\\
+	\midrule
+		& Introductions  & Syllabus, Coogan ix--49, TAL 332     &   4, 6 Jan. \\
+		& Introductions  & Coogan 50--93, Miller 1--12          & 11, 13 Jan. \\
+		& First Word     & Coogan 94--141, Van Harn 1--21       & 18, 20 Jan. \\
+		& Second Word    & Van Harn 23--45, Miller 13--62       & 25, 27 Jan. \\
+		& Third Word     & Van Harn 47--67, Greenman 1--27      &   1, 3 Feb. \\
+		& Fourth Word    & Van Harn 69--85, Greenman 29--46     &  8, 10 Feb. \\ [1ex]
+	\noclass{Reading Week}                                      & 15--19 Feb. \\ [1ex]
+		& Fifth Word     & Van Harn 87--111, Greenman 47--66    & 22, 24 Feb. \\
+		& Sixth Word     & Van Harn 113--134, Greenman 67--96   & 29 Feb, 2 Mar. \\
+		& Seventh Word   & Van Harn 135--156, Greenman 97--133  &  7, 9  Mar. \\
+		& Eighth Word    & Van Harn 157--178, Greenman 135--167 & 14, 16 Mar. \\
+		& Ninth Word     & Van Harn 179--198, Greenman 169--196 & 21, 23 Mar. \\
+		& Tenth Word     & Van Harn 199--220, Greenman 197--227 & 28, 30 Mar. \\
+	\reminder{\textbf{Final Exam} (as schedule by the Registrar)}{6--13 Apr.} \\
+	\bottomrule
+  \end{tabular}
+  \caption{Schedule of Readings}
+  \label{schedule}
+\end{table}
+
+See the Registrar's website for a list of other
+\href{http://www.tyndale.ca/registrar/important-dates}{important dates}.
+The last day to add a class, or to drop one without penalty, is
+ordinarily the end of the term's second week.
+
+\section{Evaluation}
+\label{evaluation}
+
+\subsection{Grade Structure for \ccode}
+\label{structure}
+
+\begin{enumerate}
+
+	\item At various points throughout the semester I will announce
+	\textbf{reading quizzes}. They are designed to ensure that you have
+	read the assigned material carefully, and may be administered online
+	(outside of class) or on paper (in class).
+
+	\item Working in groups of two or three, students are to make a
+	\textbf{creative presentation} on one of the Ten Commandments in the
+	week in which that Commandment is under investigation. Generally
+	this will take place on Wednesdays.
+
+	\item A \textbf{review essay} on Coogan's \emph{The Ten
+	Commandments} will be due at the start of the first class after
+	reading week (22 February).
+
+	\item A comprehensive \textbf{final paper} will give students an
+	opportunity to explore one of the Ten Commandments in detail. It
+	should be 10--12 pages in length and is due at the start of the
+	final exam period. Students must present at 5 minute summary of
+	their thesis to the rest of the class during the exam period.
+
+\end{enumerate}
+
+The breakdown for the semester's total work is shown in Table~\ref{distribution} (below).
+
+\begin{table}[htbp]
+  \centering
+  {\lining
+  \begin{tabular}{lr}
+    \toprule
+    Reading Quizzes & 25\% \\
+    Presentations   & 15\% \\
+    Review Essay    & 25\% \\
+    Final Paper     & 35\% \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Distribution of Grades}
+  \label{distribution}
+\end{table}
+
+\input{\policy/grades}
+
+\section{Policy on Assignments \& Exams}
+\label{policy}
+
+\input{\policy/academic_calendar}
+\input{\policy/assignments}
+\input{\policy/exams}
+
+\section{Student Expectations \& Guidelines}
+\label{expectations}
+
+\input{\policy/academic_integrity}
+\input{\policy/attendance}
+\input{\policy/technology}
+
+\input{\policy/support}
+
+\section{Course Bibliography}
+\label{bibliography}
+
+In addition to the required and supplementary texts listed above, see
+especially: Henning Graf Reventlow and Yair Hoffman, eds.,
+\emph{Decalogue in Jewish and Christian Tradition} (Library of Hebrew
+Bible/Old Testament Studies; New York: T\&T Clark, 2010), which is
+\href{http://ezproxy.mytyndale.ca:2048/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=e000xna&AN=369752&site=ehost-live&scope=site}{available online}.
+
+\end{document}
