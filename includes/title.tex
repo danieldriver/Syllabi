@@ -3,25 +3,24 @@
 \begin{titlepage}
   \begin{center}
 
-    \sffamily % set title elements in sans serif
-
-    \newcommand\toptxt{\LARGE Course Syllabus}
-    \newlength\topwd
-    \settowidth\topwd\toptxt
+    \newlength\toptxt
+    \setlength\toptxt{.5\textwidth}
     \begin{minipage}{\textwidth}
-      \color{TyndaleBlue}
-      \parbox[t]{140pt}{
-        \mbox{}\\[-13pt] % dummy line to align parboxes
-        \includegraphics[width=140pt]{\incl/TyndaleUC_left}}
+      \color{asturl}
+      \parbox[t]{\the\toptxt}{
+        \fontsize{18}{18}\selectfont
+        \textsc{\ccode\\
+        Course Syllabus\\
+        \csemester}}
       \hfill
-      \parbox[t]{\the\topwd}{
-        \raggedleft\toptxt \\ \csemester}
+      \parbox[t]{100pt}{
+        \mbox{}\\[-13pt] % dummy line to align parboxes
+        \includegraphics[width=100pt]{\incl/AST_Logo}}
     \end{minipage}
 
     \vfill
 
-    {\LARGE\textsc{\ccode}\\[1ex]
-      \bfseries\cseries\Huge\ctitle}
+    {\sffamily\LARGE\cseries\Huge\ctitle}
 
     \vfill
     \lining % switch to lining font family
@@ -47,10 +46,10 @@
 
   \emph{From the Academic Calendar:} \cdescrip
 
-  \section{Learning Objectives}
-  \label{objectives}
-
-  \edobject
+%  \section{Learning Objectives}
+%  \label{objectives}
+%
+%  \edobject
 
 \end{titlepage}
 \setcounter{page}{2} % count the title page as page 1

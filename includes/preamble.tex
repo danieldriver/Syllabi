@@ -1,14 +1,14 @@
-\ProvidesFile{preamble.tex}[2014/09/02 v1.1 -- Syllabus preamble]
+\ProvidesFile{preamble.tex}[2016/09/03 v2.0 -- Syllabus preamble]
 
 % basic typography
 \usepackage{fontspec,realscripts}
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont[%
   Numbers={Proportional,OldStyle},
-  SmallCapsFeatures={RawFeature=+c2sc;+smcp,LetterSpace=1}]{Scala OT}
-\newfontfamily\lining[Numbers={Lining}]{Scala OT}
+  SmallCapsFeatures={RawFeature=+c2sc;+smcp,LetterSpace=1}]{Arno Pro}
+\newfontfamily\lining[Numbers={Lining}]{Arno Pro}
 \setsansfont[%
-  SmallCapsFeatures={RawFeature=+c2sc;+smcp,LetterSpace=1}]{Scala Sans Pro}
+  SmallCapsFeatures={RawFeature=+c2sc;+smcp,LetterSpace=1}]{Myriad Pro}
 \setmonofont[Scale=MatchLowercase]{Menlo}
 \usepackage{sectsty}
 \allsectionsfont{\sffamily\scshape}
@@ -17,13 +17,13 @@
 
 % custom font size and leading
 \renewcommand\tiny{\fontsize{6}{9}\selectfont}
-\renewcommand\scriptsize{\fontsize{7}{10}\selectfont}
-\renewcommand\footnotesize{\fontsize{8}{10}\selectfont}
-\renewcommand\small{\fontsize{9}{11}\selectfont}
-\renewcommand\normalsize{\fontsize{10}{12}\selectfont}% base size
-\renewcommand\large{\fontsize{11}{13}\selectfont}
-\renewcommand\Large{\fontsize{12}{14}\selectfont}
-\renewcommand\LARGE{\fontsize{16}{18}\selectfont}% "course syllabus \\ semester" benefits from more lead
+\renewcommand\scriptsize{\fontsize{8}{11}\selectfont}
+\renewcommand\footnotesize{\fontsize{9}{11}\selectfont}
+\renewcommand\small{\fontsize{10}{12}\selectfont}
+\renewcommand\normalsize{\fontsize{11}{13}\selectfont}% base size
+\renewcommand\large{\fontsize{12}{14}\selectfont}
+\renewcommand\Large{\fontsize{14}{16}\selectfont}
+\renewcommand\LARGE{\fontsize{16}{18}\selectfont}
 \renewcommand\huge{\fontsize{20}{22}\selectfont}
 \renewcommand\Huge{\fontsize{24}{26}\selectfont}
 
@@ -49,22 +49,17 @@
 \newcommand\sessionskip[1]{\multicolumn{1}{@{}r@{ }}{#1}}
 \newcommand\unit[1]{\multicolumn{\thecolumns}{c}{%
   \scshape\stepcounter{courseunit}\roman{courseunit}. #1}}
-\newcommand\noclass[1]{\sessionskip{---.}&\multicolumn{\themidcolumns}{@{}l}{\itshape No Class: #1}}
-\newcommand\rarr{\Large\char"EA31\hspace*{0.5pt}} % pointer finger w/ reminder tie in Scala OT
-\newcommand\reminder[2]{\sessionskip{\rarr}&\multicolumn{\thespancolumns}{@{}l}{#1 \hfill #2}}
+\newcommand\noclass[1]{\sessionskip{\XeTeXglyph405.}&\multicolumn{\themidcolumns}{@{}l}{\em No Class: #1}}% Arno swash gap
+%\newcommand\noclass[1]{\sessionskip{---.}&\multicolumn{\themidcolumns}{@{}l}{\em No Class: #1}} % generic em-dash gap
+\newcommand\rarr{\large\XeTeXglyph369} % fleuron for accent of reminder memo in Arno Pro
+%\newcommand\rarr{\Large\char"EA31\hspace*{0.5pt}} % pointer finger w/ reminder tie in Scala OT
+\newcommand\reminder[2]{\sessionskip{\rarr}&\multicolumn{\thespancolumns}{@{}l}{{\em #1}\hfill #2}}
 
-% color to match Tyndale's branding
+% color to match the school's branding
 \usepackage[usenames]{xcolor}
-% predefined: black, white, red, green, blue, cyan, magenta, yellow
-\definecolor{TyndaleURLs}{HTML}{0062A0} % links on tyndale.ca
-\definecolor{TyndaleBlue}{cmyk}{1,1,0,.32}
-\definecolor{TyndaleGold}{cmyk}{0,.27,1,0}
-\definecolor{TyndaleRed}{cmyk}{0,1,.99,.04}
-\definecolor{TyndaleBlack}{cmyk}{0,0,0,1}
-\definecolor{TyndaleGreen}{cmyk}{.45,0,1,.24}
-\definecolor{TyndaleOrange}{cmyk}{0,.79,1,0}
-\definecolor{TyndaleAqua}{cmyk}{.47,0,.24,0}
-\definecolor{TyndaleYellow}{cmyk}{.03,.03,.35,0}
+% predefined: black, white, red, green, blue, cyan, magenta, purple, yellow
+\definecolor{astred}{cmyk}{0.3068,1,0.5333,0.2015} % defined in eps file (PANTONE 221 C): https://www.pantone.com/color-finder/221-C
+\definecolor{asturl}{HTML}{680831} % links on astheology.ns.ca
 
 % metadata (assumes a host of definitions are made in the main file)
 \usepackage[setpagesize=false,     % leave this to geometry
@@ -72,12 +67,12 @@
             xetex]{hyperref}
 \hypersetup{breaklinks=true,       % allow link text to break across lines
             colorlinks=true,       % colorlinks resets pdfborder to 0 0 0
-            urlcolor=TyndaleURLs,  % for external links
-            linkcolor=TyndaleRed,  % for normal internal links
-            citecolor=TyndaleGold, % for bibliographical citations in text
+            urlcolor=asturl,       % for external links
+            linkcolor=purple,      % for normal internal links
+            citecolor=cyan,      % for bibliographical citations in text
             pdfauthor={\prof},
             pdftitle={\ccode: \ctitle},
-            pdfsubject={Tyndale UC, \csemester},
+            pdfsubject={AST, \csemester},
             pdfcreator={github.com/danieldriver/syllabus}}
 \urlstyle{same}                    % don't use monospace font for urls
 
@@ -86,7 +81,7 @@
 \pagestyle{fancy} % turn it on
 \fancyhf{}        % reset everything
 \renewcommand{\headrulewidth}{0pt} % remove header line as well
-\lfoot{\sffamily\scshape\footnotesize\ctitle, \csemester}
+\lfoot{\sffamily\scshape\footnotesize\ccode Syllabus, \csemester}
 \rfoot{\sffamily\scshape\footnotesize\prof\quad\thepage}
 
 % language support: polyglossia needs to go last
@@ -94,9 +89,6 @@
 \setdefaultlanguage{english}
 \setotherlanguage{hebrew}
 \newfontfamily\hebrewfont[Script=Hebrew]{SBL BibLit}
-
-% protect positioning of margin table in policy/grades -- needs to come after polyglossia
-\usepackage{marginfix}
 
 % gratuitous with custom title page, but useful as a fallback
 \title{\ccode: \ctitle}
