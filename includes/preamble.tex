@@ -27,12 +27,13 @@
 \renewcommand\huge{\fontsize{20}{22}\selectfont}
 \renewcommand\Huge{\fontsize{24}{26}\selectfont}
 
-% layout packages: page, logo, tables
+% layout packages: page, logo, tables, columns
 \usepackage[scale={0.6,0.8},
             xetex]{geometry}
 \usepackage{graphicx}
 \usepackage{array}     % allow insertions of column styling with >{}
 \usepackage{booktabs}  % elegant horizontal rules in tables
+\usepackage{multicol}  % for compact lists of commentaries, etc
 
 % custom macros for a session count in the schedule of readings
 \newcounter{session}
@@ -56,10 +57,11 @@
 \newcommand\reminder[2]{\sessionskip{\rarr}&\multicolumn{\thespancolumns}{@{}l}{{\em #1}\hfill #2}}
 
 % color to match the school's branding
-\usepackage[usenames]{xcolor}
+\usepackage[cmyk,dvipsnames]{xcolor}
 % predefined: black, white, red, green, blue, cyan, magenta, purple, yellow
 \definecolor{astred}{cmyk}{0.3068,1,0.5333,0.2015} % defined in eps file (PANTONE 221 C): https://www.pantone.com/color-finder/221-C
-\definecolor{asturl}{HTML}{680831} % links on astheology.ns.ca
+\definecolor{asturl}{cmyk}{0.3068,1,0.5333,0.2015} % defined in eps file (PANTONE 221 C): https://www.pantone.com/color-finder/221-C
+%\definecolor{asturl}{HTML}{680831} % links on astheology.ns.ca
 
 % metadata (assumes a host of definitions are made in the main file)
 \usepackage[setpagesize=false,     % leave this to geometry
@@ -68,11 +70,11 @@
 \hypersetup{breaklinks=true,       % allow link text to break across lines
             colorlinks=true,       % colorlinks resets pdfborder to 0 0 0
             urlcolor=asturl,       % for external links
-            linkcolor=purple,      % for normal internal links
-            citecolor=cyan,      % for bibliographical citations in text
+            linkcolor=BurntOrange,      % for normal internal links
+            citecolor=Cerulean,      % for bibliographical citations in text
             pdfauthor={\prof},
             pdftitle={\ccode: \ctitle},
-            pdfsubject={AST, \csemester},
+            pdfsubject={\csemester, Version \cversion},
             pdfcreator={github.com/danieldriver/syllabus}}
 \urlstyle{same}                    % don't use monospace font for urls
 
@@ -81,7 +83,7 @@
 \pagestyle{fancy} % turn it on
 \fancyhf{}        % reset everything
 \renewcommand{\headrulewidth}{0pt} % remove header line as well
-\lfoot{\sffamily\scshape\footnotesize\ccode Syllabus, \csemester}
+\lfoot{\sffamily\scshape\footnotesize\ccode Syllabus, \csemester (\cversion)}
 \rfoot{\sffamily\scshape\footnotesize\prof\quad\thepage}
 
 % language support: polyglossia needs to go last
