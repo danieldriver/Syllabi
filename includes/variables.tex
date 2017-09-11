@@ -1,4 +1,4 @@
-\ProvidesFile{variables.tex}[2016/09/03 v1.2 -- Syllabus variables]
+\ProvidesFile{variables.tex}[2017/09/11 v2.0 -- Syllabus variables]
 
 \usepackage{xspace} % make manual spaces (like \mycmd\ ) unnecessary
 \usepackage{xifthen} % provides \isempty test
@@ -23,6 +23,10 @@
 \newcommand\cdescrip{}
 \newcommand\edobject{}
 
+% in case of fully online courses - https://tex.stackexchange.com/a/5896
+\newif\ifonline
+\newcommand\Int[2]{\ifonline#1\else#2\fi}
+
 % commands for setting variables in the preamble
 \newcommand\professor[2][PhD]{
   \renewcommand\pdegree{#1\xspace}
@@ -36,8 +40,8 @@
   \renewcommand\phours{#2\xspace}}
 %
 \newcommand\coursecode[2][1.0]{
-  \renewcommand\cversion{#1\xspace}
-  \renewcommand\ccode{#2\xspace}}
+  \renewcommand\cversion{#1\Int{-i}{}\xspace}
+  \renewcommand\ccode{#2\Int{(Int)}{}\xspace}}
 \newcommand\coursetitle[2][]{
   \ifthenelse{\isempty{#1}}%
     {}% do nothing if #1 is empty, else:
@@ -48,9 +52,9 @@
 \newcommand\meets[3]{
   \newcommand\AM{\textsc{am}}
   \newcommand\PM{\textsc{pm}}
-  \renewcommand\cmeetson{#1\xspace}
-  \renewcommand\cmeetsat{#2\xspace}
-  \renewcommand\cmeetsin{#3\xspace}}
+  \renewcommand\cmeetson{On #1\xspace}
+  \renewcommand\cmeetsat{\Int{From 9:00 \AM}{#2}\xspace}
+  \renewcommand\cmeetsin{\Int{Brightspace}{#3}\xspace}}
 \newcommand\website[1]{
   \renewcommand\cwebsite{\href{http://#1}{#1}\xspace}}
 \newcommand\cdescription[1]{
