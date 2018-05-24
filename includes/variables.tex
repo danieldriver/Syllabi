@@ -1,4 +1,4 @@
-\ProvidesFile{variables.tex}[2017/09/11 v2.0 -- Syllabus variables]
+\ProvidesFile{variables.tex}[2018/05/24 v2.1 -- Syllabus variables]
 
 \usepackage{xspace} % make manual spaces (like \mycmd\ ) unnecessary
 \usepackage{xifthen} % provides \isempty test
@@ -21,6 +21,7 @@
 \newcommand\cmeetsin{}
 \newcommand\cwebsite{}
 \newcommand\cdescrip{}
+\newcommand\cprereqs{}
 \newcommand\edobject{}
 
 % in case of fully online courses - https://tex.stackexchange.com/a/5896
@@ -52,12 +53,13 @@
 \newcommand\meets[3]{
   \newcommand\AM{\textsc{am}}
   \newcommand\PM{\textsc{pm}}
-  \renewcommand\cmeetson{On #1\xspace}
+  \renewcommand\cmeetson{#1\xspace}
   \renewcommand\cmeetsat{\Int{From 9:00 \AM}{#2}\xspace}
   \renewcommand\cmeetsin{\Int{Brightspace}{#3}\xspace}}
 \newcommand\website[1]{
   \renewcommand\cwebsite{\href{http://#1}{#1}\xspace}}
-\newcommand\cdescription[1]{
-  \renewcommand\cdescrip{#1\par}}
+\newcommand\cdescription[2][RM 1000 or GTRS 6000; and BF 1001]{
+  \renewcommand\cprereqs{#1}
+  \renewcommand\cdescrip{#2\par}}
 \newcommand\objectives[1]{
   \renewcommand\edobject{#1\par}}
