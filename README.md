@@ -1,22 +1,22 @@
-DRD's Syllabi
-=============
+Dr. Driver’s Syllabi
+====================
 
-This [repository][repo] holds the code and policy I use to make my
-course syllabi in LaTeX.
+This repository holds the code and policy I use to make my course
+syllabi in LaTeX.
 
 History
 -------
 
 For several years now I have produced my syllabi in LaTeX (or [XeTeX][],
 to be exact). Since mid-2013 I have version controlled them in [Git][].
-Then, in late 2014, I decided to make them available in a [public
+Then, in late 2014, I decided to make them available in this [public
 repository][repo] on GitHub.
 
 I use LaTeX for consistency, durability, and [beauty][]. I use Git to
 aid my pursuit of continuous improvement, particularly in the
 foundational courses that I teach year in and year out. I use GitHub in
 the interest of accountability. To my mind a syllabus is a public
-document. I want mine to be good enough that I don't mind having them on
+document. I want mine to be good enough that I don’t mind having them on
 the open web.
 
 The whole system allows me, and my students, and anyone else who might
@@ -65,9 +65,9 @@ Fonts
 My use of `fontspec` calls for a good pair of well-designed fonts.
 Currently I use [Minion][] and [Myriad][], by Robert Slimbach and, in
 the latter case, Carol Twombly. The combination may be plain vanilla,
-but it's efficient, and for technical documents I think it makes sense
+but it’s efficient, and for technical documents I think it makes sense
 to use a “[crystal goblet][goblet].” In the past I have used Martin
-Majoor's [FF Scala][FFS], one of the original superfamilies from
+Majoor’s [FF Scala][FFS], one of the original superfamilies from
 [FontShop][FSS]. For Greek and Hebrew text I usually call on the freely
 available [SBL BibLit][SBL], by John Hudson.
 
