@@ -2,22 +2,27 @@
 % !TEX TS-program = XeLaTeX
 
 \documentclass[11pt,twocolumn]{article}
-\usepackage[letterpaper]{geometry}
-\geometry{%
-%margin=1in,
-scale=0.8,
-columnsep=0.25in}
+\usepackage[%
+	letterpaper,
+	scale=0.8,
+	columnsep=0.25in]{geometry}
 
 % Typography
 \usepackage{fontspec,realscripts}
 \defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle}
-\setromanfont[]{Arno Pro}
+\setromanfont{Arno Pro}
 \setsansfont[Scale=MatchLowercase]{Scala Sans Pro}
 \setmonofont[Scale=MatchLowercase]{Menlo}
 \usepackage{sectsty}
 \allsectionsfont{\sffamily}
 \frenchspacing
 
+% Tables, links, and metadata
+\usepackage{array}     % allow insertions of column styling with >{}
+\usepackage{booktabs}  % elegant horizontal rules in tables
+\usepackage{graphicx}
+
+% Title
 \title{Guidelines for Papers and Other Written Assignments}
 \author{Daniel R. Driver, PhD\thanks{I would like to acknowledge my
 teachers. Two who might recognize echoes of their advice in what I set
@@ -60,8 +65,9 @@ paper's expected length. Whole monographs have been written on single
 psalms. It is simply not realistic to think that you can prove something
 about the entire Book of Psalms in twenty pages. A good thesis is narrow
 in focus. For example: “The divine warrior motif in Psalm 24:7–10 finds
-natural resonance in later Christian liturgies of Christ's Harrowing of
-Hell, as seen in the libretto of Handel's \emph{Messiah}.”
+new resonance in later Christian liturgies of Christ's Harrowing of
+Hell, as shown by the placement of movement 33 in the libretto of
+Handel's \emph{Messiah}.”
 
 Second, a thesis must be \textbf{unified}; in other words, it must
 express only one idea. Consider the following sentence: “Sabbath keeping
@@ -129,20 +135,21 @@ discussion prompts this term.
 
 \subsection{The Review (Book or Article)}
 
-A book review can facilitate critical reflection on a significant work
-of biblical interpretation or theology, but note well: a book review is
-not the same thing as a book report. A report simply summarizes the
-contents of a book, as if the only goal were to prove that you read it,
-whereas a review is a focused exercise in critical analysis and
-evaluation. In very limited space, this kind of paper should first
-explain the message of a book or article, and then present an assessment
-of its significance. It should have the following elements:
+Literature review can facilitate critical reflection on a significant
+work of biblical interpretation or theology, but note well: a book
+review is not the same thing as a book report. A report simply
+summarizes the contents of a work, as if the only goal were to prove
+that you read it, whereas a review is a focused exercise in critical
+analysis and evaluation. In very limited space, this kind of paper
+should first explain the message of a book or article, and then present
+an assessment of its significance. It should have the following
+elements:
 
 \begin{enumerate}
 
 \item full bibliographic details about the work under review. Let the
 reference follow SBL Style. Parenthetical citations may follow, thus:
-“quote” (73).
+“quote” (79).
 
 \item an introductory hook (a phatic or attention-getting device). It
 will be quite short compared to the introductions most other papers
@@ -160,7 +167,7 @@ exegetical, examine a characteristic instance of biblical
 interpretation. Read the biblical passage being interpreted, and ask
 yourself the following sorts of questions: Is the interpretation
 insightful? Does it help you understand the biblical text? Does it
-include everything in the biblical text? What does it omit? Why? Are
+explain every feature of it? What does it omit or pass over? Why? Are
 there any problems with the interpretation? Does the biblical text aid
 the scholar’s wider argument? Alternately, if the work is not especially
 exegetical, consider the list of questions suggested by Northey et
@@ -176,11 +183,29 @@ before you can make an argument about it.
 
 \end{enumerate}
 
-Unless the professor or syllabus states otherwise, at least half of the
-paper (50\%) should be evaluative. Mere plot summary is not required. In
-the case of an assigned text, unlike a review that might appear in
-print, you can assume that your audience is already at least somewhat
-familiar with the work.
+Unless the professor or syllabus states otherwise, about half of the
+paper (50\%) should be evaluative. If the assignment calls for 1,000
+words, you might choose to distribute them as follows (the bibliographic
+citation at the top does not count against your word limit).
+
+\begin{table}[htbp]
+  \centering
+  {\begin{tabular}{lr}
+    \toprule
+    Introduction & 80  \\
+    Summary      & 400 \\
+    Evaluation   & 400 \\
+    Conclusion   & 120 \\
+    \bottomrule
+  \end{tabular}}
+%  \caption{Sample proportions for a review}
+%  \label{review}
+\end{table}
+
+\noindent Mere plot summary is not required. In the case of an assigned
+text, unlike a review that might appear in print, you can assume that
+your audience is already at least somewhat familiar with the work in
+question.
 
 \subsection{The Exegetical Essay}
 
@@ -248,7 +273,7 @@ can even be a virtue if, in the interest of honesty, you point out some
 limits in your reading. The goal is not to override but to clarify the
 text.
 
-\subsection{The Thesis Proper}
+\subsection{The Thesis}
 
 A thesis proper, by which I mean not just a sentence but a total
 argument, is often a culminating work in a degree program. I regularly
@@ -256,34 +281,37 @@ set a question that calls for a final thesis as the culminating
 assignment of a course as well. It requires all the things that have
 been described above: a sound thesis statement, mature and topical
 supporting paragraphs, competence in secondary literature, and a solid
-exegetical foundation. My main advice is to write and rewrite. Leaving
-most of the work to the night before a deadline is no recipe for
-success. Give yourself as much time as you can to revise your work,
-knowing that writing is a rigorous process. It takes effort to make
-prose appear effortless.
+exegetical foundation. There is considerable freedom in how these
+elements may be combined, which means there is scope for creativity.
+[\emph{This handout, too, is a work in progress! TK\ldots}]
 
-\section{Try the Paramedic Method}
+How might you approach such a big job? My main advice is to take it in
+stages, separated by several good nights of sleep. Leaving most of the
+work to the day before a deadline is no recipe for success. Give
+yourself as much time as you can to revise your work, knowing that
+writing is a rigorous process. Write. Reflect. Rewrite. Edit. Repeat as
+necessary. It takes real effort to make prose appear effortless.
 
-Use the Paramedic Method (originally developed by Richard Lanham in
-\emph{Revising Prose}) to edit any kind of professional writing. Editing
-your professional writing using the Paramedic Method will make your
-prose easier to read. Sentences that are easy to read are more
-persuasive and more user-centered.
+\section{Write, Reflect, Rewrite, Edit}
+
+\subsection{Write Shitty Rough Drafts}
+
+\subsection{Take a Nap}
+
+\subsection{Write and Rewrite}
+
+\subsection{Try the Paramedic Method}
 
 See the Online Writing Lab (OWL) at Purdue University for details.
 Search for “Paramedic Method” or go to:
 https://owl.english.purdue.edu/owl/resource/635/01/
 
-\begin{enumerate}
-\item Circle the prepositions (of, in, about, for, onto, into)
-\item Draw a box around the “is” verb forms
-\item Ask, “Where's the action?”
-\item Change the “action” into a simple verb
-\item Move the doer into the subject (Who's kicking whom)
-\item Eliminate any unnecessary slow wind-ups
-\item Eliminate any redundancies
-\end{enumerate}
-
+%Use the Paramedic Method (originally developed by Richard Lanham in
+%\emph{Revising Prose}) to edit any kind of professional writing. Editing
+%your professional writing using the Paramedic Method will make your
+%prose easier to read. Sentences that are easy to read are more
+%persuasive and more user-centered.
+%
 %Professional writers understand the need for clear, concise prose. An
 %industry standard for helping workplace writers achieve user-centered,
 %persuasive, and clear prose is the Paramedic Method. When you use the
