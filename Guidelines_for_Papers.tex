@@ -3,6 +3,7 @@
 
 \documentclass[11pt,twocolumn]{article}
 \usepackage[%
+%	showframe,
 	letterpaper,
 	scale=0.8,
 	columnsep=0.25in]{geometry}
@@ -21,6 +22,14 @@
 \usepackage{array}     % allow insertions of column styling with >{}
 \usepackage{booktabs}  % elegant horizontal rules in tables
 \usepackage{graphicx}
+
+% Issue list
+\usepackage{enumitem}
+\newlist{issues}{itemize}{2}
+\setlist[issues]{%
+	parsep=0em,
+	itemsep=0ex,
+	label=\underline{\hspace{1.5em}}}
 
 % Title
 \title{Guidelines for Papers and Other Written Assignments}
@@ -362,5 +371,60 @@ https://owl.english.purdue.edu/owl/resource/635/01/
 %Use of this site constitutes acceptance of our terms and conditions of
 %fair use.
 
+%\mbox{}\par
+%\centering
+%\noindent
+%\begin{minipage}{\textwidth}
+
+\onecolumn
+\thispagestyle{empty}
+\section*{Dr. Driver's Paper Analysis and Assessment}
+
+\subsection*{Surface-level Issues}
+
+\begin{issues}
+
+\item Format Violations: Follow \emph{The SBL Handbook of Style}, 2nd ed. (which supplements \emph{The Chicago Manual of Style})
+\item Awkward Sentence (\emph{awk}): Wordy/Strange meaning/Clumsy arrangement
+\item Comma Splice (\emph{cs}): Comma used in the place of a period
+\item Run-on (\emph{RO}): Two independent clauses cannot be fused together
+\item Fragment (\emph{frag}): Incomplete sentence, usually missing a verb
+\item Agreement Error (\emph{agr/S-V/ref}): Subject-verb or pronoun-antecedent
+\item Not Parallel (\emph{//}): Sentence elements incorrectly linked; they must be coordinated
+\item Verb Error (\emph{vb}): The wrong verb tense is used, or it changes without good reason
+\item Passive Voice (\emph{PV}): Verbs should be active
+\item Redundant (\emph{rep}): Do not repeat words or ideas unnecessarily
+\item Spelling/Wrong Word (\emph{sp/ww}): Check the dictionary for standard usage
+\item Punctuation: Observe the standard rules
+\item Clichés: They do not creatively engage the reader with fresh expression
+\item Miscellaneous:
+
+\end{issues}
+
+\subsection*{Deeper-level Issues}
+
+\begin{issues}
+
+\item Thesis Problem: Missing/Unclear/Weak/Nonspecific/Awkward/Not proven by the paper
+\item Introduction Weak: Phatic device/Lack of clarity/Lack of development
+\item Poor Organization: Ideas scattered/Illogical order/Irrelevant material
+\item Inadequate Explanation: Need more: Details/Descriptions/Examples/Illustrations/Quotes
+\item Paragraphs Lacking: Unity/Coherence/Development
+\item Transitions (\emph{trans.}): Paragraphs change abruptly/You need to connect one idea to another
+\item Sentence Style Too Similar: Vary the types and lengths more often
+\item Conclusion: Does not bring the essay to a satisfying or natural close
+\item Persuasive Caliber: Lacks logic/Lacks passion/Lacks credibility/Lacks clarity/Lacks interpretation
+\item Reasoning Flaws: Overgeneralizations/Unqualified statements/Lack of proof or support
+\item Audience: The writing does not engage a particular group or person
+\item Tone: Not appropriate or consistent with the subject or audience
+\item Style: Too formal/Too colloquial for the subject or purpose of the writing
+\item Miscellaneous:
+
+\end{issues}
+
+\subsection*{Final Comments (Note: + indicates a strength of this paper, while \textminus\ indicates an area for improvement)}
+
+
+%\end{minipage}
 
 \end{document}
