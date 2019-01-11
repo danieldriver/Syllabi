@@ -1,0 +1,269 @@
+% Copyright (c) 2019 by Daniel R. Driver.
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTeX
+
+\documentclass[titlepage]{article}
+
+% This document presumes a file structure and set of inputs that are
+% available at: git@github.com:danieldriver/syllabi.git
+
+\newcommand\policy{../policy}
+\newcommand\incl{../includes}
+\input{\incl/variables}
+
+%\onlinetrue % \Int{true}{false}
+\coursecode[2.0]{HB 3116(Int)}
+\coursetitle[Hebrew Bible]{Ecclesiastes}
+
+% Taught as BSTH 4403 at Tyndale in:
+%   - Fall 2015
+% Taught as HB 3116 at AST in:
+%   - Winter 2019
+
+\professor{Daniel R. Driver}
+\phone{902-222-0930}
+\email{ddriver@astheology.ns.ca}
+\officehours[Room 106, then Library?]{By appointment}
+
+\semester{Winter Term 2019}
+\meets{On Fridays}% \meets{on}{at}{in}
+      {From 10:00 \AM\ (Atlantic)}
+      {Online: Brightspace}
+\website{danieldriver.com}
+\cdescription{% copy from the Academic Calendar; add [] for unusual prereqs
+
+In this course Ecclesiastes will be studied in the context of the
+Writings and other wisdom literature, and in connection with the book’s
+reception history. By the end of the course students should be able to:
+understand the basic shape of the Writings and, within that collection,
+books classi ed as wisdom literature; give examples of extra-biblical
+parallels to wisdom literature; situate Ecclesiastes relative to other
+Solomonic literature; characterize some ancient and modern commentaries
+on Ecclesiastes; articulate a few of the major interpretive options in
+reading Ecclesiastes; defend their own readings of the book in writing,
+with detailed textual support.
+
+}% end of course description
+\objectives{% recall Bloom's taxonomy: http://www.celt.iastate.edu/teaching/RevisedBlooms1.html
+
+In this course Ecclesiastes will be studied in the context of other
+biblical literature, with some reference to extra-biblical sources, and
+in connection with the book's reception history. By the end of the
+course students should be able to:
+	name biblical books classified with the Writings and wisdom literature;
+	understand some different ways this literature has been classified;
+	give examples of extra-biblical parallels to it;
+	locate Ecclesiastes relative to other Solomonic literature;
+	recognize quotes from Ecclesiastes by chapter;
+	name major ancient and modern commentators on Ecclesiastes;
+	report on specific commentators verbally;
+	articulate major interpretive options in reading Ecclesiastes;
+	defend their own preferred readings in writing, with detailed textual support.
+
+}% end of learning objectives
+
+\input{\incl/preamble}
+
+\begin{document}
+\input{\incl/title}
+
+  \section{Learning Objectives}
+  \label{objectives}
+
+  \edobject
+
+\section{Required Texts \& Materials}
+\label{texts}
+
+The following texts are required. Students are strongly encouraged to
+purchase their own copies.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Christianson}% use the longest item in the bibliography
+
+	\bibitem[Christianson]{Christianson} Eric S. Christianson.
+    \emph{Ecclesiastes Through the Centuries} (paperback).
+    Chichester, West Sussex: Wiley-Blackwell, 2012.
+	ISBN 978-0470674918.
+
+	\bibitem[Fox]{Fox} Michael V. Fox.
+	\emph{Ecclesiastes: The Traditional Hebrew Text with the New JPS Translation}. The JPS Bible Commentary.
+	Philadelphia: Jewish Publication Society, 2004.
+	ISBN 978-0827607422.
+
+\end{thebibliography}
+\endgroup
+
+Students may also wish to access a good Study Bible. I recommend either
+the NRSV (ed. Michael Coogan) or the NJPS (ed. Adele Berlin and Marc Zvi
+Brettler), both published by Oxford University Press. Element of both
+versions, and many other useful resources, are available digitally
+through \href{http://ezproxy.astheology.ns.ca:2048/login?url=http://www.oxfordbiblicalstudies.com/}{Oxford Biblical Studies Online}.
+
+\section{Supplementary Texts}
+\label{supplementary}
+
+The following reference works are worth owning and consulting.
+\cite{rlgs} in particular contains sound advice on core skills like
+reading religious texts, writing essays and reviews, revising essays,
+making oral presentations, and learning languages.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Making Sense}% use the longest item in the bibliography
+
+	\bibitem[Barbour]{Barbour} Jennie Barbour.
+	\emph{The Story of Israel in the Book of Qohelet: Ecclesiastes as Cultural Memory}. Oxford Theological Monographs.
+	Oxford: Oxford University Press, 2012.
+	ISBN 978-0199657827.
+
+	\bibitem[Dell]{Dell} Katharine Dell.
+	\emph{Interpreting Ecclesiastes: Readers Old and New}.
+	Winona Lake, Indiana: Eisenbrauns, 2013.
+	ISBN 978-1575062815.
+
+	\bibitem[Making Sense]{rlgs} Northey, Margot, Bradford A. Anderson, and Joel N. Lohr.
+	\emph{Making Sense in Religious Studies: A Student's Guide to Research and Writing}.
+	3rd ed. Toronto: Oxford University Press, 2019. ISBN 978-0199026838.
+
+	\bibitem[SBL2]{sbl2} Collins, Billie Jean, et al.
+	\emph{The SBL Handbook of Style}.
+	2nd ed. Atlanta: SBL Press, 2014. ISBN 978-1589839649.
+	Designed to augment \href{http://www.chicagomanualofstyle.org/home.html}{\emph{Chicago Style}}
+	(the standard at AST), there is also a free
+	\href{https://www.sbl-site.org/assets/pdfs/pubs/SBLHSsupp2015-02.pdf}{Student Supplement for SBL2}.
+
+\end{thebibliography}
+\endgroup
+
+\section{Course Outline}
+\label{outline}
+
+We will adhere to the schedule in \autoref{schedule} as closely as
+possible, though the professor reserves the right to adjust it to suit
+the needs of the class.
+
+\setcolumncount{4}% set up \sessioncount, \unit{}, \noclass{}, and \reminder{memo}{date} macros
+\begin{table}[htb]% add p to put the schedule on its own page
+  \centering
+  \begin{tabular}{>{\sessioncount.}r@{ }llr}% make sure the column config agrees with \setcolumncount
+	\toprule
+	\sessionskip{\textbf{\S}.}&\textbf{Primary Text}&\textbf{Secondary Reading}&\textbf{Date}\\
+	\midrule
+	& Ecclesiastes \thesession & Christianson 87--155; Fox Intro, 3--11   & 11 Jan. \\
+	& Ecclesiastes \thesession & Christianson Intro, 156--163; Fox 11--19 & 18 Jan. \\
+	& Ecclesiastes \thesession & Christianson 164--179; Fox 19--26        & 25 Jan. \\
+	& Ecclesiastes \thesession & Christianson 180--183; Fox 27--32        &  1 Feb. \\
+	& Ecclesiastes \thesession & Christianson 183--185; Fox 33--38        &  8 Feb. \\
+	& Ecclesiastes \thesession & Christianson 184--187; Fox 38--42        & 15 Feb. \\
+	\noclass{Midterm Break}                                               & 22 Feb. \\
+	& Ecclesiastes \thesession & Christianson 188--201; Fox 43--53        &  1 Mar. \\
+	& Ecclesiastes \thesession & Christianson 201--205; Fox 53--61        &  8 Mar. \\
+	& Ecclesiastes \thesession & Christianson 206--215; Fox 61--67        & 15 Mar. \\
+	& Ecclesiastes \thesession & Christianson 216--224; Fox 67--72        & 22 Mar. \\
+	& Ecclesiastes \thesession & Christianson 225--246; Fox 72--76        & 29 Mar. \\
+	& Ecclesiastes \thesession & Christianson 247--263; Fox 77--85        &  5 Apr. \\
+	\reminder{End of Term: Final marks are due for all courses}{10 Apr.}            \\
+	\bottomrule
+  \end{tabular}
+  \caption{Schedule of Readings}
+  \label{schedule}
+\end{table}
+
+See the AST website for a list of other \href{http://www.astheology.ns.ca/students/academic-dates.html}{important dates}.
+
+\section{Evaluation}
+\label{evaluation}
+
+The grade structure for \ccode has the following elements.
+
+\begin{enumerate}
+
+	\item I will set \textbf{discussion prompts} each week. They are
+	intended to help you engage with the assigned reading material, the
+	lectures, and your classmates. Prompt responses may vary in length.
+	In fact there is no required word count, thought if it helps you may
+	think of about 300 words as a rule of thumb. Questions will go up by
+	the start of each class day (Fridays, 10 \AM\ Atlantic Time). Answer
+	the week's question before the following Wednesday. Then, before the
+	next class, take some time to read the responses of your classmates.
+	You are invited to post another 50 words or so as you interact with
+	them. No post is required in the week of your creative presentation.
+
+	\item Students are to make a \textbf{creative presentation} related
+	to one chapter of Ecclesiastes, due the week after the chapter is
+	assigned. (A presentation on Ecclesiastes 1, for example, would be
+	due at the start of Week 2.) Presentations may be audio or video,
+	and they may take virtually any form you wish -- a podcast, a
+	homily, an interview, a dramatic piece, an explication of fine art
+	(cf. \cite{Christianson}), a show of original artwork, or some other
+	creative thing you envision. It should last 15 to 20 minutes, and
+	should feel like it deserves 20\% of the final grade. The only
+	strict requirement is that the work be sharable by URL. (Try
+	SoundCloud or YouTube.) Sign up for a week early on and, when the
+	time comes, post your title and link to the presentation forum.
+
+	\item A major \textbf{exegetical paper} will give students an
+	opportunity to work directly and closely with the biblical text. The
+	first task is to identify an appropriate text.  Select a suitably
+	short passage from Ecclesiastes. Focus on just a few verses that
+	interest you: a full chapter is almost certainly too much material
+	to handle well in a paper of this length. Then, conduct an analysis
+	and explication of your passage. Advance a thesis that relates to
+	the text itself, and your explication of it. If you are unsure how
+	to craft a thesis, see me and \cite[Chs 3, 5, 8, 11]{rlgs} for
+	further guidance. Feel free to build on an idea first explored in
+	one of your discussion prompts. The paper is due one week before the
+	last class (on 29 March 2019). It should be 4,000 words long, plus
+	or minus 10\%. The total count includes footnotes but not the final
+	bibliography, which should contain at least a dozen scholarly
+	sources.
+
+\end{enumerate}
+
+The breakdown for the semester's total work is shown in
+\autoref{distribution}.
+
+\begin{table}[htbp]
+  \centering
+  {\lining
+  \begin{tabular}{lr}
+    \toprule
+    Discussion Prompts    & 40\% \\
+    Creative Presentation & 20\% \\
+    Exegetical Paper      & 40\% \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Distribution of Grades}
+  \label{distribution}
+\end{table}
+
+\input{\policy/grades}
+\input{\policy/other}
+
+
+\section{Bibliography}
+\label{bib}
+
+Articles and book chapters from the vast literature on Ecclesiastes in
+reception, and in the context of the Writings and wisdom literature
+(so-called), may be recommended and placed on the course website as the
+semester progresses. Students are encouraged to pursue secondary
+literature on their own as well, with an awareness that a good, focussed
+bibliography is an essential component of the exegetical paper. For a
+place to start your research, refer to the detailed bibliographies in
+the back of \cite{Christianson} and \cite{Dell}. You might also see what
+you can find through the following databases:
+
+\begin{itemize}
+\item \href{http://ezproxy.astheology.ns.ca:2048/login?url=http://www.oxfordbibliographies.com/browse?module_0=obo-9780195393361}{Oxford Bibliographies Online: Biblical Studies}
+\item \href{https://search.ebscohost.com/login.aspx?authtype=ip,shib&custid=s5315951&groupid=main&profile=ehost&defaultdb=ota}{Old Testament Abstracts}
+\item \href{https://search.ebscohost.com/login.aspx?authtype=ip,shib&custid=s5315951&groupid=main&profile=ehost&defaultdb=rfh}{ATLA Religion Database (Full Text)}
+\item \href{https://login.proxy1.athensams.net/login?qurl=https%3A%2F%2Fwww.degruyter.com%2F}{EBR: Encyclopedia of the Bible and Its Reception Online} --
+Note: after logging in through OpenAthens, search  "Encyclopedia of the
+Bible and Its Reception Online" in the top right-hand corner search bar
+for access to the database.
+\end{itemize}
+
+\end{document}
