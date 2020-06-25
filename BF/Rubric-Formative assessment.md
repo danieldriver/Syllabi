@@ -33,8 +33,8 @@ Feedback: You are a model for your peers. Outstanding work!
 
 ## Typical Prompt Series for BF 1001
 
-Prompt 1: Genesis 1–11
-Prompt 2: Genesis 12–50
+Prompt 1: Nomenclature
+Prompt 2: Genesis
 Prompt 3: Exodus
 Prompt 4: Leviticus
 Prompt 5: Deuteronomy
@@ -45,6 +45,7 @@ Prompt 9: Isaiah
 Prompt 10: Hosea–Jonah
 Prompt 11: Select Psalms
 Prompt 12: Ecclesiastes
+
 
 ## Reading Prompt assignment for BF 1001 as of Winter 2020
 
