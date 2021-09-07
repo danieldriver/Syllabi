@@ -1,0 +1,317 @@
+% Copyright (c) 2021 by Daniel R. Driver.
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTeX
+
+\documentclass[titlepage]{article}
+
+% This document presumes a file structure and set of inputs that are
+% available at: git@github.com:danieldriver/syllabi.git
+
+\newcommand\policy{../policy}
+\newcommand\incl{../includes}
+\input{\incl/variables}
+
+%\onlinetrue % \Int{true}{false}
+\coursecode[1.0]{HB 3117(Hyb)}
+\coursetitle[Hebrew Bible]{Creation and Canon}
+
+% Taught as HB 3117 in:
+%   - Fall 2021 (Hyb)
+
+\professor{Daniel R. Driver}
+\phone{902-425-7051}
+\email{ddriver@astheology.ns.ca}
+\officehours[Microsoft Teams]{Tuesdays, 1:00--3:00 \PM}
+
+\semester{Fall Term 2021}
+\meets{Mondays}% \meets{on}{at}{in}
+      {4:00--6:30 \PM}% if online, it prints "From 9:00 AM"
+      {Classroom 3/Teams}% if online, it prints "Brightspace" with link
+\website{danieldriver.com}
+\cdescription[RM 1000 or GTRS 6000; BF 1001]{% copy from the current Academic Calendar; [] for prereqs
+	A study of creation across the Christian Bible, with particular
+	focus on the HB/OT, this course will explore why the topic of
+	creation has been sidelined in biblical studies and biblical
+	theology, and how, thanks in part to the ecological crisis, it is
+	getting new attention. Major headings in the course are creation,
+	counter-creation, de-creation, and re-creation. Minor themes include
+	sabbath, sea monsters, land, city, wisdom, and praise.
+}% end of course description
+\objectives{% recall Bloom's taxonomy: https://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy/
+	By the end of the course students should be able to articulate a theology of creation.
+	In particular, they should be able to:
+		understand a variety of methods and approaches to the theme;
+		analyze a proposal stipulating rules for Christian speech about creation;
+		identify a number of primary texts, both inside and outside the Bible;
+		contextualize and discuss many of those texts informally;
+		name and evaluate with ecumenical sensitivity a range of scholarly interprations, including by Jews, Christians, and others;
+		formally exegete at least one biblical creation text;
+		begin to construct, or to know how to begin to construct, a more complete biblical theology of creation.
+}% end of learning objectives
+
+\input{\incl/preamble}
+
+\begin{document}
+\input{\incl/title}
+
+  \section{Learning Objectives}
+  \label{objectives}
+
+  \edobject
+
+\section{Required Texts \& Materials}
+\label{texts}
+
+The following texts are required. Students are strongly encouraged to
+purchase their own copies. Library copies that are not reference works
+will be placed on a 2-hour reserve.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Levenson}% use the longest item in the bibliography
+
+	\bibitem[NRSV]{nrsv} M.\,D. Coogan, ed.
+    \emph{New Oxford Annotated Bible with Apocrypha: NRSV}. 5th ed.
+    Oxford: Oxford University Press, 2018.
+    ISBN 978-0190276072.
+
+	\bibitem[Myths]{myths} Stephanie Dalley, ed.
+	\emph{Myths from Mesopotamia: Creation, The Flood, Gilgamesh, and Others}. Rev. ed.
+	Oxford: Oxford University Press, 2000.
+	ISBN: 978-0199538362.
+
+	\bibitem[Levenson]{jl} Jon D. Levenson.
+	\emph{Creation and the Persistence of Evil: The Jewish Drama of Divine Omnipotence}.
+	Princeton: Princeton University Press, 1988 (repr. 1994).
+	ISBN: 978-0691029504.
+
+	\bibitem[Tanner]{kt} Kathryn Tanner.
+	\emph{God and Creation in Christian Theology: Tyranny or Empowerment?}
+	Oxford: Basil Blackwell, 1988 (repr. Minneapolis: Fortress Press, 2005).
+	ISBN: 978-0800637378.
+
+\end{thebibliography}
+\endgroup
+
+The NJPS is a good alternative study Bible: Adele Berlin and Marc Zvi
+Brettler, eds., \emph{The Jewish Study Bible: Second Edition} (Oxford:
+Oxford University Press, 2014). \href{https://danieldriver.com/courses/hb-3117/}{See
+my website for links to required and recommended books, and a discussion
+of options for a Bible.}
+
+\section{Supplementary Texts}
+\label{supplementary}
+
+Supplementary readings will be recommended throughout the semester and
+may be placed on reserve or made available through the course website.
+
+The following titles are especially worth owning and consulting.
+\cite{ed} explores the theology and ethics of land use. \cite{ms}
+develops a suggestive reading of Genesis 1 within a comparative
+framework. We will read excerpts from both books. Beyond the course
+theme, \cite{rlgs} contains sound advice on core skills like reading
+religious texts, writing essays and reviews, revising essays, making
+oral presentations, and learning languages. Finally, \cite{sbl2} will
+help you format your papers appropriately.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Making Sense}% use the longest item in the bibliography
+
+	\bibitem[Davis]{ed} Ellen F. Davis.
+	\emph{Scripture, Culture, and Agriculture: An Agrarian Reading of the Bible}.
+	New York: Cambridge University Press, 2009.
+	ISBN: 978-0521732239.
+
+	\bibitem[Smith]{ms} Mark S. Smith.
+	\emph{The Priestly Vision of Genesis 1}.
+	Minneapolis: Fortress, 2010.
+	ISBN: 978-0800663735.
+
+	\bibitem[Making Sense]{rlgs} Northey, Margot, Bradford A. Anderson, and Joel N. Lohr.
+	\emph{Making Sense in Religious Studies: A Student's Guide to Research and Writing}.
+	3rd ed. Toronto: Oxford University Press, 2019. ISBN 978-0199026838.
+
+	\bibitem[SBL2]{sbl2} Collins, Billie Jean, et al.
+	\emph{The SBL Handbook of Style}.
+	2nd ed. Atlanta: SBL Press, 2014. ISBN 978-1589839649.
+	Designed to augment \href{http://www.chicagomanualofstyle.org/home.html}{\emph{Chicago Style}}
+	(the standard at AST), there is also a free
+	\href{https://www.sbl-site.org/assets/pdfs/pubs/SBLHSsupp2015-02.pdf}{Student Supplement for SBL2}.
+
+\end{thebibliography}
+\endgroup
+
+
+\section{Course Outline}
+\label{outline}
+
+We will adhere to the schedule in \autoref{schedule} as closely as
+possible, though the professor reserves the right to adjust it to suit
+the needs of the class.
+
+\newcommand\HBFB[1]{\cite[#1]{hbfb}}
+
+\setcolumncount{4}% set up \sessioncount, \unit{}, \noclass{}, and \reminder{memo}{date} macros
+\begin{table}[htbp]% set to `p' to put the schedule on its own page
+  \centering
+  \begin{tabular}{>{\sessioncount.}r@{ }llr}% make sure the column config agrees with \setcolumncount
+	\toprule
+	\sessionskip{\textbf{\S}.}&\textbf{Primary}&\textbf{Secondary}&\textbf{Due}\\
+	\midrule
+
+	\unit{Creation} \\
+
+		& Genesis 1--2         &                            & 13 Sep. \\
+		& Psalms 8; 19; 104    & \cite[chs 1--2]{kt}        & 20 Sep. \\
+		& Prov 8; Wis of Sol 6 & \cite[chs 3--end]{kt}      & 27 Sep. \\
+		& Isaiah 40--55        & \cite[ch 1]{ms}            &  4 Oct. \\
+	\noclass{Thanksgiving}                                  & 11 Oct. \\
+	\noclass{Reading Week}                                  & 18 Oct. \\
+	\reminder{A first short paper is \textbf{due} by the end of week five}{} \\ [1ex]% NB I moved this back from wk 6 to wk 5 because of the unusual two week break in F21. Perhaps move back to wk 6 next time.
+
+	\unit{Counter-Creation} \\
+
+		& Genesis 3--5         & \cite[chs 1--4]{jl}        & 25 Oct. \\
+		& \cite[pp 1--153]{myths}   & \cite[chs 5--9]{jl}   &  1 Nov. \\
+		& \cite[pp 154--315]{myths} & \cite[chs 10--12]{jl} &  8 Nov. \\ [1ex]
+
+	\unit{De-Creation} \\
+
+		& Genesis 6--9         & self-directed              & 15 Nov. \\
+		& Job; Psalms 74; 89   & self-directed              & 22 Nov. \\
+		& Ecclesiastes 1--12   & self-directed              & 29 Nov. \\
+	\reminder{A second short paper is \textbf{due} by the end of week eleven}{} \\ [1ex]
+
+	\unit{Re-Creation} \\
+
+		& Gen 10--14; Exod 1--15; 39--40 & self-directed    &  6 Dec. \\
+		& Psalms 51; 146--150  & \cite[ch 9]{ed}            & 13 Dec. \\ [1ex]
+
+	\reminder{End of Term: Final marks are due for all courses}{16 Dec.} \\
+
+	\bottomrule
+  \end{tabular}
+  \caption{Schedule of Readings}
+  \label{schedule}
+\end{table}
+
+See the AST website for a list of other \href{http://www.astheology.ns.ca/students/academic-dates.html}{important dates}.
+
+\section{Evaluation}
+\label{evaluation}
+
+The grade structure for \ccode has the following elements.
+
+\begin{enumerate}
+
+	\item \textbf{Reading prompts} will be given throughout the
+	semester. They are low-risk writing exercises designed to encourage
+	careful reading of the assigned material, and to help explore its
+	significance. Prompt responses are not marked, though points may be
+	deducted if the exercise is not taken seriously. Prompts will
+	usually be given live, near the beginning of each class. However, we
+	may shift to online submissions if the format seems preferable
+	(depending, in part, on how hybrid engagement works). If the prompts
+	move to online forums, responses should not exceed 300 words.
+
+	\item Two \textbf{short papers} will facilitate student engagement
+	with the art of biblical interpretation. One is keyed to a
+	theological theme, the other to a biblical text. Each should be
+	about 3,000 words in length. The first paper is due at the end of
+	the fifth week of class; the second is due at the end of the
+	eleventh week.
+
+	% I moved the first paper from wk 6 to wk 5 because of the unusual
+	% two-week break in F21. Perhaps move it back to wk 6 next time.
+
+	\begin{enumerate}
+
+		\item A \textbf{theological essay} invites reflection on the
+		parameters for Christian discourse about creation. How can and
+		should we speak of the God of creation? The primary interlocutor
+		for this paper is \cite{kt}. She outlines a number of rules for
+		faithful speech about the transcendence and creative agency of
+		God. Is her thesis persuasive? Is it right? How does it help?
+		What are its limitations? Other sources may be engaged, if
+		desired, but \cite{kt} must be engaged fully.
+
+		You might think of this paper as a \emph{review essay} (note:
+		this is not the same thing as a book report). Devote the first
+		half of the paper to a summary the argument under review. Devote
+		the second half of the paper to critical analysis and evaluation
+		of the same. Be specific. In your analysis, select and discuss
+		concrete examples from the work. Be fair, too, but do not fail
+		to take a position. The paper needs to develop a
+		\textbf{thesis}. See me and \cite[chs 3, 5–7, 11]{rlgs} for
+		guidance.
+
+		\item An \textbf{exegetical essay} provides an opportunity for
+		direct work with the biblical text. The first task is to
+		identify an appropriate text. Select a suitably short passage
+		from the HB/OT. Then, conduct an analysis and explication of it.
+		Interact with the assigned literature and at least five other
+		sources or commentators. (Note that secondary reading from week
+		eight is self-directed; you may also ask for suggestions.)
+		Advance a \textbf{thesis} that relates to the chosen text. See
+		me and \cite[chs 3, 5, 8, 11]{rlgs} for guidance.
+
+	\end{enumerate}
+
+	\item Before the last day of class, each student will upload a brief
+	(5--7 minute) \textbf{video presentation} that summarizes and
+	synthesizes their work in this course. First, by way of
+	\emph{summary}, describe and contextualize the results of your
+	exegetical paper. What text did you select and why? What did you
+	discover about it through research and study? In a single sentence,
+	what was your thesis? Second, by way of \emph{synthesis}, what might
+	your exegetical work contribute to a renewed Christian theology of
+	creation? You may revisit Tanner's argument here, if desired.
+	Alternatively, how might your findings sharpen our understanding of
+	the Bible's creation traditions?
+
+	In essence, in this video you are distilling and representing the
+	introduction and conclusion to your exegetical essay, but with a
+	wider outlook and in a different medium. Elaborate with a view to
+	the broad theme of creation. Answer the question: So what? Videos
+	should be sharable by URL (try YouTube or Vimeo), and posted to
+	Teams for the benefit of the class, to be viewed and discussed
+	asynchronously. Finally, be sure not to exceed the time limit;
+	points will be deducted for overlong submissions. To keep to time
+	you will probably need to edit your video (recommended), or else to
+	plan and rehearse your presentation well enough to capture it in a
+	single take.
+
+\end{enumerate}
+
+The breakdown for the semester's total work is shown in
+\autoref{grade-dist}.
+
+\begin{table}[htbp]
+  \centering
+  {\lining
+  \begin{tabular}{lr}
+    \toprule
+    Reading Prompts    & 20\% \\
+    Review Essay       & 30\% \\
+    Exegetical Essay   & 30\% \\
+    Video Presentation & 20\% \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Distribution of Grades}
+  \label{grade-dist}
+\end{table}
+
+%AST's \href{http://www.astheology.ns.ca/students/resources.html}{Academic
+%Calendar} provides guidelines and detailed criteria for academic
+%assessment. Marks are assigned by letter grade using these benchmarks.
+
+\input{\policy/grades}
+\input{\policy/other}
+
+%\section{Bibliography}
+%\label{bib}
+%
+%Literature on creation is vast. See the professor for suggestions on further reading.
+
+\end{document}
