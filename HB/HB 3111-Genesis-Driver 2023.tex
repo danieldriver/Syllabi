@@ -1,0 +1,409 @@
+% Copyright (c) 2017 by Daniel R. Driver.
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTeX
+
+\documentclass[titlepage]{article}
+
+% This document presumes a file structure and set of inputs that are
+% available at: git@github.com:danieldriver/syllabi.git
+
+\newcommand\policy{../policy}
+\newcommand\incl{../includes}
+\input{\incl/variables}
+
+\coursecode[2.2]{HB 3111}
+\coursetitle[Hebrew Bible]{The Book of Genesis}
+
+% Taught as RLGS 3213 (T&I: Genesis) in:
+%   - Winter 2009
+% Taught similar course BSTH 4403 (TOBITH: Creation and the OT) in:
+%   - Fall 2013 (students dropped until it became a DS with the one left)
+% Taught as HB 3111 in:
+%   - Winter 2017
+%   - Fall 2023
+
+\professor{Daniel R. Driver}
+\phone{902-425-7051}
+\email{daniel.driver@astheology.ns.ca}
+\officehours{Thursdays, 2:00--4:30 \PM}
+
+\semester{Fall 2023}
+\meets{Tuesdays}% \meets{on}{at}{in}
+      {9:00--11:30 \AM}
+      {Flahiff Room/Zoom}
+\website{danieldriver.com}
+\cdescription{% copy from the current Academic Calendar
+	From the creation of the world to the call of Abraham, and from the
+	promise of children to the establishment of the people Israel, the book
+	of Genesis is one of the greatest origin stories ever told. Biblical
+	scholars today write about the “lost world” of Genesis, and so try to
+	account for the genesis of Genesis. There is indeed much to learn about
+	the history behind the Bible's first book. The book has given rise a
+	major history of its own, too, and this history of interpretation has
+	become an area of interest in recent research. The history of the text
+	includes the question of how Genesis relates to the so-called Abrahamic
+	religions, and so the book also invites ecumenical and interreligious
+	study.
+
+	This course will consider multiple approaches to the Book of Genesis. It
+	seeks to integrate what can be known about worlds behind and before the
+	text into a comprehensive theological vision that includes its role as
+	Jewish and Christian scripture, from antiquity down through the present
+	day. Students will have an opportunity to sample ancient and modern
+	interpretations of the book, and to develop their own expositions of it.
+}% end of course description
+\objectives{% recall Bloom's taxonomy: http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy
+	By the end of the course students should be able to:
+		recall and summarize events from the Genesis narratives in detail;
+		characterize literarily the book's main figures;
+		describe major models for the interpretation of Genesis, illustrating their application to particular texts;
+		use and contextualize commentaries on Genesis from a number of different historical eras;
+		reflect on the complex interplay of text, tradition, and interpretation;
+		analyze claims made by different faith communities on the legacy of Abraham;
+		critique specific arguments put forward by scholars about the theological meaning of Genesis;
+		generate questions relevant to the interpretation of short passages from Genesis;
+		construct an original argument in aid of the exposition of short passages from Genesis.
+}% end of learning objectives
+
+\input{\incl/preamble}
+
+\begin{document}
+\input{\incl/title}
+
+\section{Learning Objectives}
+\label{objectives}
+\edobject
+
+\section{Required Texts \& Materials}
+\label{texts}
+
+In addition to the Bible in a modern translation such as the NJPS and
+NRSV, the following text is required. Students are strongly encouraged
+to purchase their own copies. The AST Library copy ({\scshape BS 1235.53
+C36 2022}) will be placed on a 2-hour reserve.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{CCG}% use the longest item in the bibliography
+
+	\bibitem[CCG]{ccg} Arnold, Bill T., ed.
+	\emph{The Cambridge Companion to Genesis}.
+	Cambridge: Cambridge University Press, 2022.
+
+%	\bibitem[NRSV]{nrsv} M.\,D. Coogan, ed.
+%    \emph{New Oxford Annotated Bible with Apocrypha: NRSV}. 4th ed.
+%    Oxford / New York: Oxford University Press, 2010.
+%    \textsc{isbn} 978-0195289602.
+
+%	\bibitem[NJPS]{njps}
+%	Adele Berlin and Marc Zvi Brettler, eds.
+%	\emph{The Jewish Study Bible: Second Edition}.
+%	Oxford / New York: Oxford University Press, 2014.
+%	\textsc{isbn} 978-0199978465.
+
+\end{thebibliography}
+\endgroup
+
+\section{Supplementary Texts}
+\label{supplementary}
+
+Supplementary readings will be recommended throughout the semester.
+Excerpts from this literature may either be placed on reserve or made
+available for download through the course website. Outstanding students
+will also pursue leads on their own, using library databases and
+pursuing notes and bibliographies in the required reading.
+
+\begin{multicols}{3}[Major modern commentaries on Genesis include:]%
+\footnotesize\noindent
+M.\,M. Kalisch (1858)\\
+J.\,P. Lange (ET 1868)\\
+F. Delitzsch (\textsuperscript{5}1899)\\
+A. Dillmann (\textsuperscript{6}1892)\\
+H. Holzinger (1898)\\
+S.\,R. Driver (1904)\\
+J. Skinner (1910, \textsuperscript{2}1930)\\
+H. Gunkel (\textsuperscript{4}1917)\\
+O. Procksch (\textsuperscript{3}1924)\\
+B. Jacob (1934)\\
+A. Richardson (1953)\\
+A. Clamer (1953)\\
+U. Cassuto (1961--64)\\
+E.\,A. Speiser (1964)\\
+W. Zimmerli (\textsuperscript{3}1967, 1976)\\
+D. Kidner (1967)\\
+G. von Rad (ET \textsuperscript{2}1972)\\
+R. Davidson (1973)\\
+C. Westermann (1974)\\
+B. Vawter (1977)\\
+N. Sarna (1989)\\
+H. Seebass (1996--99)\\
+J. Ebach [37--50, HthKAT] (2007)\\
+B. Arnold (2009)\\
+L. Ruppert (1992--2008)\\
+S. Brayford [Septuagint] (2009)\\
+J. Blenkinsopp (2011)\\
+C. Dohmen [1--11] (2017)\\
+J.\,Chr. Gertz [1--11] (2018, \textsuperscript{2}2021)\\
+D. Carr [1--11] (2021)
+\end{multicols}
+
+\begin{multicols}{2}[Commentaries on Genesis in the AST Library include:]%
+\footnotesize\noindent
+Targums: {\scshape BS 709.2 B5 1987 vv. 1A, 1B, 6} (c. 150--?)\\
+Didymus the Blind: {\scshape BS 1235 D4913 2016} (d. 398)\\
+Augustine of Hippo: {\scshape BS 1235 A8413 1991} (d. 430)\\
+Bede, the Venerable: {\scshape BS 1235 B43 2008} (d. 735)\\
+ACCS, Genesis 1--11: {\scshape BS 1235.3 G46 2001}\\
+ACCS, Genesis 12--50: {\scshape BS 1235.53 G46 2002}\\
+RCS, Genesis 1--11: {\scshape BS 1235.53 G455 2012}\\
+Luther, Martin: {\scshape BR 330 E5 1955 vv.1--8} (d. 1546)\\
+Calvin, John: {\scshape BS 1235 C293 1948} (d. 1564)\\
+Patrick, Simon: {\scshape BS 1235 P36 1695}\\
+Henry, Matthew: {\scshape BS 490 H4 1961} (d. 1714)\\
+Hershon, Paul Isaac: {\scshape BS 1235 H47} (1883)\\
+Delitzsch, Franz: {\scshape BS 1235 D4} (1888)\\
+Skinner, John: {\scshape BS 1235 S45 1917, 1963} (1930)\\
+Richardson, Alan: {\scshape BS 1235 R66 1959}\\
+Cassuto, Umberto: {\scshape BS 1235.3 C3} (1961)\\
+Herbert, Arthur: {\scshape BS 1235.3 H4} (1962)\\
+Speiser, E. A.: {\scshape BS 1233 S64 1964}\\
+Kidner, Derek: {\scshape BS 1235.3 K47} (1967)\\
+Rad, Gerhard von: {\scshape BS 1235.3 R3213 1972}\\
+Plaut, Gunther: {\scshape BS 1225.3 P55 v. 1} (1974)\\
+Vawter, Bruce: {\scshape BS 1235.3 V38 1977}\\
+Davidson, Robert: {\scshape BS 1235.3 D3 1973, 1979}\\
+Leibowitz, Nehama: {\scshape BS 1235.3 L413 1981}\\
+Wenham, Gordon : {\scshape BS 491.2 W67 1982}\\
+Brueggemann, Walter: {\scshape BS 1235.3 B78} (1982)\\
+Maher, Michael: {\scshape BS 1235.3 M346 1982}\\
+Westermann, Claus: {\scshape BS 1235.3 W43213 1986, 1987, 1994}\\
+Sarna, Nahum: {\scshape BS 1235.3 S325 1989}\\
+Hamilton, Victor: {\scshape BS 1235.3 H32 1990, 1995}\\
+Scullion, John: {\scshape BS 1235.3 S37 1992}\\
+Fox, Everett: {\scshape BS 1223 A3 F68 1995}\\
+Hamilton, Victor: {\scshape BS 1235.3 H323 1995}\\
+Hartley, John: {\scshape BS 1235.3 H37 2000}\\
+Towner, Sibley: {\scshape BS 1235.3 T69 2001}\\
+Walton, John: {\scshape BS 1235.53 W35 2001}\\
+Cotter, David: {\scshape BS 1235.52 C68 2003}\\
+Briscoe, Stuart: {\scshape BS 1151.2 C66 2004}\\
+McKeown, James: {\scshape BS 1235.53 M35 2008}\\
+Arnold, Bill: {\scshape BS 1235.53 A76 2009}\\
+Goldingay, John: {\scshape BS 1235.53 G65 2010}\\
+Reno, Russell: {\scshape BS 1235.53 R46 2010}\\
+Cook, Joan: {\scshape BS 1235.53 C66 2011}\\
+De La Torre, Miguel: {\scshape BS 1235.53 D4 2011}\\
+Coleson, Joseph: {\scshape BS 1235.53 C64 2012}\\
+Longman, Tremper: {\scshape BS 1235.53 L66 2016}
+\end{multicols}
+
+Also, the following basic works are also worth consulting and even owning.
+\cite{rlgs} in particular contains sound advice on core skills like
+reading religious texts, writing essays and reviews, revising essays,
+making oral presentations, and learning languages.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Making}% use the longest item in the bibliography
+
+	\bibitem[Making]{rlgs} Northey, Margot, Bradford A. Anderson, and Joel N. Lohr.
+	\emph{Making Sense in Religious Studies: A Student's Guide to Research and Writing}.
+	3rd ed. Toronto: Oxford University Press, 2019. AST Library: Reference BL 41 N67 2019.
+
+	\bibitem[SBL2]{sbl2} Collins, Billie Jean, et al.
+	\emph{The SBL Handbook of Style}.
+	2nd ed. Atlanta: SBL Press, 2014.
+	Designed to augment \href{https://proxy.openathens.net/login?qurl=https%3A%2F%2Fwww.chicagomanualofstyle.org%2Fbook%2Fed17%2Ffrontmatter%2Ftoc.html}{\emph{Chicago Style}}
+	(the standard at AST), there is also a free
+	\href{https://www.sbl-site.org/assets/pdfs/pubs/SBLHSsupp2015-02.pdf}{Student Supplement for SBL2}. AST Library: Reference PN 147 S26 2014.
+
+\end{thebibliography}
+\endgroup
+
+\section{Course Outline}
+\label{outline}
+
+We will adhere to the schedule in \autoref{schedule} as closely as
+possible, though the professor reserves the right to adjust it to suit
+the needs of the class.
+
+\setcolumncount{4}% set up \sessioncount, \unit{}, \noclass{}, and \reminder{memo}{date} macros
+\begin{table}[htbp]% set to `p' to put the schedule on its own page
+  \centering
+  \begin{tabular}{>{\sessioncount.}r@{ }llr}% make sure the column config agrees with \setcolumncount
+	\toprule
+	\sessionskip{\textbf{\S}.}&\textbf{Primary}&\textbf{Secondary}&\textbf{Date}\\
+	\midrule
+
+	\unit{Primeval History} \\
+		& Genesis 1      & Course syllabus                  & 12 Sep. \\
+		& Genesis 2--3   & Arnold, Strawn \cite[1, 10]{ccg} & 19 Sep. \\
+		& Genesis 4--9   & Ska, Gertz \cite[2, 3]{ccg}      & 26 Sep. \\
+		& Genesis 10--11 & Levin, Bauks \cite[4, 5]{ccg}    &  3 Oct. \\ [1ex]
+
+	\unit{Ancestral Narratives} \\
+		& Genesis 12--15 & Mandell, Walton \cite[6, 7]{ccg} & 10 Oct. \\
+		& Genesis 16--20 & van der Meer \cite[11]{ccg}      & 17 Oct. \\
+	\noclass{Reading Week (Tuesday to Friday)}              & 24--27 Oct. \\
+	\reminder{Review essay is \textbf{due before} the seventh week of class}{27 Oct.} \\
+		& Genesis 21--25 & Gould, Aquino \cite[13, 14]{ccg} & 31 Oct. \\
+		& Genesis 26--30 & Steinberg \cite[8]{ccg}          &  7 Nov. \\
+		& Genesis 31--36 & Shectman \cite[9]{ccg}           & 14 Nov. \\ [1ex]
+
+	\unit{The Joseph Story} \\
+		& Genesis 37--41 & Otto \cite[12]{ccg}              & 21 Nov. \\
+		& Genesis 42--45 & Kaminsky \cite[15]{ccg}          & 28 Nov. \\
+	\reminder{Exegetical essay is \textbf{due before} the twelfth week of class}{1 Dec.} \\
+		& Genesis 46--50 & Provan \cite[16]{ccg}            &  5 Dec. \\
+
+	\reminder{End of Term: Final marks are due for all courses}{14 Dec.} \\
+
+	\bottomrule
+  \end{tabular}
+  \caption{Schedule of Readings}
+  \label{schedule}
+\end{table}
+
+See the AST website for a list of other \href{http://www.astheology.ns.ca/students/academic-dates.html}{important dates}.
+
+\section{Evaluation and Grade Structure}
+\label{evaluation}
+
+\begin{enumerate}
+
+	\item \textbf{Notes and quotes} will be solicited from students at the
+	start of each class. These are to be drawn from the primary and
+	secondary readings assigned for each week. What do you note about
+	Genesis on this occasion? What words, phrases, or verses stand out to
+	you from your translation? Why so? Also, what ideas or formulations
+	strike you from the contributors to \cite{ccg}? Are they useful to you
+	as experts and “companions”? How do their discussions seem to help or
+	impede your reading of Genesis?
+
+	\item Student input in \textbf{seminar discussions} will be evaluated on
+	the basis of two elements.
+
+	\begin{enumerate}
+
+		\item Students will select a commentator or major version for a
+		period of 3--5 weeks, during which time they are responsible to
+		report on it in class and bring its insight to bear on the seminar
+		discussions. Recognizing that everyone will be working with
+		different resources from the exegetical tradition, come prepared
+		each week to be the resident expert on your particular commentary.
+
+		\item Twice in the term, students will lead 20-minute seminars on
+		single chapters from the book of Genesis. They should take the lead
+		by briefly outlining the chapter in question, situating it relative
+		to the rest of Genesis, and reporting on their research into part of
+		that chapter. Then, in the balance of the time, they should helping
+		the class elaborate, reflect on, test, challenge, or extend a
+		central idea or two. Students are encouraged to align at least one
+		of their seminar texts with their work on their exegetical paper.
+
+	\end{enumerate}
+
+	\item Two \textbf{papers} will facilitate student engagement with the
+	art of biblical interpretation. One is keyed to the critical analysis of
+	a work of post-biblical interpretation, the other to the exposition of a
+	short biblical text.
+
+	\begin{enumerate}
+
+		\item A \textbf{review essay} invites student reflection on a model
+		work of biblical interpretation. Some pre-approved options are
+		listed as further readings in \autoref{bib}. Alternatively, you may
+		propose a different title to the professor, subject to approval. The
+		review essay should be \textbf{3,000 words} in length.
+
+		Note that a review is not the same thing as a report. Devote the
+		first half of the paper to a summary the interpretation or argument
+		under review. Devote the second half of the paper to critical
+		analysis and evaluation of your chosen example. Be fair, but do not
+		fail to take a position. The paper needs to develop a
+		\textbf{thesis}. See me and \cite[chs 3, 5–7, 11]{rlgs} for
+		guidance.
+
+		\item An \textbf{exegetical essay} provides an opportunity for
+		direct work with the biblical text. The first task is to identify an
+		appropriate text. Select a suitably short passage from Genesis.
+		Then, conduct an analysis and explication of it. Interact with at
+		least five sources and commentators. Advance a \textbf{thesis} that
+		relates to the text itself. The exegetical essay should be
+		\textbf{4,000 words} in length. See me and \cite[chs 3, 5, 8,
+		11]{rlgs} for guidance.
+
+	\end{enumerate}
+
+\end{enumerate}
+
+The breakdown for the semester's total work is shown in
+\autoref{grade-dist}.
+
+\begin{table}[htbp]
+  \centering
+  {\lining
+  \begin{tabular}{lr}
+    \toprule
+    Notes \& Quotes     & 10\% \\
+    Seminar Discussions & 20\% \\
+    Review Essay        & 30\% \\
+    Exegetical Essay    & 40\% \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Distribution of Grades}
+  \label{grade-dist}
+\end{table}
+
+\input{\policy/grades}
+\input{\policy/other}
+
+\section{Selected Bibliography}
+\label{bib}
+
+Literature on Genesis is vast. The few works listed here have been selected
+for clarity, insight, and/or theological alertness. They are eligible as
+selections for review essays.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{99}
+
+\bibitem{ca18} Allert, Craig D. \emph{Early Christian Readings of Genesis One: Patristic Exegesis and Literal Interpretation}. Downers Grove, IL: IVP Academic, 2018.
+
+\bibitem{ra81} Alter, Robert. \emph{The Art of Biblical Narrative}. New York: Basic Books, 1981.
+
+\bibitem{ga01} Anderson, Gary A. \emph{The Genesis of Perfection: Adam and Eve in Jewish and Christian Imagination}. Louisville: Westminster John Knox, 2001.
+
+\bibitem{ed09} Davis, Ellen F. \emph{Scripture, Culture, and Agriculture: An Agrarian Reading of the Bible}. New York: Cambridge University Press, 2009.
+
+\bibitem{es90} Ephrem the Syrian. \emph{Hymns on Paradise}. Translated by Sebastian Brock. Popular Patristics Series 10. Crestwood, NY: St Vladimir’s Seminary Press, 1990.
+
+\bibitem{hg64} Gunkel, Hermann. \emph{The Legends of Genesis: The Biblical Saga and History}. Translated by W.\,H. Carruth. New York: Schocken, 1964.
+
+%\bibitem{rh13} Hendel, Ronald S. \emph{The Book of Genesis: A Biography}. Princeton: Princeton University Press, 2013.
+
+\bibitem{jl12} Levenson, Jon D. \emph{Inheriting Abraham: The Legacy of the Patriarch in Judaism, Christianity, and Islam}. Princeton: Princeton University Press, 2012.
+
+\bibitem{wm92} Moberly, R. W. L. \emph{The Theology of the Book of Genesis}. Cambridge: Cambridge University Press, 2009.
+
+\bibitem{ip16} Provan, Iain. \emph{Discovering Genesis: Content, Interpretation, Reception}. Grand Rapids: Eerdmans, 2016.
+
+\bibitem{ts08} Schneider, Tammi J. \emph{Mothers of Promise: Women in the Book of Genesis}. Grand Rapids: Baker Academic, 2008.
+
+\bibitem{ms90} Smith, Mark S. \emph{The Priestly Vision of Genesis 1}. Minneapolis: Fortress, 2010.
+
+\bibitem{pt84} Trible, Phyllis. \emph{Texts of Terror: Literary-Feminist Readings of Biblical Narratives}. Overtures to Biblical Theology. Philadelphia: Fortress, 1984.
+
+\end{thebibliography}
+\endgroup
+
+For additional literature, I recommend exploring \href{https://go.openathens.net/redirector/astheology.ns.ca?url=https://www.oxfordbibliographies.com/obo/page/biblical-studies}{Oxford Bibliographies: Biblical Studies (Full Text)}.
+You can access the database automatically while on campus or remotely
+with OpenAthens credentials. Numerous articles by subject-area
+specialists appear under such headings as: Ancient Near East; Bible;
+Early Christianity; Greco-Roman World; Hebrew Bible; New Testament;
+Rabbinic Judaism; Second Temple Judaism. For \ccode, see especially
+\href{https://go.openathens.net/redirector/astheology.ns.ca?url=https://www.oxfordbibliographies.com/view/document/obo-9780195393361/obo-9780195393361-0044.xml}{Victor H. Matthews, “Book of Genesis,”} doi: 10.1093/OBO/9780195393361-0044.
+
+\end{document}
