@@ -1,0 +1,645 @@
+% Copyright (c) 2024 by Daniel R. Driver.
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTeX
+
+\documentclass[titlepage]{article}
+
+% This document presumes a file structure and set of inputs that are
+% available at: git@github.com:danieldriver/syllabi.git
+
+\newcommand\policy{../policy}
+\newcommand\incl{../includes}
+\input{\incl/variables}
+
+%\onlinetrue % \Int{true}{false}
+%\UGtrue % \UG{true}{false} terms for undergraduate students
+\coursecode[4.1]{BF 1001\UG{-UG}{}}
+\coursetitle[Biblical Foundations]{Hebrew Bible/Old Testament}
+
+% Taught as RLGS 1013 in:
+%   - Fall 2008
+%   - Winter 2009
+%   - Fall 2009
+%   - Winter 2010
+%   - Fall 2010
+%   - Winter 2011 (Fall 2011 was covered by Joel Lohr in a course release)
+%   - Winter 2012
+%   - Fall 2012
+%   - Winter 2013
+% Taught as BSTH 1013 in:
+%   - Fall 2013
+%   - Winter 2014
+%   - Fall 2014
+%   - Winter 2015
+%   - Fall 2015
+%   - Winter 2016
+% Taught as BF 1001 in:
+%   - Fall 2016
+%   - Fall 2017
+%   - Fall 2017(Int - online section run parallel to campus course)
+%   - Fall 2018
+%   - Winter 2020(Int) - Nate Wall helped as TA
+%   - Fall 2020 - not scheduled Int, but driven online by Covid-19
+%   - Fall 2021(Int)
+%   - Fall 2022(Int) - run in parallel as DTS 2000: Intro to the Old Testament
+%   - Fall 2023 - Version 4.0/-UG; back to campus (only); only text: NJPS Study Bible
+%   - Fall 2024 - Version 4.1/-UG; hybrid; added textbook: Davis 2019
+
+
+\professor{Daniel R. Driver}
+\phone{902-425-7051}
+\email{daniel.driver@astheology.ns.ca}
+\officehours{Mondays, 1:00--3:00 \PM}
+
+\semester{Fall 2024}
+\meets{Mondays}% \meets{on}{at}{in} - on could be: \Int{Mondays}{Thursdays}
+      {10:00 \AM--12:30 \PM}% if online, it prints "From 9:00 AM"
+      {Flahiff Room}% if online, it prints "Brightspace" with link
+\website{danieldriver.com}
+\cdescription[none. The course is required for 3000-level courses in HB]{% copy from the current Academic Calendar; [] for prereqs
+	The First Testament of Christian Scripture is a fundamental part of
+	Christian tradition and durable rule of faith and practice. Students in
+	this course will be introduced to historical and literary data important
+	for understanding the origins of the Hebrew Bible/Old Testament and its
+	subsequent function as scripture in a variety of contexts. The outlook
+	will be broadly ecumenical, with case studies that exemplify Jewish and
+	Christian interpretation.
+
+	The broad sweep of biblical tradition will be presented through a survey
+	of representative books from the Law, the Prophets, and the Writings. To
+	help foster an ecumenical outlook, primary readings from the Bible will
+	be supplemented by illustrative commentary from various biblical
+	interpreters. Students will develop their exegetical skills by studying
+	these examples, and so learn to appreciate the diverse canonical,
+	cultural, hermeneutical, historical, literary, and theological elements
+	involved in the art of biblical interpretation.
+}% end of course description
+\objectives{% recall Bloom's taxonomy: http://www.celt.iastate.edu/teaching/RevisedBlooms1.html
+	By the end of the course students should be able to:
+		name major Old Testament people and events;
+		locate a few important biblical sites on a map;
+		give key dates for Israel's history and summarize the succession of superpowers in the ancient Near Eastern political theatre from Egypt to Greece;
+		recognize and cite examples of most genres of biblical literature;
+		defend a decision to pronounce or circumlocute the Divine Name;
+		understand the general shape of the Masoretic Text tradition and differentiate it from other canonical orders;
+		report on parallel and divergent material across the Law and the Prophets;
+		classify and begin to evaluate a variety of ancient and modern approaches to the Bible.
+
+	Students should also be able to identify settings in which the
+	Scriptures of Israel are read (notably the synagogue, church, and
+	academy), employ terminology appropriate to these communities, recognize
+	where their own biographies place them in relation to the Hebrew
+	Bible/Old Testament and its uses, and monitor and test their individual
+	attitudes and assumptions. They should be able to extend their awareness
+	of the Bible's contemporary readers to the Bible's long history of
+	reception. Finally, students should begin to infer what Jesus meant in
+	speaking of “the law of Moses, the prophets, and the psalms” (Luke
+	24:44), and so learn to hear claims about New Testament fulfilment of
+	scripture in light of the unique voice that the Old Testament retains
+	along side of the New in Christian Scripture.
+}% end of learning objectives
+
+\input{\incl/preamble}
+
+\begin{document}
+\input{\incl/title}
+
+  \section{Learning Objectives}
+  \label{objectives}
+
+  \edobject
+
+\section{Required Texts \& Materials}
+\label{texts}
+
+The following \textbf{primary text} is required. All students should have their own copies.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{NJPS}% use the longest item in the bibliography
+
+	\bibitem[NJPS]{njps} Berlin, Adele, and Marc Zvi Brettler, eds.
+    \emph{The Jewish Study Bible: Jewish Publication Society Tanakh Translation}.
+    2nd ed. Oxford: Oxford University Press, 2014.
+    % ISBN 978-0199978465.
+     A non-circulating reference copy is held in the AST Library: Ref BS 895.J4 2014.
+
+\end{thebibliography}
+\endgroup
+
+Alternatively, for an ecumenical study Bible with a gender-inclusive
+translation of the full Christian Bible, see Michael D. Coogan, ed.,
+\emph{The New Oxford Annotated Bible: New Revised Standard Version with
+the Apocrypha}, 5th ed. (Oxford: Oxford University Press, 2018).
+% ISBN 978-0190276072.
+
+\UG{}{%
+For graduate students, the following \textbf{secondary text} is also required.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{NJPS}% use the longest item in the bibliography
+
+	\bibitem[Davis]{ed19} Davis, Ellen F.
+	\emph{Opening Israel's Scriptures}.
+	New York: Oxford University Press, 2019.
+	An AST Library e-book (single user license) is \href{https://doi.org/10.1093/oso/9780190260545.001.0001}{available online}.
+
+\end{thebibliography}
+\endgroup%
+}
+
+\section{Supplementary Texts}
+\label{supplementary}
+
+Supplementary readings will be recommended throughout the semester and
+either placed on reserve or made available through the course website.
+Please give this material good effort and attention. Some of this
+material is listed in the bibliography below, in \autoref{bib}. 
+
+\UG{%
+The following \textbf{secondary text} is recommended but, for undergraduates, not required.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Irenaeus}% use the longest item in the bibliography
+
+	\bibitem[Davis]{ed19} Davis, Ellen F.
+	\emph{Opening Israel's Scriptures}.
+	New York: Oxford University Press, 2019.
+	An AST Library e-book (single user license) is \href{https://doi.org/10.1093/oso/9780190260545.001.0001}{available online}.
+
+\end{thebibliography}
+\endgroup%
+}{}
+
+The professor especially recommends two titles as profound but
+accessible, pocket-sized exemplars of Jewish and Christian interpretive
+traditions. Both titles will be referenced in the course. They repay
+careful reading and are worth adding to your personal libraries.
+
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Irenaeus}% use the longest item in the bibliography
+
+	\bibitem[Heschel]{Heschel} Heschel, Abraham Joshua.
+	\emph{The Sabbath: Its Meaning for Modern Man}.
+	New York: Farrar, Straus and Giroux, 1951.
+
+	\bibitem[Irenaeus]{Irenaeus} Irenaeus of Lyons.
+	\emph{On the Apostolic Preaching}. Translated by John Behr. Popular Patristics Series 17.
+	St Vladimir’s Seminary Press, 1997.
+
+
+\end{thebibliography}
+\endgroup
+
+Also, the following basic works are worth consulting and even owning.
+\cite{rlgs} in particular contains sound advice on core skills like
+reading religious texts, writing essays and reviews, revising essays,
+making oral presentations, and learning languages.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Irenaeus}% use the longest item in the bibliography
+
+	\bibitem[Making]{rlgs} Northey, Margot, Bradford A. Anderson, and Joel N. Lohr.
+	\emph{Making Sense in Religious Studies: A Student's Guide to Research and Writing}.
+	3rd ed. Toronto: Oxford University Press, 2019. AST Library: Ref BL 41.N67 2019.
+
+	\bibitem[SBL2]{sbl2} Collins, Billie Jean, et al.
+	\emph{The SBL Handbook of Style}.
+	2nd ed. Atlanta: SBL Press, 2014.
+	Designed to augment \href{https://proxy.openathens.net/login?qurl=https%3A%2F%2Fwww.chicagomanualofstyle.org%2Fbook%2Fed17%2Ffrontmatter%2Ftoc.html}{\emph{Chicago Style}}
+	(the standard at AST), there is also a free
+	\href{https://www.sbl-site.org/assets/pdfs/pubs/SBLHSsupp2015-02.pdf}{Student Supplement for SBL2}. AST Library: Ref PN 147.S26 2014.
+
+\end{thebibliography}
+\endgroup
+
+
+\section{Course Outline}
+\label{outline}
+
+We will adhere to the schedule in \autoref{schedule} as closely as
+possible, though the professor reserves the right to adjust it to suit
+the needs of the class.
+
+\setcolumncount{5}% set up \sessioncount, \unit{}, \noclass{}, and \reminder{memo}{date} macros
+\begin{table}[htbp]% set to `p' to put the schedule on its own page
+  \centering
+  \begin{tabular}{>{\sessioncount.}r@{ }lllr}% make sure the column config agrees with \setcolumncount
+	\toprule
+	\sessionskip{\textbf{\S}.}&\textbf{Primary reading}&\textbf{Focal texts}&\textbf{Secondary}&\textbf{Due}\\
+	\midrule
+
+	\unit{Law / Torah / Pentateuch} \\
+
+		& Gen 1--11              & Gen 1; 9          & Syllabus            &  9 Sep. \\
+		& Gen 12--36             & Gen 12; 22        & \cite[ch. 1]{ed19}  & 16 Sep. \\
+		& Exod 1--18             & Exod 3; 16        & \cite[ch. 2a]{ed19} & 23 Sep. \\
+		& Exod 19--34            & Exod 20--21; 34   & \cite[ch. 2b]{ed19} & 30 Sep. \\
+	\noclass{Nat'l Day for T\&R (self-study of Sinai covenant)}            & 30 Sep. \\
+	    & Lev 1--16; 25--26      & Lev 10; 26        & \cite[ch. 3]{ed19}  &  7 Oct. \\
+	\noclass{Thanksgiving (but meet Mon of Reading Week)}                  & 14 Oct. \\
+%	\noclass{Reading Week from Tuesday to Friday}                          & 22--25 Oct. \\
+%	\reminder{A short paper is \textbf{due} before the \textbf{sixth week} of class}{17 Oct.} \\% Have moved btw wks 5 and 6 depending on how holidays (eg, Thanksgiving Monday) impact the schedule
+		& Deut 1--26; 34         & Deut 5; 16; 34       & \cite[ch. 5]{ed19}  & 21 Oct. \\ [1ex]
+
+	\unit{Prophets: Former \textit{\&} Latter} \\
+
+		& \multicolumn{2}{@{}l}{Josh 1--12; 23--24; Judg 1--8; 13--16; 19--21} & \cite[ch. 6--7]{ed19} & 28 Oct. \\
+		& Ruth 1--4; 1 Sam 1--31 & 1 Sam 2; 8        & \cite[ch. 8]{ed19}  &  4 Nov. \\
+	\noclass{Remembrance Day}                                              & 11 Nov. \\
+		& 2 Sam 1--1 Kgs 12      & 2 Sam 7; 1 Kgs 11 & \cite[ch. 9]{ed19}  & 18 Nov. \\
+		& Hos 1--Jonah 4         & Hos 8; Joel 2     & \cite[ch. 10]{ed19} & 25 Nov. \\ [1ex]
+
+	\unit{Writings: Wisdom \textit{\&} Praise} \\
+
+%	\reminder{A short paper is \textbf{due} before the \textbf{twelfth week} of class}{5 Dec.} \\% NB Moved back from wk 11 to wk 10 because of the nearness of the last day of class in F22. Perhaps move back to wk 11 in future.
+		& \multicolumn{2}{@{}l}{Pss 1--8; 51--60; 89--90; 104--6; 146--50} & \cite[ch. 14]{ed19} &  2 Dec. \\
+		& Prov 1--9; Eccl 1--12   & Prov 8; Eccl 4 & \cite[ch. 15]{ed19} &  9 Dec. \\
+%		& Ecclesiastes         & Dell \cite{kd13} or  &  7 Dec. \\ [1ex]
+
+	\reminder{End of Term: Final marks are due for all courses}{13 Dec.} \\
+
+	\bottomrule
+  \end{tabular}
+  \caption{Schedule of Readings}
+  \label{schedule}
+\end{table}
+
+See the AST website for a list of other \href{https://www.astheology.ns.ca/students/index.html}{important dates}.
+
+\section{Evaluation}
+\label{evaluation}
+
+The grade structure for \ccode has the following elements.
+
+\begin{enumerate}
+
+	\item \textbf{Notes and quotes} will be solicited from students at
+	the start of each class. These are to be drawn from the primary
+	reading \cite{njps}. What do you note about the material on this
+	occasion? What words, phrases, or verses stand out to you? Pay
+	attention to things you notice from a survey of large sections of
+	the Bible. Stay alert, too, to details that strike you from this
+	English translation of the Masoretic text. Make notes as you read.
+	Come prepared to share highlights with the class.
+	
+	\item Two \textbf{reflection papers} give students an opportunity to
+	consider their relationship to the Scriptures of Israel and to
+	reflect on its development over the course. Each of these papers is
+	to be about \UG{1,000}{1,500} words long, including any footnotes. The
+	first paper is due before the third class; the second paper is due
+	before the final class.
+	
+	\begin{enumerate}
+
+		\item Before the third class, answer the following question:
+		\emph{What does my tradition tell me about the Scriptures of
+		Israel?} To start, identify a tradition that broadly informs
+		your thinking about the Tanakh/OT/HB. Our traditions are often
+		multiple, but for the purposes of this assignment, select one
+		that is, for you, especially relevant, dominant, or in need of
+		investigation. Then, summarize what your tradition says. Focus
+		on official statements, where available. You may review informal
+		attitudes, too, but keep to things that are identifiable with a
+		tradition (not too personal, in other words). Students
+		associated with AST's founding parties should consider sources
+		like: the Catechism of the Catholic Church; the Thirty-nine
+		Articles of Religion; the four subordinate standards of the
+		UCCan. Students with other religious affiliation, or with none,
+		should consider what pertains to them. (Anglo-American celebrity
+		atheists embody a tradition, too, for example.)
+
+		\item Before the final class, answer the following question:
+		\emph{What would I like to say to my tradition about the
+		Scriptures of Israel?} Revisit your first reflection paper and
+		the tradition you identified at the start of the term. Then, as
+		you think about what you might want to affirm, critique, or
+		reform in that tradition, reflect on what we have studied. Based
+		on what you have learned, what is something you would say about
+		the Tanakh/OT/HB to others today who are shaped by your
+		tradition? If desired, you may craft this paper as an open
+		letter to a peer (someone like you before this course) or an
+		authority (an offical leader or public figure). In your
+		discussion, incorporate at least two good examples from the
+		Bible. Whether you make points broad or narrow, be sure to cite
+		chapter and verse.
+
+	\end{enumerate}
+
+%	\item \textbf{Writing prompts} will be given throughout the
+%	semester. They are low-risk writing exercises designed to encourage
+%	careful reading of the assigned material, and to help explore its
+%	significance. Individual posts are not marked, though points may be
+%	deducted from your final grade if the exercise is not taken
+%	seriously. Prompt responses submitted online should be around 250
+%	words long, and should not exceed 300 words. Try to post the in the
+%	morning of class days, after you do the reading but before you
+%	listen to the lecture. You are invited (but not strictly required)
+%	to respond to and interact with classmates on the forums through the
+%	rest of the day.
+
+	\item Two \textbf{exegetical papers} facilitate direct work with the
+	biblical text as students practice the art of biblical
+	interpretation. Each of these papers should focus on one narrow
+	passage and be about \UG{2,000}{3,000} words long, including any
+	footnotes. The professor encourages, but does not require, the
+	selection of shorter passages from within the focal chapters listed
+	in the course outline (\autoref{schedule}). The first paper is due
+	before the sixth class; the second paper is due before the eleventh
+	class.
+
+	% Deadlines have sometimes been wks 6 and 11 or else wks 5 and 10
+	% depending on scheduling issues. Make sure that what is stated here
+	% matches the schedule above.
+
+	\begin{enumerate}
+
+		\item Before the sixth class, compose and submit an exegetical
+		analysis of any suitably short passage from the \textbf{Law}
+		(Torah).
+
+		\item Before the eleventh class, compose and submit an
+		exegetical analysis of any suitably short passage from the
+		\textbf{Prophets} (Former or Latter).
+		
+		\item Each paper must advance a \textbf{thesis} related to the
+		selected text. Each paper should interact with at least \UG{four
+		(4)}{six (6)} sources or commentators, not counting lectures
+		(which need not be cited). See me and \cite[chs. 3, 5, 8,
+		11]{rlgs} for guidance.
+
+	\end{enumerate}
+
+%\Int{
+%	\item One week, instead of answering a writing prompt, each student
+%	will make an \textbf{online presentation} on one of the twelve
+%	supplementary articles. Be creative! It may take the form of a
+%	podcast or online video, and should be sharable by URL (try
+%	SoundCloud, YouTube, or Vimeo). The presentation should last 8–10
+%	minutes (12 min at most). It must begin with a brief (3–5~min)
+%	summary of the article. The balance of the time should be spent
+%	helping other readers elaborate, reflect on, test, challenge, or
+%	extend the main ideas presented there. Post your link to the forums
+%	by the morning so that you can help shape the forum discussions on
+%	the same article.
+%}{
+%	\item Each student will lead a \textbf{seminar discussion} of one
+%	chapter from the HB/OT, freely chosen from a week's primary reading.
+%	The discussion should last about 25~minutes. It needs to begin with
+%	a brief (5~min) \textbf{outline} of the chapter. Outlines must be
+%	original, not borrowed from commentators. They should be circulated
+%	as handouts and explained orally. The balance of the time should be
+%	spent helping the class discover, elaborate, reflect on, test, or
+%	otherwise explore the meaning of the passage. Critical to success
+%	here is the ability to ask good questions of the Bible.
+%}
+
+%	\item \textbf{Seminar discussions}: Graduate students will lead
+%	\textbf{two} seminar discussions over the course of the semester;
+%	undergraduate (BTh) students will lead \textbf{one}. Handouts may be
+%	developed and circulated, but they are not required as part of the mark.
+%
+%
+%	\begin{enumerate}
+%
+%		\item Each student in the course must lead a discussion of one
+%		chapter from the primary reading, to occur in the same week in which
+%		it is assigned. Any chapter may be selected. Discussion should last
+%		twenty minutes. It should begin with a brief overview (five minutes
+%		maximum) of the chapter and key issues raised by it. The balance of
+%		the time should be spent helping the class discover, elaborate,
+%		reflect on, test, or otherwise explore the meaning of the passage.
+%		Vital to success here is the ability to ask good questions of the
+%		Bible.
+%
+%		\item Each graduate student must lead a second discussion on a
+%		supplementary reading. If the reading selection deviates from what
+%		is set in the syllabus, consult with the professor to make sure the
+%		alternate reading is circulated at least one week in advance. These
+%		seminars, too, should occur in the same week in which the material
+%		is assigned and should last twenty minutes. The allocation of time
+%		is different, however. Approximately fifteen minutes should be given
+%		to summary and analysis, with just five minutes at the end for
+%		questions and class discussion. The goal here is for advanced degree
+%		students to report on the results of critical inquiries into various
+%		noteworthy examples of biblical interpretation.
+%
+%		\item Students are encouraged to align their essay writing with
+%		their seminar topics. For example, it is perfectly acceptable to
+%		lead a discussion on the biblical chapter in which the short passage
+%		for your exegetical essay appears. It is also acceptable to let
+%		class discussion spur revisions to your paper, of course with the
+%		understanding that you credit others appropriately for their input.
+%
+%	\end{enumerate}
+
+\end{enumerate}
+
+The breakdown for the semester's total work is shown in
+\autoref{grade-dist}.
+
+\begin{table}[htbp]
+  \centering
+  {\lining
+  \begin{tabular}{lr}
+    \toprule
+    Notes \& Quotes     & 10\% \\
+    Reflection Paper 1  & 15\% \\
+    Reflection Paper 2  & 15\% \\
+    Exegetical Essay 1  & 30\% \\
+    Exegetical Essay 2  & 30\% \\
+%    \Int{Online Presentation}{Seminar Discussion} & 20\% \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Distribution of Grades}
+  \label{grade-dist}
+\end{table}
+
+%AST's \href{https://www.astheology.ns.ca/students/resources.html}{Academic
+%Calendar} provides guidelines and detailed criteria for academic
+%assessment. Marks are assigned by letter grade using these benchmarks.
+
+\input{\policy/grades}
+\input{\policy/other}
+
+\section{Further Bibliography}
+\label{bib}
+
+Introductions to the Hebrew Bible/Old Testament abound. Students looking
+for a second or third opinion on basic matters may find one or more the
+following volumes useful. They arise from a variety of contexts and, in
+terms of orientation, have different kinds of utility. The one by
+Kaminsky and Lohr \cite{hbfb} is notable for its brevity and interfaith
+outlook.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{99}% use the longest item in the bibliography
+
+	\bibitem{jb16} Barton, John, ed.
+	\emph{The Hebrew Bible: A Critical Companion}.
+	Princeton: Princeton University Press, 2016.
+
+	\bibitem{bb05} Birch, Bruce, Walter Brueggemann, Terence E. Fretheim, and David L. Petersen.
+	\emph{A Theological Introduction to the Old Testament}.
+	2nd ed. Nashville: Abingdon, 2005.
+	AST Library: BS 1192.5 T43 2005.
+
+	\bibitem{wbtl21} Brueggemann, Walter, and Tod Linafelt.
+	\emph{An Introduction to the Old Testament: The Canon and Christian Imagination}.
+	3rd ed. Louisville: Westminster John Knox, 2021.
+	AST Library (2nd ed.): BS 1140.3 B78 2012.
+
+	\bibitem{scms16} Chapman, Stephen B., and Marvin A. Sweeney, eds.
+	\emph{The Cambridge Companion to the Hebrew Bible/Old Testament}.
+	New York: Cambridge University Press, 2016.
+	AST Library: BS 1140.3 C35 2016.
+
+	\bibitem{jc04} Collins, John J.
+	\emph{Introduction to the Hebrew Bible}.
+	Minneapolis: Fortress, 2004.
+	AST Library: BS 1140.3 C65 2004.
+
+	\bibitem{mc10} Coogan, Michael D.
+	\emph{The Old Testament: A Historical and Literary Introduction to the Hebrew Scriptures}.
+	3rd ed. New York: Oxford University Press, 2014.
+	AST Library: BS 1197 C56 2014.
+
+	\bibitem{pdjr05} Davies, Philip R., and John Rogerson.
+	\emph{The Old Testament World}.
+	2nd ed. Louisville: Westminster John Knox, 2005.
+	AST Library: BS 1171.3 D38 2005.
+
+	\bibitem{ahjw09} Hill, Andrew E., and John H. Walton.
+	\emph{A Survey of the Old Testament}.
+	3rd ed. Grand Rapids: Zondervan, 2009.
+
+	\bibitem{jc23} Jacobson, Rolf A., and Michael J. Chan.
+	\emph{Introducing the Old Testament: A Historical, Literary, and Theological Survey}.
+	Grand Rapids: Baker Academic, 2023.
+
+	\bibitem{hbfb} Kaminsky, Joel S., and Joel N. Lohr.
+	\emph{The Hebrew Bible for Beginners: A Jewish and Christian Introduction}.
+	Nashville: Abingdon Press, 2015.
+	AST Library: BS 1171.3 K39 2015 and \href{https://search.ebscohost.com/login.aspx?direct=true&AuthType=cookie,ip,shib&db=nlebk&AN=969753&site=ehost-live&scope=site&custid=s5315951}{online}.
+
+	\bibitem{jk07} Kugel, James L.
+	\emph{How To Read the Bible: A Guide to Scripture, Then and Now}.
+	New York: Free, 2007.
+
+	\bibitem{hprb10} Page, Hugh R., Jr., and Randall C. Bailey, eds.
+	\emph{The Africana Bible: Reading Israel’s Scriptures from Africa and the African Diaspora}.
+	Minneapolis: Fortress, 2010.
+	AST Library: BS 1171.3 A37 2010.
+
+	\bibitem{rr86} Rendtorff, Rolf.
+	\emph{The Old Testament: An Introduction}. Translated by John Bowden.
+	Philadelphia: Fortress, 1986.
+	AST Library: BS 1140.2 R3913 1986.
+
+	\bibitem{ks12} Schmid, Konrad.
+	\emph{The Old Testament: A Literary History}. Translated by Linda Maloney.
+	Minneapolis: Fortress, 2012.
+	AST Library: BS 1174.3 S3613 2012.
+
+\end{thebibliography}
+\endgroup
+
+
+Further literature on the Bible is vast. The works listed here have been
+selected for clarity, insight, and theological alertness. Some will be
+supplementary texts, as per \autoref{supplementary}.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{99}
+\makeatletter%https://tex.stackexchange.com/a/114434
+\addtocounter{\@listctr}{14}
+\makeatother
+
+\bibitem{ra81} Alter, Robert. “The Techniques of Repetition.” Pages 88–113 in \emph{The Art of Biblical Narrative}. New York: Basic Books, 1981.
+
+\bibitem{ga01} Anderson, Gary A. “Biblical Origins and the Fall.” Pages 197–210 in \emph{The Genesis of Perfection: Adam and Eve in Jewish and Christian Imagination}. Louisville: Westminster John Knox, 2001.
+
+\bibitem{ga17} Anderson, Gary A. “Apophatic Theology: The Transcendence of God and the Story of Nadab and Abihu.” Pages 3–22 in \emph{Christian Doctrine and the Old Testament: Theology in the Service of Biblical Exegesis}. Grand Rapids: Baker Academic, 2017.
+
+\bibitem{bz09} Ben Zvi, Ehud and James D. Nogalski. \emph{Two Sides of a Coin: Juxtaposing Views on Interpreting the Book of the Twelve / the Twelve Prophetic Books}. Analecta Gorgiana 201. Piscataway, NJ: Gorgias, 2009.
+
+\bibitem{sc16} Chapman, Stephen B. “1 Samuel 1–12.” Pages 71–119 in \emph{1 Samuel as Christian Scripture: A Theological Commentary}. Grand Rapids: Eerdmans, 2016.
+
+\bibitem{bc69} Childs, Brevard S. “Psalm 8 in the Context of the Christian Canon.” Pages 85--93 in \emph{Canon as Rule and Guide: Collected Essays}. Edited by Daniel R. Driver. FAT 1.174. Tübingen: Mohr Siebeck, 2023.
+
+\bibitem{bc77} Childs, Brevard S. “The \emph{Sensus Literalis} of Scripture: An Ancient and Modern Problem.” Pages 169--80 in \emph{Canon as Rule and Guide: Collected Essays}. Edited by Daniel R. Driver. FAT 1.174. Tübingen: Mohr Siebeck, 2023.
+
+\bibitem{bc79} Childs, Brevard S. \emph{Introduction to the Old Testament as Scripture}. Philadelphia: Fortress, 1979.
+
+%\bibitem{bc85} Childs, Brevard S. \emph{Old Testament Theology in a Canonical Context}. Philadelphia: Fortress, 1985.
+
+%\bibitem{bc92} Childs, Brevard S. \emph{Biblical Theology of the Old and New Testaments: Theological Reflection on the Christian Bible}. Minneapolis: Fortress, 1992.
+
+\bibitem{bc04} Childs, Brevard S. \emph{The Struggle to Understand Isaiah as Christian Scripture}. Grand Rapids: Eerdmans, 2004.
+
+\bibitem{ed03} Davis, Ellen F. “Teaching the Bible Confessionally in the Church.” Pages 9–26 in \emph{The Art of Reading Scripture}. Edited by Ellen F. Davis and Richard B. Hays. Grand Rapids: Eerdmans, 2003.
+
+\bibitem{ed14} Davis, Ellen F. \emph{Biblical Prophecy: Perspectives for Christian Theology, Discipleship, and Ministry}. Louisville: Westminster John Knox, 2014.
+
+\bibitem{ndw14} deClaissé-Walford, Nancy L. “The Meta-Narrative of the Psalter.” Pages 363–76 in \emph{The Oxford Handbook of the Psalms}. Edited by William P. Brown. Oxford: Oxford University Press, 2014.
+
+\bibitem{kd13} Dell, Katherine J. “Ecclesiastes as Wisdom: Consulting Early Interpreters.” Pages 9–36 in \emph{Interpreting Ecclesiastes: Readers Old and New}. Winona Lake, IN: Eisenbrauns, 2013.
+
+\bibitem{mf04} Fox, Michael V. \emph{Ecclesiastes: The Traditional Hebrew Text with the New JPS Translation}. The JPS Bible Commentary. Philadelphia: Jewish Publication Society, 2004.
+
+\bibitem{bj13} Janowski, Bernd. \emph{Arguing with God: A Theological Anthropology of the Psalms}. Louisville: Westminster John Knox, 2013.
+
+\bibitem{jl85} Levenson, Jon D. \emph{Sinai and Zion: An Entry into the Jewish Bible}. Minneapolis: Winston, 1985.
+
+\bibitem{jl12} Levenson, Jon D. “The Test.” Pages 66–112 in \emph{Inheriting Abraham: The Legacy of the Patriarch in Judaism, Christianity, and Islam}. Princeton: Princeton University Press, 2012.
+
+\bibitem{nm09} MacDonald, Nathan. “Israel and the Old Testament Story in Irenaeus’s Presentation of the Rule of Faith.” \emph{Journal of Theological Interpretation} 3.2 (2009): 281–98.
+
+\bibitem{cm12} McGinnis, Claire Mathews. “The Hardening of Pharaoh’s Heart in Christian and Jewish Interpretation.” \emph{Journal of Theological Interpretation} 6.1 (2012): 43–64.
+
+\bibitem{wm92} Moberly, R. W. L. \emph{The Old Testament of the Old Testament: Patriarchal Narratives and Mosaic Yahwism}. Minneapolis: Fortress, 1992.
+
+\bibitem{wm13} Moberly, R. W. L. “A Love Supreme.” Pages 7–40 in \emph{Old Testament Theology: Reading the Hebrew Bible as Christian Scripture}. Grand Rapids: Baker Academic, 2013.
+
+\bibitem{jn07a} Nogalski, James D. “Reading the Book of the Twelve Theologically.” \emph{Interpretation} 61.2 (2007): 115–22.
+
+\bibitem{jn07b} Nogalski, James D. “Recurring Themes in the Book of the Twelve: Creating Points of Contact for a Theological Reading.” \emph{Interpretation} 61.2 (2007): 125–36.
+
+\bibitem{db89} Patrick, Dale. “Studying Biblical Law as a Humanities.” \emph{Semeia} 45 (1989): 27–47.
+
+\bibitem{ip14} Provan, Ian. \emph{Seriously Dangerous Religion: What the Old Testament Really Says and Why It Matters}. Waco: Baylor University Press, 2014.
+
+\bibitem{fr11} Rutledge, Fleming. \emph{And God Spoke to Abraham: Preaching From the Old Testament}. Grand Rapids: Eerdmans, 2011.
+
+\bibitem{ks19} Schmid, Konrad. \emph{A Historical Theology of the Hebrew Bible}. Translated by Peter Altmann. Grand Rapids: Eerdmans, 2019. ISBN 978-0802876935.
+
+\bibitem{cs96} Seitz, Christopher R. “Old Testament or Hebrew Bible? Some Theological Considerations.” \emph{Pro Ecclesia} 5.3 (1996): 292–303.
+
+\bibitem{cs99} Seitz, Christopher R. “The Call of Moses and the ‘Revelation’ of the Divine Name: Source-Critical Logic and Its Legacy.” Pages 145--61 in Christopher R. Seitz and Kathryn Greene-McCreight, eds. \emph{Theological Exegesis: Essays in Honor of Brevard S. Childs}. Grand Rapids: Eerdmans, 1999.
+
+%\bibitem{cs18} Seitz, Christopher R. “‘Can We Read This Book?’ Reader Response-ability.” Pages 51–68 in \emph{The Elder Testament: Canon, Theology, Trinity}. Waco, TX: Baylor University Press, 2018.
+
+\bibitem{gs92} Sheppard, Gerald T. “Theology and the Book of Psalms.” \emph{Interpretation} 46.2 (1992): 143–55.
+
+\bibitem{bs15} Sommer, Benjamin D. “What Happened at Sinai? Maximalist and Minimalist Approaches.” Pages 27–98 in \emph{Revelation and Authority: Sinai in Jewish Scripture and Tradition}. New Haven: Yale University Press, 2015.
+
+\bibitem{pt84} Trible, Phyllis. “An Unnamed Woman: The Extravagance of Violence.” Pages 65–91 in \emph{Texts of Terror: Literary-Feminist Readings of Biblical Narratives}. Overtures to Biblical Theology. Philadelphia: Fortress, 1984.
+
+\end{thebibliography}
+\endgroup
+
+For additional literature, I recommend exploring \href{https://go.openathens.net/redirector/astheology.ns.ca?url=https://www.oxfordbibliographies.com/obo/page/biblical-studies}{Oxford Bibliographies: Biblical Studies (Full Text)}.
+You can access the database automatically while on campus or remotely
+with OpenAthens credentials. Numerous articles by subject-area
+specialists appear under such headings as: Ancient Near East; Bible;
+Early Christianity; Greco-Roman World; Hebrew Bible; New Testament;
+Rabbinic Judaism; Second Temple Judaism.
+
+\end{document}

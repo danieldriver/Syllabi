@@ -24,11 +24,13 @@
 \newcommand\cprereqs{}
 \newcommand\edobject{}
 
-% in case of fully online or BTh courses - https://tex.stackexchange.com/a/5896
+% in case of fully online, BTh, or undergraduate courses - https://tex.stackexchange.com/a/5896
 \newif\ifonline
 \newcommand\Int[2]{\ifonline#1\else#2\fi}
 \newif\ifbth
 \newcommand\bth[2]{\ifbth#1\else#2\fi}
+\newif\ifUG
+\newcommand\UG[2]{\ifUG#1\else#2\fi}
 
 % commands for setting variables in the preamble
 \newcommand\professor[2][PhD]{
