@@ -1,0 +1,351 @@
+% Copyright (c) 2025 by Daniel R. Driver.
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTeX
+
+\documentclass[titlepage]{article}
+
+% This document presumes a file structure and set of inputs that are
+% available at: git@github.com:danieldriver/syllabi.git
+
+\newcommand\policy{../policy}
+\newcommand\incl{../includes}
+\input{\incl/variables}
+
+%\onlinetrue % \Int{true}{false}
+%\UGtrue % \UG{true}{false} terms for undergraduate students
+\coursecode[1.5\UG{-UG}{}]{HB 3115\UG{-UG}{}}% version is 1.0 unless \cmd[1.1]{}
+\coursetitle{Exodus and the Life of Moses}% \cmd[optional series]{title}
+
+% Taught in:
+%   - Summer 2018
+%   - Fall 2025
+
+\professor{Daniel R. Driver}% terminal degree is PhD unless \cmd[DPhil]{}
+\phone{902-425-7051}
+\email{daniel.driver@astheology.ns.ca}
+\officehours{Thursdays, 1:00--3:00 \PM}
+
+\semester{Fall 2025}
+\meets{Mondays}% \meets{on}{at}{in} - on could be: \Int{Mondays}{Thursdays}
+      {10:00 \AM--12:30 \PM\ Atlantic}% if online, it prints "From 9:00 AM"
+      {MS Teams}% if online, it prints "Brightspace" with link
+\website{danieldriver.com/courses}
+\cdescription{% \cmd[standard prereqs]{from the current Academic Calendar}
+
+Who is Moses? How does his story shape Israel’s story in Egypt and at
+Sinai? This course will examine the life of Moses in the context of the
+book of Exodus, with special attention to the book’s canonical shape and
+historic reception. Students will also become familiar with some of the
+current debate about the formation of the Pentateuch, particularly as it
+relates to different accounts of Israel’s origins in the Hebrew
+Bible/Old Testament.
+
+}% end of course description
+\objectives{%
+
+By the end of the course students should be able to demonstrate a
+critical awareness of the main contours of the Book of Exodus and, to a
+more limited extent, of its modern interpretation and ancient reception
+history. They should be able to communicate their own understanding of
+who Moses is, with an ecumenical outlook that includes some knowledge of
+Jewish and Christian tradition. They should develop a critical
+self-awareness of their own patterns of thought about biblical story and
+biblical law, particularly where these elements converge on the figure
+of Moses. Ideally, they will discover in the study of Old Testament
+scripture a genuine love of learning, all due humility before the task
+of interpretation, and the courage to address themselves to text and
+tradition.
+
+Students should also be able to:
+	summarize and understand major hermeneutical approaches to the Pentateuch;
+	identify, analyze, and explicate short passages from it, especially from Exodus;
+	appreciate, compare, and evaluate modern and traditional religious understandings of the text;
+	generate and defend an original, coherent thesis about Moses.
+
+% A Model of Learning Objectives
+% Adapted from http://www.celt.iastate.edu/teaching/RevisedBlooms1.html
+%
+% A learning objective should contain a *subject* (a verb related to
+% cognitive process) and an *object* (a noun identifying the knowledge
+% or skill sought). Statements should be precise and measurable, e.g.,
+% "By the end of this course, students will be able to <verb> <noun>."
+%
+% Anderson and Krathwohl name four *classes of knowledge* that students
+% can be expected to acquire. Terms move from the concrete to the
+% abstract:
+%
+%   1. factual           (basic elements, details, terminology)
+%   2. conceptual        (interrelationship of basic elements)
+%   3. procedural        (skills, methods, techniques, criteria)
+%   4. metacognitive     (strategy, context and conditions, self-knowledge)
+%
+% Metacognitive knowledge is a special case. It concerns one's own
+% "cognition and about oneself in relation to various subject matters"
+% (Anderson and Krathwohl, 2001, p.44).
+%
+% A&K also identify 19 *cognitive processes*, arranged in six categories
+% (a 2001 revision of Bloom's 1957 taxonomy) that progress from lower
+% order to higher order thinking skills (from LOTS to HOTS):
+%
+%   1. remember
+%      * recognizing     (identifying)
+%      * recalling       (retrieving)
+%   2. understand
+%      * interpreting    (clarifying, paraphrasing, representing, translating)
+%      * exemplifying    (illustrating, instantiating)
+%      * classifying     (categorizing, subsuming)
+%      * summarizing     (abstracting, generalizing)
+%      * inferring       (concluding, extrapolating, interpolating, predicting)
+%      * comparing       (contrasting, mapping, matching)
+%      * explaining      (constructing models)
+%   3. apply
+%      * executing       (carrying out)
+%      * implementing    (using)
+%   4. analyze
+%      * differentiating (discriminating, distinguishing, focusing, selecting)
+%      * organizing      (finding coherence, integrating, outlining, parsing, structuring)
+%      * attributing     (deconstructing)
+%   5. evaluate
+%      * checking        (coordinating, detecting, monitoring, testing)
+%      * critiquing      (judging)
+%   6. create
+%      * generating      (hypothesizing)
+%      * planning        (designing)
+%      * producing       (constructing)
+%
+% If you reference a List of Measurable Verbs Used to Assess Learning
+% Outcomes, remember that A&K reverse Bloom's 6th and 5th categories.
+
+}% end of learning objectives
+
+\input{\incl/preamble}
+
+\begin{document}
+\input{\incl/title}
+
+\section{Learning Objectives}
+\label{objectives}
+
+\edobject
+
+\section{Required Texts \& Materials}
+\label{texts}
+
+The following texts are required. Students should have their own copies.
+Library copies that are not reference works have been placed on reserve.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Sommer}% use the longest item in the bibliography
+
+	\bibitem[Nyssa]{nyssa} Gregory of Nyssa.
+	\emph{The Life of Moses}. Translated by Abraham J. Malherbe and Everett Ferguson.
+	New York: Paulist, 1978, rev. 2002; repr. New York: HarperOne, 2006.
+	ISBN 978-0809121120 (Paulist) or 978-0060754648 (HarperOne).
+
+	\bibitem[Sommer]{sommer} Benjamin D. Sommer.
+	\emph{Revelation and Authority: Sinai in Jewish Scripture and Tradition}.
+	New Haven: Yale University Press, 2015.
+	ISBN 978-0300234688.
+
+	\bibitem[von Rad]{vonrad} Gerhard von Rad.
+	\emph{Moses}. 2nd ed. Edited by K.\,C. Hanson.
+	Eugene, OR: Cascade Books, 2011.
+	ISBN 978-1606087718.
+
+\end{thebibliography}
+\endgroup
+
+Students should also have a good, modern translation of the Bible such
+as the NRSV or NJPS. If you want a study Bible, I recommend either
+Michael Coogan et al., eds., \emph{The New Oxford Annotated Bible: NRSV
+with Apocrypha} (5th ed.; Oxford: OUP, 2018) or, with some superb notes
+and essays but neither Apocrypha nor NT, Adele Berlin and Marc Zvi
+Brettler, eds., \emph{The Jewish Study Bible: Second Edition} (2nd ed.;
+Oxford: OUP, 2014).
+
+\section{Supplementary Texts}
+\label{supplementary}
+
+Supplementary readings may be recommended throughout the semester.
+Excerpts from this literature will either be placed on reserve or made
+available through the course website. The following secondary titles are
+notable but not required:
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{Childs}% use the longest item in the bibliography
+
+	\bibitem[Buber]{buber} Martin Buber.
+	\emph{Moses}.
+	Oxford: East and West Library, 1946.
+	
+	\bibitem[Childs]{childs} Brevard S. Childs.
+	\emph{The Book of Exodus: A Critical, Theological Commentary}.
+	Louisville: Westminster John Knox Press, 1974.
+
+	\bibitem[Schmid]{schmid} Konrad Schmid.
+	\emph{Genesis and the Moses Story: Israel’s Dual Origins in the Hebrew Bible}. Translated by James D. Nogalski.
+	Winona Lake, IN: Eisenbrauns, 2010.
+
+\end{thebibliography}
+\endgroup%
+
+Also, the following basic works are worth consulting and even owning.
+\cite{rlgs} in particular contains sound advice on core skills like
+reading religious texts, writing essays and reviews, revising essays,
+making oral presentations, and learning languages.
+
+\begingroup
+\renewcommand{\section}[2]{}% temporarily remove the section heading
+\begin{thebibliography}{9}% use the longest item in the bibliography
+
+	\bibitem[Making]{rlgs} Northey, Margot, Bradford A. Anderson, and Joel N. Lohr.
+	\emph{Making Sense in Religious Studies: A Student's Guide to Research and Writing}.
+	3rd ed. Toronto: Oxford University Press, 2019. AST Library: Ref BL 41.N67 2019.
+
+	\bibitem[SBL2]{sbl2} Collins, Billie Jean, et al.
+	\emph{The SBL Handbook of Style}.
+	2nd ed. Atlanta: SBL Press, 2014.
+	Designed to augment \href{https://proxy.openathens.net/login?qurl=https%3A%2F%2Fwww.chicagomanualofstyle.org%2Fbook%2Fed17%2Ffrontmatter%2Ftoc.html}{\emph{Chicago Style}}
+	(the standard at AST), there is also a free
+	\href{https://www.sbl-site.org/wp-content/uploads/2025/04/SBLHSsupp2015-02.pdf}{Student Supplement for SBL2}. AST Library: Ref PN 147.S26 2014.
+
+\end{thebibliography}
+\endgroup
+
+\section{Course Outline}
+\label{outline}
+
+% For ease of citation:
+\newcommand\bsc[1]{\cite[#1]{childs}}
+\newcommand\bds[1]{\cite[#1]{sommer}}
+\newcommand\gvr[1]{\cite[#1]{vonrad}}
+\newcommand\nys[1]{\cite[#1]{nyssa}}
+
+We will adhere to the schedule in \autoref{schedule} as closely as
+possible, though the professor reserves the right to adjust it to suit
+the needs of the class.
+
+\setcolumncount{4}% set up \sessioncount, \unit{}, \noclass{}, and \reminder{memo}{date} macros
+\begin{table}[htb]% set to `p' to put the schedule on its own page
+  \centering
+  \begin{tabular}{>{\sessioncount.}r@{ }llr}% make sure the column config agrees with \setcolumncount
+	\toprule
+	\sessionskip{\textbf{\S}.}&\textbf{Primary}&\textbf{Secondary}&\textbf{Due}\\
+	\midrule
+
+		& Exodus 1                         &               &  8 Sep. \\ % or \Int{14}{12} Sep.
+		& Exodus 2                         & \nys{1–68}    & 15 Sep. \\
+		& Exodus 3                         & \nys{69–132}  & 22 Sep. \\
+		& Exodus 7                         & \gvr{1–44}    & 29 Sep. \\
+		& Exodus 12                        & \gvr{45–87}   &  6 Oct. \\ [1ex]
+	\reminder{The first paper is \textbf{due} before the \textbf{sixth week} of class.}{26 Oct.} \\
+		
+	\noclass{Thanksgiving}                                 & 13 Oct. \\
+	\noclass{Reading Week}                                 & 20--24 Oct. \\ [1ex]
+
+		& Exodus 16                        & \bds{1–26}    & 27 Oct. \\
+		& Exodus 19                        & \bds{27–98}   &  3 Nov. \\
+		& Exodus 20                        & \bds{99–146}  & 10 Nov. \\
+		& Exodus 24                        & \bds{147–187} & 17 Nov. \\
+		& Film: \emph{The Prince of Egypt} &               & 24 Nov. \\
+		& Exodus 32--33                    & \bds{188–208} &  1 Dec. \\
+		& Exodus 33--34                    & \bds{209–251} &  8 Dec. \\ [1ex]
+
+	\reminder{End of Term: Final marks are due for this course.}{15 Dec.} \\
+
+	\bottomrule
+  \end{tabular}
+  \caption{Schedule of Readings}
+  \label{schedule}
+\end{table}
+
+See the AST website for a list of other \href{https://www.astheology.ns.ca/students/index.html}{important dates}.
+
+\section{Evaluation}
+\label{evaluation}
+
+The grade structure for \ccode has the following elements.
+
+\begin{enumerate}
+
+	\item To facilitate regular engagement with the biblical text,
+	\textbf{notes and quotes} will be solicited from students at the
+	start of each class. Prepare by giving careful attention to the
+	primary reading in a modern translation (such as NJPS or NRSV).
+	Annotate it. Mark up your Bible. Make excursive notes as you read.
+	Reflect: What do you note about the material? What words, phrases,
+	or ideas stand out to you? \UG{Undergraduate students should augment
+	their observations with the footnotes in a good Study
+	Bible.}{Graduate students must augment this work by consulting a
+	different commentaries in each half of the class, ideally from two
+	different eras.} All students should come prepared to share and
+	discuss your observations with the class.
+
+	\item Imagine that a church press is releasing a new edition of a
+	classic treatise on Moses, and you have agreed to write a new
+	preface. Compose a new \textbf{book preface} for either \cite{nyssa}
+	or \cite{vonrad}. Describe what your selected book contributes to a
+	Christian understanding of Moses. Be sure to touch on aspects of
+	biography and authority (legal and moral). Contextualize your
+	description by comparing your book to a Christian portrait from a
+	very different era, whether modern (20th C. German in \cite{vonrad})
+	or ancient (4th C. Cappadocian Greek in \cite{nyssa}). Focus on one
+	work and use the other for auxiliary support. By all means “spoil”
+	the works, and illustrate your account with abundant paraphrase and
+	a few well-chosen quotes. Your preface should be about
+	\UG{2,000}{3,000} words long. It is due before the sixth week of
+	class.
+
+	\item \textbf{Teach a chapter} from \cite{sommer}. In most cases,
+	students will work in pairs. Undergraduate students should pair up
+	with graduate students. One or two graduate students may elect to
+	work alone. Teaching sessions should last 30 minutes, with about 20
+	min given to presentation and 10 min to class discussion.
+
+	\item A \textbf{final thesis} gives students an opportunity to
+	develop their own answer to the question “Who is Moses?” The paper
+	must have a clear thesis, which should govern the entire discussion.
+	The thesis needs to be supported by exegesis of passages form Exodus
+	and research into the literature. The paper should also show an
+	awareness of the readings, lectures, and classroom discussions. It
+	should be \UG{2,500}{4,000} words long, the first 500 of which are
+	to be read aloud at the start of the last class. Let this
+	introduction feature a single-sentence thesis statement. The paper
+	is due by the last class.
+
+\end{enumerate}
+
+For guidance on how to approach these and other assignments, see
+\cite{rlgs} in \autoref{supplementary}, above. The breakdown for the
+semester's total work is shown in \autoref{grade-dist}.
+
+\begin{table}[htbp]
+  \centering
+  {\lining
+  \begin{tabular}{lr}
+    \toprule
+    Notes \& Quotes  & 20\% \\
+    Book Preface     & 25\% \\
+    Teaching Session & 25\% \\
+    Final Thesis     & 30\% \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Distribution of Grades}
+  \label{grade-dist}
+\end{table}
+
+\input{\policy/grades}
+\input{\policy/other}
+
+\section{Further Bibliography}
+\label{bibliography}
+
+For additional literature, I recommend exploring \href{https://go.openathens.net/redirector/astheology.ns.ca?url=https://www.oxfordbibliographies.com/obo/page/biblical-studies}{Oxford Bibliographies: Biblical Studies (Full Text)}.
+You can access the database automatically while on campus or remotely
+with OpenAthens credentials. Among the many articles by subject-area
+specialists, see especially these three by Thomas B. Dozeman: “Moses,”
+“Pentateuch,” and “Book of Exodus.”
+
+\end{document}
